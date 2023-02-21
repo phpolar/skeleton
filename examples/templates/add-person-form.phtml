@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<?php
+
+use Phpolar\MyApp\Person;
+
+/**
+ * @var Person $view
+ */
+$view = $this;
+?>
+<html>
+    <head>
+        <title>MyApp Person Form</title>
+        <meta charset="utf-8" />
+        <meta name="theme-color" content="#ffffff" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Some Dev" />
+        <meta name="description" content="A PHPolar Example App" />
+        <meta name="keywords" content="demo,example,microframework" />
+        <link rel="manifest" href="/manifest.json" />
+        <link rel="icon" href="/resources/images/phpolar.svg" />
+        <link rel="apple-touch-icon" href="/resources/images/phpolar.svg" />
+        <link rel="icon" href="/resources/images/phpolar.svg" />
+        <link rel="stylesheet" href="/resources/stylesheets/style.css" />
+    </head>
+    <body>
+        <h1><img class="brand-icon" src="/resources/images/phpolar.svg" alt="brand icon" /> Add Person</h1>
+        <form action="/person/add" method="post">
+<?php foreach ($view as $propName => $propVal): ?>
+<?php $view->hasError($propName) ?>
+            <p>
+              <label for="<?= $propName ?>"><?= $view->getLabel($propName) ?></label>
+              <br />
+              <input
+                id="<?= $propName ?>"
+                name="<?= $propName ?>"
+                class="<?= $view->hasError($propName) === false ?: "field-error" ?>"
+                type="<?= $view->getInputType($propName)->asString() ?>"
+                value="<?= $propVal ?>" />
+              <br />
+              <span class="error"><strong><?= $view->getFieldErrorMessage($propName, " \u{26a0}") ?></strong></span>
+            </p>
+<?php endforeach ?>
+            <input type="submit" value="Submit" />
+        </form>
+    </body>
+</html>
