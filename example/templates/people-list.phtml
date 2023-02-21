@@ -9,54 +9,56 @@ use Phpolar\MyApp\PeopleList;
 $view = $this;
 ?>
 <html>
-    <head>
-        <title>MyApp People List</title>
-        <meta charset="utf-8" />
-        <meta name="theme-color" content="#ffffff" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="author" content="Some Dev" />
-        <meta name="description" content="A PHPolar Example App" />
-        <meta name="keywords" content="demo,example,microframework" />
-        <link rel="manifest" href="/manifest.json" />
-        <link rel="icon" href="/resources/images/phpolar.svg" />
-        <link rel="apple-touch-icon" href="/resources/images/phpolar.svg" />
-        <link rel="icon" href="/resources/images/phpolar.svg" />
-        <link rel="stylesheet" href="/resources/stylesheets/style.css" />
-    </head>
-    <body>
-        <h1><img class="brand-icon" src="/resources/images/phpolar.svg" alt="brand icon" /> People</h1>
-        <main class="container">
-            <nav class="sidenav">
-                <ul>
-                    <li class="list-item">
-                        <a href="/person/form">Add a person</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="content">
-<?php if (count($view->people) === 0): ?>
+
+<head>
+    <title>MyApp People List</title>
+    <meta charset="utf-8" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Some Dev" />
+    <meta name="description" content="A PHPolar Example App" />
+    <meta name="keywords" content="demo,example,microframework" />
+    <link rel="icon" href="/resources/images/phpolar.svg" />
+    <link rel="apple-touch-icon" href="/resources/images/phpolar.svg" />
+    <link rel="icon" href="/resources/images/phpolar.svg" />
+    <link rel="stylesheet" href="/resources/stylesheets/style.css" />
+</head>
+
+<body>
+    <h1><img class="brand-icon" src="/resources/images/phpolar.svg" alt="brand icon" /> People</h1>
+    <main class="container">
+        <nav class="sidenav">
+            <ul>
+                <li class="list-item">
+                    <a href="/person/form">Add a person</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="content">
+            <?php if (count($view->people) === 0) : ?>
                 No results
-<?php else: ?>
+            <?php else : ?>
                 <table>
                     <thead>
                         <tr>
-<?php foreach ($view->people[0] as $propName => $propValue): ?>
-                            <th><?= $view->people[0]->getColumnName($propName) ?></th>
-<?php endforeach ?>
+                            <?php foreach ($view->people[0] as $propName => $propValue) : ?>
+                                <th><?= $view->people[0]->getColumnName($propName) ?></th>
+                            <?php endforeach ?>
                         </tr>
                     </thead>
                     <tbody>
-<?php foreach ($view->people as $person): ?>
-                        <tr>
-<?php foreach ($person as $cell): ?>
-                            <td><?= $cell ?></td>
-<?php endforeach ?>
-                        </tr>
-<?php endforeach ?>
+                        <?php foreach ($view->people as $person) : ?>
+                            <tr>
+                                <?php foreach ($person as $cell) : ?>
+                                    <td><?= $cell ?></td>
+                                <?php endforeach ?>
+                            </tr>
+                        <?php endforeach ?>
                     </tbody>
                 </table>
-<?php endif ?>
-            </div>
-        </main>
-    </body>
+            <?php endif ?>
+        </div>
+    </main>
+</body>
+
 </html>
