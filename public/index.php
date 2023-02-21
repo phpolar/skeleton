@@ -10,7 +10,7 @@ declare(strict_types=1);
  * See `src/config/dependencies/conf.d/`.
  */
 
-namespace Phpolar\MyApp;
+namespace Phpolar\Example;
 
 use Phpolar\Phpolar\Routing\RouteRegistry;
 use Phpolar\Phpolar\WebServer\ContainerFactory;
@@ -62,7 +62,7 @@ $request = \Laminas\Diactoros\ServerRequestFactory::fromGlobals(
   $_POST,
   $_COOKIE,
 );
-// $person = new Person($request->getParsedBody());
+$person = new Person($request->getParsedBody());
 
 /**
  * ==========================================================
@@ -72,8 +72,8 @@ $request = \Laminas\Diactoros\ServerRequestFactory::fromGlobals(
  * PHPolar uses type-safe PSR-15 request handlers
  * instead of Closures.
  */
-// $getPersonForm = new GetPersonForm($person);
-// $submitPersonForm = new SubmitPersonForm($person);
+$getPersonForm = new GetPersonForm($person);
+$submitPersonForm = new SubmitPersonForm($person);
 
 /**
  * ==========================================================
@@ -81,9 +81,9 @@ $request = \Laminas\Diactoros\ServerRequestFactory::fromGlobals(
  * ==========================================================
  */
 $routes = new RouteRegistry();
-// $routes->addGet("/", new GetPeople());
-// $routes->addGet("/person/form", $getPersonForm);
-// $routes->addPost("/person/add", $person->isValid() === true ? $submitPersonForm : new GetPersonForm($person, true));
+$routes->addGet("/", new GetPeople());
+$routes->addGet("/person/form", $getPersonForm);
+$routes->addPost("/person/add", $person->isValid() === true ? $submitPersonForm : new GetPersonForm($person, true));
 
 /**
  * ==========================================================
