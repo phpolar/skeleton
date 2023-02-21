@@ -27,7 +27,7 @@ final class GetPeople extends AbstractRouteDelegate
         $people = array_map(static fn (array|object $data) => new Person($data), $storage->getAll());
         $peopleList = new PeopleList(...$people);
         return $templateEngine->apply(
-            "examples/templates/people-list.phtml",
+            "example/templates/people-list.phtml",
             new HtmlSafeContext($peopleList),
         );
     }
