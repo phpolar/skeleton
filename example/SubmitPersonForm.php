@@ -27,7 +27,7 @@ final class SubmitPersonForm extends AbstractRouteDelegate
             return $templateEngine->apply("person-saved");
         }
         return $templateEngine->apply(
-            "examples/templates/add-person-form.phtml",
+            "example/templates/add-person-form.phtml",
             new HtmlSafeContext($this->person),
         );
     }

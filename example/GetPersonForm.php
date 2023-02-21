@@ -24,7 +24,7 @@ final class GetPersonForm extends AbstractRouteDelegate
         }
         $templateEngine = $container->get(TemplateEngine::class);
         return $templateEngine->apply(
-            "examples/templates/add-person-form.phtml",
+            "example/templates/add-person-form.phtml",
             new HtmlSafeContext($this->person),
         );
     }
