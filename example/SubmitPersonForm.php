@@ -24,7 +24,7 @@ final class SubmitPersonForm extends AbstractRouteDelegate
         $templateEngine = $container->get(TemplateEngine::class);
         if ($this->person->isValid() === true) {
             $this->savePerson(uniqid(), $this->person, $container);
-            return $templateEngine->apply("person-saved");
+            return $templateEngine->apply("example/templates/person-saved.phtml");
         }
         return $templateEngine->apply(
             "example/templates/add-person-form.phtml",
