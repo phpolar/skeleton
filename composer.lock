@@ -376,12 +376,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpolar/phpolar.git",
-                "reference": "f7b8f7882c14fa742d88ef65dda35f0f8a1247da"
+                "reference": "2815dc5fd78bf6fb30674bdc3d0a298af486b2fc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpolar/phpolar/zipball/f7b8f7882c14fa742d88ef65dda35f0f8a1247da",
-                "reference": "f7b8f7882c14fa742d88ef65dda35f0f8a1247da",
+                "url": "https://api.github.com/repos/phpolar/phpolar/zipball/2815dc5fd78bf6fb30674bdc3d0a298af486b2fc",
+                "reference": "2815dc5fd78bf6fb30674bdc3d0a298af486b2fc",
                 "shasum": ""
             },
             "require": {
@@ -408,6 +408,9 @@
                 "phpunit/phpunit": "^10.0",
                 "squizlabs/php_codesniffer": "^3.7"
             },
+            "bin": [
+                "bin/launch"
+            ],
             "type": "library",
             "autoload": {
                 "files": [
@@ -433,7 +436,7 @@
                 "issues": "https://github.com/phpolar/phpolar/issues",
                 "source": "https://github.com/phpolar/phpolar/tree/58-redesign-project"
             },
-            "time": "2023-02-20T12:06:19+00:00"
+            "time": "2023-02-21T03:06:08+00:00"
         },
         {
             "name": "phpolar/phpolar-core",
