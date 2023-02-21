@@ -12,7 +12,7 @@ use Phpolar\Phpolar\Storage\AbstractStorage;
  * by the PHPolar Microframework.
  */
 return [
-    "csv_storage" => "data/people.csv",
+    "csv_storage" => "data/example.csv",
     AbstractStorage::class => static fn (
         $container
     ) => new CsvFileStorage($container["csv_storage"]),
