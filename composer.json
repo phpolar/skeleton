@@ -30,8 +30,5 @@
             "mkdir data && mkdir src/templates && mkdir tests",
             "@start"
         ]
-    },
-    "bin": [
-        "bin/launch"
-    ]
+    }
 }
