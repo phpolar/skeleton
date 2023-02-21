@@ -4,12 +4,6 @@
     "description": "A minimal starting point for a PHPolar application.",
     "type": "project",
     "license": "MIT",
-    "authors": [
-        {
-            "name": "Eric Fortmeyer",
-            "email": "e.fortmeyer01@gmail.com"
-        }
-    ],
     "require": {
         "phpolar/csv-file-storage": "^0.4",
         "phpolar/phpolar": "dev-58-redesign-project",
@@ -30,11 +24,14 @@
             "composer exec \"phpunit\""
         ],
         "start": [
-            "php -S localhost:8221 -t public",
-            "open http://localhost:8221"
+            "composer exec \"launch\""
         ],
         "post-create-project-cmd": [
+            "mkdir data && mkdir src/templates && mkdir tests",
             "@start"
         ]
-    }
+    },
+    "bin": [
+        "bin/launch"
+    ]
 }
