@@ -6,7 +6,7 @@
     "license": "MIT",
     "require": {
         "phpolar/csv-file-storage": "^0.4",
-        "phpolar/phpolar": "dev-58-redesign-project",
+        "phpolar/phpolar": "2.0.0-alpha",
         "laminas/laminas-diactoros": "^2.24",
         "pimple/pimple": "^3.5"
     },

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ccafd7b2c2618d430a61bc33b8114c80",
+    "content-hash": "06acc3209372c70eb04343ea00f9c1f4",
     "packages": [
         {
             "name": "laminas/laminas-diactoros",
@@ -372,16 +372,16 @@
         },
         {
             "name": "phpolar/phpolar",
-            "version": "dev-58-redesign-project",
+            "version": "2.0.0-alpha",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpolar/phpolar.git",
-                "reference": "1667ae19c5ff771f3227452f4f4fefd147164482"
+                "reference": "2a1ba3cd49ec7a77d63a4ad7d994862fc07ad31c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpolar/phpolar/zipball/1667ae19c5ff771f3227452f4f4fefd147164482",
-                "reference": "1667ae19c5ff771f3227452f4f4fefd147164482",
+                "url": "https://api.github.com/repos/phpolar/phpolar/zipball/2a1ba3cd49ec7a77d63a4ad7d994862fc07ad31c",
+                "reference": "2a1ba3cd49ec7a77d63a4ad7d994862fc07ad31c",
                 "shasum": ""
             },
             "require": {
@@ -434,9 +434,9 @@
             "description": "A super-tiny, lightweight microframework for PHP projects",
             "support": {
                 "issues": "https://github.com/phpolar/phpolar/issues",
-                "source": "https://github.com/phpolar/phpolar/tree/58-redesign-project"
+                "source": "https://github.com/phpolar/phpolar/tree/2.0.0-alpha"
             },
-            "time": "2023-02-22T14:12:27+00:00"
+            "time": "2023-02-22T14:34:26+00:00"
         },
         {
             "name": "phpolar/phpolar-core",
@@ -2569,7 +2569,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "phpolar/phpolar": 20
+        "phpolar/phpolar": 15
     },
     "prefer-stable": false,
     "prefer-lowest": false,
