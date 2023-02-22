@@ -16,10 +16,25 @@ use Phpolar\Phpolar\Routing\RouteRegistry;
 use Phpolar\Phpolar\WebServer\ContainerFactory;
 use Phpolar\Phpolar\WebServer\WebServer;
 
-// ini_set("display_errors", true);
+ini_set("display_errors", true);
 chdir("../");
 
 require "vendor/autoload.php";
+
+/**
+ * Simulate a login session.
+ *
+ * Required for CSRF protection
+ * middleware
+ */
+session_start([
+  "cookie_httponly" => true,
+  "cookie_samesite" => "Strict",
+  "cookie_secure" => true,
+  "cookie_path" => true,
+  "use_strict_mode" => true,
+  "referer_check" => true,
+]);
 
 /**
  * ==========================================================
