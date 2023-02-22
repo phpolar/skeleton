@@ -105,16 +105,16 @@
         },
         {
             "name": "phpolar/csrf-protection",
-            "version": "1.3.2",
+            "version": "1.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpolar/csrf-protection.git",
-                "reference": "fb124ba39c93eb2c8a9f78320fd6d004e7a6d23d"
+                "reference": "31e0c7acffadb7605448f3a7914f31767ea0b72e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpolar/csrf-protection/zipball/fb124ba39c93eb2c8a9f78320fd6d004e7a6d23d",
-                "reference": "fb124ba39c93eb2c8a9f78320fd6d004e7a6d23d",
+                "url": "https://api.github.com/repos/phpolar/csrf-protection/zipball/31e0c7acffadb7605448f3a7914f31767ea0b72e",
+                "reference": "31e0c7acffadb7605448f3a7914f31767ea0b72e",
                 "shasum": ""
             },
             "require": {
@@ -173,9 +173,9 @@
             ],
             "support": {
                 "issues": "https://github.com/phpolar/csrf-protection/issues",
-                "source": "https://github.com/phpolar/csrf-protection/tree/1.3.2"
+                "source": "https://github.com/phpolar/csrf-protection/tree/1.3.3"
             },
-            "time": "2023-02-12T03:59:10+00:00"
+            "time": "2023-02-22T14:02:44+00:00"
         },
         {
             "name": "phpolar/csv-file-storage",
@@ -376,12 +376,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpolar/phpolar.git",
-                "reference": "2815dc5fd78bf6fb30674bdc3d0a298af486b2fc"
+                "reference": "1667ae19c5ff771f3227452f4f4fefd147164482"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpolar/phpolar/zipball/2815dc5fd78bf6fb30674bdc3d0a298af486b2fc",
-                "reference": "2815dc5fd78bf6fb30674bdc3d0a298af486b2fc",
+                "url": "https://api.github.com/repos/phpolar/phpolar/zipball/1667ae19c5ff771f3227452f4f4fefd147164482",
+                "reference": "1667ae19c5ff771f3227452f4f4fefd147164482",
                 "shasum": ""
             },
             "require": {
@@ -436,7 +436,7 @@
                 "issues": "https://github.com/phpolar/phpolar/issues",
                 "source": "https://github.com/phpolar/phpolar/tree/58-redesign-project"
             },
-            "time": "2023-02-21T03:06:08+00:00"
+            "time": "2023-02-22T14:12:27+00:00"
         },
         {
             "name": "phpolar/phpolar-core",
