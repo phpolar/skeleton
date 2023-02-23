@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "06acc3209372c70eb04343ea00f9c1f4",
+    "content-hash": "f5be21e2810f3df8da6eaf7fca88e9c4",
     "packages": [
         {
             "name": "laminas/laminas-diactoros",
@@ -368,6 +368,7 @@
                 "issues": "https://github.com/phpolar/php-templating/issues",
                 "source": "https://github.com/phpolar/php-templating/tree/0.4.0"
             },
+            "abandoned": "phpolar/pure-php",
             "time": "2023-02-15T04:31:33+00:00"
         },
         {
@@ -582,6 +583,54 @@
                 "source": "https://github.com/phpolar/storage-driver/tree/1.0.0"
             },
             "time": "2023-02-06T04:46:21+00:00"
+        },
+        {
+            "name": "picocss/pico",
+            "version": "v1.5.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/picocss/pico.git",
+                "reference": "edfb8cb5d3e634739010f5e664298362742d107e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/picocss/pico/zipball/edfb8cb5d3e634739010f5e664298362742d107e",
+                "reference": "edfb8cb5d3e634739010f5e664298362742d107e",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Lucas Larroche",
+                    "email": "lucas@larroche.com",
+                    "homepage": "https://lucaslarroche.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Minimal CSS Framework for semantic HTML.",
+            "homepage": "https://picocss.com",
+            "keywords": [
+                "CSS-Framework",
+                "css",
+                "dark-mode",
+                "dark-theme",
+                "lightweight",
+                "minimal",
+                "minimalist",
+                "minimalistic",
+                "native-html",
+                "scss-framework",
+                "semantic"
+            ],
+            "support": {
+                "issues": "https://github.com/picocss/pico/issues/",
+                "source": "https://github.com/picocss/pico/tree/v1.5.7"
+            },
+            "time": "2023-01-28T07:35:59+00:00"
         },
         {
             "name": "pimple/pimple",

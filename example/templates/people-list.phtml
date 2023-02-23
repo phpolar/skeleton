@@ -8,7 +8,7 @@ use Phpolar\MyApp\PeopleList;
  */
 $view = $this;
 ?>
-<html>
+<html lang="en" data-theme="light">
 
 <head>
     <title>MyApp People List</title>
@@ -21,44 +21,62 @@ $view = $this;
     <link rel="icon" href="/resources/images/phpolar.svg" />
     <link rel="apple-touch-icon" href="/resources/images/phpolar.svg" />
     <link rel="icon" href="/resources/images/phpolar.svg" />
-    <link rel="stylesheet" href="/resources/stylesheets/style.css" />
+    <link rel="stylesheet" href="/resources/css/pico.min.css" />
+    <link rel="stylesheet" href="/resources/css/overrides.css" />
 </head>
 
 <body>
-    <h1><img class="brand-icon" src="/resources/images/phpolar.svg" alt="brand icon" /> People</h1>
-    <main class="container">
-        <nav class="sidenav">
+    <header class="container">
+        <nav>
             <ul>
-                <li class="list-item">
-                    <a href="/person/form">Add a person</a>
+                <li>
+                    <a href="/" arial-label="Back Home">
+                        <img width="48px" height="48px" src="/resources/images/phpolar.svg" alt="brand icon" />
+                    </a>
+                </li>
+                <li><strong>Example App</strong></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <nav>
+            <ul>
+                <li>
+                    <a href="/person/form"><strong>Add a person</strong></a>
                 </li>
             </ul>
         </nav>
-        <div class="content">
-            <?php if (count($view->people) === 0) : ?>
-                No results
-            <?php else : ?>
-                <table>
-                    <thead>
+        <?php if (count($view->people) === 0) : ?>
+            No results
+        <?php else : ?>
+            <table>
+                <thead>
+                    <tr>
+                        <?php foreach ($view->people[0] as $propName => $propValue) : ?>
+                            <th><?= $view->people[0]->getColumnName($propName) ?></th>
+                        <?php endforeach ?>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php foreach ($view->people as $person) : ?>
                         <tr>
-                            <?php foreach ($view->people[0] as $propName => $propValue) : ?>
-                                <th><?= $view->people[0]->getColumnName($propName) ?></th>
+                            <?php foreach ($person as $cell) : ?>
+                                <td><?= $cell ?></td>
                             <?php endforeach ?>
                         </tr>
-                    </thead>
-                    <tbody>
-                        <?php foreach ($view->people as $person) : ?>
-                            <tr>
-                                <?php foreach ($person as $cell) : ?>
-                                    <td><?= $cell ?></td>
-                                <?php endforeach ?>
-                            </tr>
-                        <?php endforeach ?>
-                    </tbody>
-                </table>
-            <?php endif ?>
-        </div>
+                    <?php endforeach ?>
+                </tbody>
+            </table>
+        <?php endif ?>
     </main>
+    <footer class="container">
+        <nav>
+            <ul>
+                <li><strong>Phpolar</strong> - mimimal PHP</li>
+                <li>&copy; 2023</li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 
 </html>
