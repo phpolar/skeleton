@@ -8,7 +8,7 @@ use Phpolar\MyApp\Person;
  */
 $view = $this;
 ?>
-<html>
+<html lang="en" data-theme="light">
 
 <head>
   <title>MyApp Person Form</title>
@@ -21,24 +21,45 @@ $view = $this;
   <link rel="icon" href="/resources/images/phpolar.svg" />
   <link rel="apple-touch-icon" href="/resources/images/phpolar.svg" />
   <link rel="icon" href="/resources/images/phpolar.svg" />
-  <link rel="stylesheet" href="/resources/stylesheets/style.css" />
+  <link rel="stylesheet" href="/resources/css/pico.min.css" />
+  <link rel="stylesheet" href="/resources/css/overrides.css" />
 </head>
 
 <body>
-  <h1><img class="brand-icon" src="/resources/images/phpolar.svg" alt="brand icon" /> Add Person</h1>
-  <form action="/person/add" method="post">
-    <?php foreach ($view as $propName => $propVal) : ?>
-      <?php $view->hasError($propName) ?>
-      <p>
-        <label for="<?= $propName ?>"><?= $view->getLabel($propName) ?></label>
-        <br />
-        <input id="<?= $propName ?>" name="<?= $propName ?>" class="<?= $view->hasError($propName) === false ?: "field-error" ?>" type="<?= $view->getInputType($propName)->asString() ?>" value="<?= $propVal ?>" />
-        <br />
-        <span class="error"><strong><?= $view->getFieldErrorMessage($propName, " \u{26a0}") ?></strong></span>
-      </p>
-    <?php endforeach ?>
-    <input type="submit" value="Submit" />
-  </form>
+  <header class="container">
+    <nav>
+      <ul>
+        <li>
+          <a href="/" arial-label="Back Home">
+            <img width="48px" height="48px" src="/resources/images/phpolar.svg" alt="brand icon" />
+          </a>
+        </li>
+        <li><strong>Example App</strong></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="container">
+    <div class="grid">
+      <form action="/person/add" method="post">
+        <?php foreach ($view as $propName => $propVal) : ?>
+          <?php $view->hasError($propName) ?>
+          <label for="<?= $propName ?>"><?= $view->getLabel($propName) ?></label>
+          <input id="<?= $propName ?>" name="<?= $propName ?>" aria-invalid="<?= $view->hasError($propName) === true ? "true" : "false" ?>" placeholder="<?= $view->hasError($propName) === true ? $view->getLabel($propName) : $view->getFieldErrorMessage($propName, " \u{26a0}") ?>" type="<?= $view->getInputType($propName)->asString() ?>" value="<?= $propVal ?>" />
+        <?php endforeach ?>
+        <button type="submit">Submit</button>
+      </form>
+      <div></div>
+    </div>
+  </main>
+  <footer class="container">
+    <nav>
+      <ul>
+        <li><strong>Phpolar</strong> - mimimal PHP</li>
+        <li>&copy; 2023</li>
+      </ul>
+    </nav>
+  </footer>
+
 </body>
 
 </html>

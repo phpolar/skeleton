@@ -1,0 +1,5 @@
+:root:not([data-theme=dark]),[data-theme=light] {
+  /* improve contrast ratio */
+  --primary: hsl(195deg, 90%, 32%);
+  --primary-hover:hsl(195deg, 95%, 28%);
+}

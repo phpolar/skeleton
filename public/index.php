@@ -27,14 +27,14 @@ require "vendor/autoload.php";
  * Required for CSRF protection
  * middleware
  */
-session_start([
-  "cookie_httponly" => true,
-  "cookie_samesite" => "Strict",
-  "cookie_secure" => true,
-  "cookie_path" => true,
-  "use_strict_mode" => true,
-  "referer_check" => true,
-]);
+// session_start([
+//   "cookie_httponly" => true,
+//   "cookie_samesite" => "Strict",
+//   "cookie_secure" => true,
+//   "cookie_path" => true,
+//   "use_strict_mode" => true,
+//   "referer_check" => true,
+// ]);
 
 /**
  * ==========================================================
@@ -107,5 +107,5 @@ $routes->addPost("/person/add", $person->isValid() === true ? $submitPersonForm 
  */
 $app = WebServer::createApp($containerFactory, $dependencyMap);
 $app->useRoutes($routes);
-$app->useCsrfMiddleware();
+// $app->useCsrfMiddleware();
 $app->receive($request);
