@@ -32,7 +32,7 @@
         ],
         "post-root-package-install": [
             "mkdir data",
-            "mkdir --parent src/templates",
+            "mkdir -p src/templates",
             "mkdir tests"
         ],
         "post-create-project-cmd": [
