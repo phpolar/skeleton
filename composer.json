@@ -28,7 +28,8 @@
             "composer exec \"launch\""
         ],
         "link-css-framework": [
-            "cd public/resources/css; ln -s ../../../vendor/picocss/pico/css/pico.min.css; ln -s ../../../vendor/picocss/pico/css/pico.min.css.map"
+            "ln -s -f ../../../vendor/picocss/pico/css/pico.classless.min.css public/resources/css/",
+            "ln -s -f ../../../vendor/picocss/pico/css/pico.classless.min.css.map public/resources/css/"
         ],
         "post-root-package-install": [
             "mkdir data",
