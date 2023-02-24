@@ -11,54 +11,54 @@ $view = $this;
 <html lang="en" data-theme="light">
 
 <head>
-  <title>MyApp Person Form</title>
-  <meta charset="utf-8" />
-  <meta name="theme-color" content="#ffffff" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="author" content="Some Dev" />
-  <meta name="description" content="A PHPolar Example App" />
-  <meta name="keywords" content="demo,example,microframework" />
-  <link rel="icon" href="/resources/images/phpolar.svg" />
-  <link rel="apple-touch-icon" href="/resources/images/phpolar.svg" />
-  <link rel="icon" href="/resources/images/phpolar.svg" />
-  <link rel="stylesheet" href="/resources/css/pico.min.css" />
-  <link rel="stylesheet" href="/resources/css/overrides.css" />
+    <title>MyApp Person Form</title>
+    <meta charset="utf-8" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Some Dev" />
+    <meta name="description" content="A PHPolar Example App" />
+    <meta name="keywords" content="demo,example,microframework" />
+    <link rel="icon" href="/resources/images/phpolar.svg" />
+    <link rel="apple-touch-icon" href="/resources/images/phpolar.svg" />
+    <link rel="icon" href="/resources/images/phpolar.svg" />
+    <link rel="stylesheet" href="/resources/css/pico.classless.min.css" />
+    <link rel="stylesheet" href="/resources/css/overrides.css" />
 </head>
 
 <body>
-  <header class="container">
-    <nav>
-      <ul>
-        <li>
-          <a href="/" arial-label="Back Home">
-            <img width="48px" height="48px" src="/resources/images/phpolar.svg" alt="brand icon" />
-          </a>
-        </li>
-        <li><strong>Example App</strong></li>
-      </ul>
-    </nav>
-  </header>
-  <main class="container">
-    <div class="grid">
-      <form action="/person/add" method="post">
-        <?php foreach ($view as $propName => $propVal) : ?>
-          <?php $view->hasError($propName) ?>
-          <label for="<?= $propName ?>"><?= $view->getLabel($propName) ?></label>
-          <input id="<?= $propName ?>" name="<?= $propName ?>" aria-invalid="<?= $view->hasError($propName) === true ? "true" : "false" ?>" placeholder="<?= $view->hasError($propName) === true ? $view->getLabel($propName) : $view->getFieldErrorMessage($propName, " \u{26a0}") ?>" type="<?= $view->getInputType($propName)->asString() ?>" value="<?= $propVal ?>" />
-        <?php endforeach ?>
-        <button type="submit">Submit</button>
-      </form>
-      <div></div>
-    </div>
-  </main>
-  <footer class="container">
-    <nav>
-      <ul>
-        <li><strong>Phpolar</strong> - mimimal PHP</li>
-        <li>&copy; 2023</li>
-      </ul>
-    </nav>
-  </footer>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/" arial-label="Back Home">
+                        <img width="48px" height="48px" src="/resources/images/phpolar.svg" alt="brand icon" />
+                    </a>
+                </li>
+                <li><strong>Example App</strong></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <form action="/person/add" method="post">
+                <?php foreach ($view as $propName => $propVal) : ?>
+                    <?php $view->hasError($propName) ?>
+                    <label for="<?= $propName ?>"><?= $view->getLabel($propName) ?></label>
+                    <input id="<?= $propName ?>" name="<?= $propName ?>" aria-invalid="<?= $view->hasError($propName) === true ? "true" : "false" ?>" placeholder="<?= $view->hasError($propName) === true ? $view->getLabel($propName) : $view->getFieldErrorMessage($propName, " \u{26a0}") ?>" type="<?= $view->getInputType($propName)->asString() ?>" value="<?= $propVal ?>" />
+                <?php endforeach ?>
+                <button type="submit">Submit</button>
+            </form>
+            <div></div>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><strong>Phpolar</strong> - mimimal PHP</li>
+                <li>&copy; 2023</li>
+            </ul>
+        </nav>
+    </footer>
 
 </body>
 

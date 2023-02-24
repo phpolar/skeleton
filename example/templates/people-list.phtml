@@ -21,12 +21,12 @@ $view = $this;
     <link rel="icon" href="/resources/images/phpolar.svg" />
     <link rel="apple-touch-icon" href="/resources/images/phpolar.svg" />
     <link rel="icon" href="/resources/images/phpolar.svg" />
-    <link rel="stylesheet" href="/resources/css/pico.min.css" />
+    <link rel="stylesheet" href="/resources/css/pico.classless.min.css" />
     <link rel="stylesheet" href="/resources/css/overrides.css" />
 </head>
 
 <body>
-    <header class="container">
+    <header>
         <nav>
             <ul>
                 <li>
@@ -38,38 +38,41 @@ $view = $this;
             </ul>
         </nav>
     </header>
-    <main class="container">
-        <nav>
-            <ul>
-                <li>
-                    <a href="/person/form"><strong>Add a person</strong></a>
-                </li>
-            </ul>
-        </nav>
-        <?php if (count($view->people) === 0) : ?>
-            No results
-        <?php else : ?>
-            <table>
-                <thead>
-                    <tr>
-                        <?php foreach ($view->people[0] as $propName => $propValue) : ?>
-                            <th><?= $view->people[0]->getColumnName($propName) ?></th>
-                        <?php endforeach ?>
-                    </tr>
-                </thead>
-                <tbody>
-                    <?php foreach ($view->people as $person) : ?>
+    <main>
+        <section>
+            <h1>List of People</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/person/form"><strong>Add a person</strong></a>
+                    </li>
+                </ul>
+            </nav>
+            <?php if (count($view->people) === 0) : ?>
+                No results
+            <?php else : ?>
+                <table>
+                    <thead>
                         <tr>
-                            <?php foreach ($person as $cell) : ?>
-                                <td><?= $cell ?></td>
+                            <?php foreach ($view->people[0] as $propName => $propValue) : ?>
+                                <th><?= $view->people[0]->getColumnName($propName) ?></th>
                             <?php endforeach ?>
                         </tr>
-                    <?php endforeach ?>
-                </tbody>
-            </table>
-        <?php endif ?>
+                    </thead>
+                    <tbody>
+                        <?php foreach ($view->people as $person) : ?>
+                            <tr>
+                                <?php foreach ($person as $cell) : ?>
+                                    <td><?= $cell ?></td>
+                                <?php endforeach ?>
+                            </tr>
+                        <?php endforeach ?>
+                    </tbody>
+                </table>
+            <?php endif ?>
+        </section>
     </main>
-    <footer class="container">
+    <footer>
         <nav>
             <ul>
                 <li><strong>Phpolar</strong> - mimimal PHP</li>
