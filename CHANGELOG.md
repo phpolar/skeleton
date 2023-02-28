@@ -1,3 +1,9 @@
+## 1.4.1 (2023-02-28)
+
+### Fix
+
+- **public/index.php**: use updated method
+
 ## 1.4.0 (2023-02-28)
 
 ### Feat
