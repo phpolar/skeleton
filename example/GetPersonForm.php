@@ -4,12 +4,12 @@ declare(strict_types=1);
 
 namespace Phpolar\Example;
 
-use Phpolar\Phpolar\Routing\AbstractRouteDelegate;
-use Phpolar\PhpTemplating\HtmlSafeContext;
-use Phpolar\PhpTemplating\TemplateEngine;
+use Phpolar\Phpolar\Routing\AbstractContentDelegate;
+use Phpolar\PurePhp\HtmlSafeContext;
+use Phpolar\PurePhp\TemplateEngine;
 use Psr\Container\ContainerInterface;
 
-final class GetPersonForm extends AbstractRouteDelegate
+final class GetPersonForm extends AbstractContentDelegate
 {
     public function __construct(
         private Person $person,
@@ -17,15 +17,16 @@ final class GetPersonForm extends AbstractRouteDelegate
     ) {
     }
 
-    public function handle(ContainerInterface $container): string
+    public function getResponseContent(ContainerInterface $container): string
     {
         if ($this->isPosted) {
             $this->person->isPosted();
         }
         $templateEngine = $container->get(TemplateEngine::class);
+        $htmlSafe = new HtmlSafeContext($this->person);
         return $templateEngine->apply(
             "example/templates/add-person-form.phtml",
-            new HtmlSafeContext($this->person),
+            $htmlSafe,
         );
     }
 }

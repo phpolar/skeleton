@@ -39,7 +39,7 @@
         <nav>
             <ul>
                 <li><strong>Phpolar</strong> - mimimal PHP</li>
-                <li>&copy; 2023</li>
+                <li>&copy; <?= (new DateTimeImmutable("now"))->format("Y") ?></li>
             </ul>
         </nav>
     </footer>
