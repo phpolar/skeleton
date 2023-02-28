@@ -81,9 +81,9 @@ $submitPersonForm = new SubmitPersonForm($person);
  * ==========================================================
  */
 $routes = new RouteRegistry();
-$routes->addGet("/", new GetPeople());
-$routes->addGet("/person/form", $getPersonForm);
-$routes->addPost("/person/add", $person->isValid() === true ? $submitPersonForm : new GetPersonForm($person, true));
+$routes->add("GET", "/", new GetPeople());
+$routes->add("GET", "/person/form", $getPersonForm);
+$routes->add("POST", "/person/add", $person->isValid() === true ? $submitPersonForm : new GetPersonForm($person, true));
 
 /**
  * ==========================================================
