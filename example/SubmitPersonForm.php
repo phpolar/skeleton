@@ -4,22 +4,22 @@ declare(strict_types=1);
 
 namespace Phpolar\Example;
 
-use Phpolar\Phpolar\Routing\AbstractRouteDelegate;
+use Phpolar\Phpolar\Routing\AbstractContentDelegate;
 use Phpolar\Phpolar\Storage\AbstractStorage;
 use Phpolar\Phpolar\Storage\Item;
 use Phpolar\Phpolar\Storage\ItemKey;
-use Phpolar\PhpTemplating\HtmlSafeContext;
-use Phpolar\PhpTemplating\TemplateEngine;
+use Phpolar\PurePhp\HtmlSafeContext;
+use Phpolar\PurePhp\TemplateEngine;
 use Psr\Container\ContainerInterface;
 
-final class SubmitPersonForm extends AbstractRouteDelegate
+final class SubmitPersonForm extends AbstractContentDelegate
 {
     public function __construct(
         private Person $person,
     ) {
     }
 
-    public function handle(ContainerInterface $container): string
+    public function getResponseContent(ContainerInterface $container): string
     {
         $templateEngine = $container->get(TemplateEngine::class);
         if ($this->person->isValid() === true) {

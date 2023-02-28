@@ -4,19 +4,19 @@ declare(strict_types=1);
 
 namespace Phpolar\Example;
 
-use Phpolar\Phpolar\Routing\AbstractRouteDelegate;
+use Phpolar\Phpolar\Routing\AbstractContentDelegate;
 use Phpolar\Phpolar\Storage\AbstractStorage;
-use Phpolar\PhpTemplating\HtmlSafeContext;
-use Phpolar\PhpTemplating\TemplateEngine;
+use Phpolar\PurePhp\HtmlSafeContext;
+use Phpolar\PurePhp\TemplateEngine;
 use Psr\Container\ContainerInterface;
 
-final class GetPeople extends AbstractRouteDelegate
+final class GetPeople extends AbstractContentDelegate
 {
     public function __construct()
     {
     }
 
-    public function handle(ContainerInterface $container): string
+    public function getResponseContent(ContainerInterface $container): string
     {
         $storage = $container->get(AbstractStorage::class);
         $templateEngine = $container->get(TemplateEngine::class);
