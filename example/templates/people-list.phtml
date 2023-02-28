@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php
 
-use Phpolar\MyApp\PeopleList;
+use Phpolar\Example\PeopleList;
 
 /**
  * @var PeopleList $view
@@ -76,7 +76,7 @@ $view = $this;
         <nav>
             <ul>
                 <li><strong>Phpolar</strong> - mimimal PHP</li>
-                <li>&copy; 2023</li>
+                <li>&copy; <?= (new DateTimeImmutable("now"))->format("Y") ?></li>
             </ul>
         </nav>
     </footer>

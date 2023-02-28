@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php
 
-use Phpolar\MyApp\Person;
+use Phpolar\Example\Person;
 
 /**
  * @var Person $view
@@ -40,11 +40,12 @@ $view = $this;
     </header>
     <main>
         <section>
+            <h1>Add Person</h1>
             <form action="/person/add" method="post">
                 <?php foreach ($view as $propName => $propVal) : ?>
                     <?php $view->hasError($propName) ?>
                     <label for="<?= $propName ?>"><?= $view->getLabel($propName) ?></label>
-                    <input id="<?= $propName ?>" name="<?= $propName ?>" aria-invalid="<?= $view->hasError($propName) === true ? "true" : "false" ?>" placeholder="<?= $view->hasError($propName) === true ? $view->getLabel($propName) : $view->getFieldErrorMessage($propName, " \u{26a0}") ?>" type="<?= $view->getInputType($propName)->asString() ?>" value="<?= $propVal ?>" />
+                    <input id="<?= $propName ?>" name="<?= $propName ?>" <?= $view->selectValAttr($propName, invalidAttr: "aria-invalid=true", validAttr: "aria-invalid=false") ?> placeholder="<?= $view->hasError($propName) === false ? $view->getLabel($propName) : $view->getFieldErrorMessage($propName, " \u{26a0}") ?>" type="<?= $view->getInputType($propName)->asString() ?>" value="<?= $propVal ?>" />
                 <?php endforeach ?>
                 <button type="submit">Submit</button>
             </form>
@@ -55,7 +56,7 @@ $view = $this;
         <nav>
             <ul>
                 <li><strong>Phpolar</strong> - mimimal PHP</li>
-                <li>&copy; 2023</li>
+                <li>&copy; <?= (new DateTimeImmutable("now"))->format("Y") ?></li>
             </ul>
         </nav>
     </footer>
