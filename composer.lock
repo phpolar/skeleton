@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f5be21e2810f3df8da6eaf7fca88e9c4",
+    "content-hash": "4b4104c413a165d39115c00b789695cc",
     "packages": [
         {
             "name": "laminas/laminas-diactoros",
@@ -317,16 +317,16 @@
         },
         {
             "name": "phpolar/phpolar",
-            "version": "2.0.0-alpha",
+            "version": "2.0.1-alpha",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpolar/phpolar.git",
-                "reference": "c43f5e9048a1639bec65379e7f7cf4d2642344ee"
+                "reference": "29d33043dff8f02255499b754d6d51305a493b7d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpolar/phpolar/zipball/c43f5e9048a1639bec65379e7f7cf4d2642344ee",
-                "reference": "c43f5e9048a1639bec65379e7f7cf4d2642344ee",
+                "url": "https://api.github.com/repos/phpolar/phpolar/zipball/29d33043dff8f02255499b754d6d51305a493b7d",
+                "reference": "29d33043dff8f02255499b754d6d51305a493b7d",
                 "shasum": ""
             },
             "require": {
@@ -379,9 +379,9 @@
             "description": "A super-tiny, lightweight microframework for PHP projects",
             "support": {
                 "issues": "https://github.com/phpolar/phpolar/issues",
-                "source": "https://github.com/phpolar/phpolar/tree/2.0.0-alpha"
+                "source": "https://github.com/phpolar/phpolar/tree/2.0.1-alpha"
             },
-            "time": "2023-02-28T16:19:50+00:00"
+            "time": "2023-03-01T02:30:45+00:00"
         },
         {
             "name": "phpolar/phpolar-core",
@@ -483,16 +483,16 @@
         },
         {
             "name": "phpolar/pure-php",
-            "version": "1.0.2",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpolar/pure-php.git",
-                "reference": "e3c251c468b31169e9543ac4aea20440cb7e1785"
+                "reference": "5ec9c8488ed82e0247c7364f92e802c0d37e5669"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpolar/pure-php/zipball/e3c251c468b31169e9543ac4aea20440cb7e1785",
-                "reference": "e3c251c468b31169e9543ac4aea20440cb7e1785",
+                "url": "https://api.github.com/repos/phpolar/pure-php/zipball/5ec9c8488ed82e0247c7364f92e802c0d37e5669",
+                "reference": "5ec9c8488ed82e0247c7364f92e802c0d37e5669",
                 "shasum": ""
             },
             "require": {
@@ -532,9 +532,9 @@
             ],
             "support": {
                 "issues": "https://github.com/phpolar/pure-php/issues",
-                "source": "https://github.com/phpolar/pure-php/tree/1.0.2"
+                "source": "https://github.com/phpolar/pure-php/tree/1.0.3"
             },
-            "time": "2023-02-27T19:16:46+00:00"
+            "time": "2023-03-01T02:25:01+00:00"
         },
         {
             "name": "phpolar/response-filter",
