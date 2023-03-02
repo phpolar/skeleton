@@ -105,23 +105,22 @@
         },
         {
             "name": "phpolar/csrf-protection",
-            "version": "2.0.0",
+            "version": "2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpolar/csrf-protection.git",
-                "reference": "e45d555d5bd483f99393bcc51384ea93dba117b5"
+                "reference": "5914ed74ec5f9367194d49df49633a61f250e72c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpolar/csrf-protection/zipball/e45d555d5bd483f99393bcc51384ea93dba117b5",
-                "reference": "e45d555d5bd483f99393bcc51384ea93dba117b5",
+                "url": "https://api.github.com/repos/phpolar/csrf-protection/zipball/5914ed74ec5f9367194d49df49633a61f250e72c",
+                "reference": "5914ed74ec5f9367194d49df49633a61f250e72c",
                 "shasum": ""
             },
             "require": {
                 "ext-mbstring": "*",
                 "php": ">=8.1",
                 "phpolar/http-codes": "^0.0.6",
-                "phpolar/response-filter": "^0.1.0",
                 "psr/http-message": "^1.0",
                 "psr/http-server-handler": "^1.0",
                 "psr/http-server-middleware": "^1.0"
@@ -173,9 +172,9 @@
             ],
             "support": {
                 "issues": "https://github.com/phpolar/csrf-protection/issues",
-                "source": "https://github.com/phpolar/csrf-protection/tree/2.0.0"
+                "source": "https://github.com/phpolar/csrf-protection/tree/2.0.1"
             },
-            "time": "2023-02-26T01:00:02+00:00"
+            "time": "2023-03-02T04:40:54+00:00"
         },
         {
             "name": "phpolar/csv-file-storage",
@@ -535,47 +534,6 @@
                 "source": "https://github.com/phpolar/pure-php/tree/1.0.3"
             },
             "time": "2023-03-01T02:25:01+00:00"
-        },
-        {
-            "name": "phpolar/response-filter",
-            "version": "0.1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/phpolar/response-filter.git",
-                "reference": "ba5e45b7311130c3af8201e82c37440cc942bb3e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/phpolar/response-filter/zipball/ba5e45b7311130c3af8201e82c37440cc942bb3e",
-                "reference": "ba5e45b7311130c3af8201e82c37440cc942bb3e",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7",
-                "psr/http-message": "^1.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Phpolar\\ResponseFilter\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Eric Fortmeyer",
-                    "email": "e.fortmeyer01@gmail.com"
-                }
-            ],
-            "description": "Provides a means to transform a PSR-7 HTTP Response.",
-            "support": {
-                "issues": "https://github.com/phpolar/response-filter/issues",
-                "source": "https://github.com/phpolar/response-filter/tree/0.1.1"
-            },
-            "time": "2023-02-25T18:20:41+00:00"
         },
         {
             "name": "phpolar/storage-driver",
@@ -1548,16 +1506,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "10.0.13",
+            "version": "10.0.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "c37a88d7a905266eab6498817a1bf1170043313f"
+                "reference": "7065dbebcb0f66cf16a45fc9cfc28c2351e06169"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/c37a88d7a905266eab6498817a1bf1170043313f",
-                "reference": "c37a88d7a905266eab6498817a1bf1170043313f",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/7065dbebcb0f66cf16a45fc9cfc28c2351e06169",
+                "reference": "7065dbebcb0f66cf16a45fc9cfc28c2351e06169",
                 "shasum": ""
             },
             "require": {
@@ -1628,7 +1586,7 @@
             ],
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/10.0.13"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/10.0.14"
             },
             "funding": [
                 {
@@ -1644,7 +1602,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-02-27T13:07:57+00:00"
+            "time": "2023-03-01T05:37:49+00:00"
         },
         {
             "name": "sebastian/cli-parser",
