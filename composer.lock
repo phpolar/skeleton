@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4b4104c413a165d39115c00b789695cc",
+    "content-hash": "e75ecaf8429a9fe6907a8f83399a13e1",
     "packages": [
         {
             "name": "laminas/laminas-diactoros",
@@ -316,16 +316,16 @@
         },
         {
             "name": "phpolar/phpolar",
-            "version": "2.0.1-alpha",
+            "version": "2.0.2-alpha",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpolar/phpolar.git",
-                "reference": "29d33043dff8f02255499b754d6d51305a493b7d"
+                "reference": "596165f6475f952589a840064e5d7a6fa3a612f6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpolar/phpolar/zipball/29d33043dff8f02255499b754d6d51305a493b7d",
-                "reference": "29d33043dff8f02255499b754d6d51305a493b7d",
+                "url": "https://api.github.com/repos/phpolar/phpolar/zipball/596165f6475f952589a840064e5d7a6fa3a612f6",
+                "reference": "596165f6475f952589a840064e5d7a6fa3a612f6",
                 "shasum": ""
             },
             "require": {
@@ -378,9 +378,9 @@
             "description": "A super-tiny, lightweight microframework for PHP projects",
             "support": {
                 "issues": "https://github.com/phpolar/phpolar/issues",
-                "source": "https://github.com/phpolar/phpolar/tree/2.0.1-alpha"
+                "source": "https://github.com/phpolar/phpolar/tree/2.0.2-alpha"
             },
-            "time": "2023-03-01T02:30:45+00:00"
+            "time": "2023-03-05T00:51:42+00:00"
         },
         {
             "name": "phpolar/phpolar-core",
