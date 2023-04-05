@@ -2,6 +2,7 @@
 <?php
 
 use Phpolar\Example\Person;
+use Phpolar\Phpolar\Model\InputTypes;
 
 /**
  * @var Person $view
@@ -18,9 +19,9 @@ $view = $this;
     <meta name="author" content="Some Dev" />
     <meta name="description" content="A PHPolar Example App" />
     <meta name="keywords" content="demo,example,microframework" />
-    <link rel="icon" href="/resources/images/phpolar.svg" />
-    <link rel="apple-touch-icon" href="/resources/images/phpolar.svg" />
-    <link rel="icon" href="/resources/images/phpolar.svg" />
+    <link rel="icon" href="/resources/images/logo.svg" />
+    <link rel="apple-touch-icon" href="/resources/images/logo.svg" />
+    <link rel="icon" href="/resources/images/logo.svg" />
     <link rel="stylesheet" href="/resources/css/pico.classless.min.css" />
     <link rel="stylesheet" href="/resources/css/overrides.css" />
 </head>
@@ -31,7 +32,7 @@ $view = $this;
             <ul>
                 <li>
                     <a href="/" arial-label="Back Home">
-                        <img width="48px" height="48px" src="/resources/images/phpolar.svg" alt="brand icon" />
+                        <img width="48px" height="48px" src="/resources/images/logo.svg" alt="brand icon" />
                     </a>
                 </li>
                 <li><strong>Example App</strong></li>
@@ -43,9 +44,12 @@ $view = $this;
             <h1>Add Person</h1>
             <form action="/person/add" method="post">
                 <?php foreach ($view as $propName => $propVal) : ?>
-                    <?php $view->hasError($propName) ?>
-                    <label for="<?= $propName ?>"><?= $view->getLabel($propName) ?></label>
-                    <input id="<?= $propName ?>" name="<?= $propName ?>" <?= $view->selectValAttr($propName, invalidAttr: "aria-invalid=true", validAttr: "aria-invalid=false") ?> placeholder="<?= $view->hasError($propName) === false ? $view->getLabel($propName) : $view->getFieldErrorMessage($propName, " \u{26a0}") ?>" type="<?= $view->getInputType($propName)->asString() ?>" value="<?= $propVal ?>" />
+                    <?php $propVal = $propVal instanceof DateTimeInterface ? $propVal->format(DATE_RSS) : $propVal ?>
+                    <?php $inputType = $view->getInputType($propName) ?>
+                    <?php if ($inputType !== InputTypes::Hidden) : ?>
+                        <label for="<?= $propName ?>"><?= $view->getLabel($propName) ?></label>
+                    <?php endif ?>
+                    <input id="<?= $propName ?>" name="<?= $propName ?>" <?= $view->selectValAttr($propName, invalidAttr: "aria-invalid=true", validAttr: "aria-invalid=false") ?> placeholder="<?= $view->hasError($propName) === false ? $view->getLabel($propName) : $view->getFieldErrorMessage($propName, " \u{26a0}") ?>" type="<?= $propName === "dateOfBirth" ? "date" : $inputType->asString() ?>" value="<?= $propVal ?>" />
                 <?php endforeach ?>
                 <button type="submit">Submit</button>
             </form>

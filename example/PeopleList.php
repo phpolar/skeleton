@@ -6,10 +6,10 @@ namespace Phpolar\Example;
 
 final class PeopleList
 {
-    public array $people;
-
-    public function __construct(Person ...$people)
+    /**
+     * @param Person[] $people
+     */
+    public function __construct(public array $people)
     {
-        $this->people = $people;
     }
 }
