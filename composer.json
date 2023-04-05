@@ -5,11 +5,12 @@
     "type": "project",
     "license": "MIT",
     "require": {
-        "phpolar/csv-file-storage": "^0.4",
-        "phpolar/phpolar": "2.0.2-alpha",
+        "phpolar/csv-file-storage": "^0.6",
         "laminas/laminas-diactoros": "^2.24",
         "pimple/pimple": "^3.5",
-        "picocss/pico": "^1.5"
+        "picocss/pico": "^1.5",
+        "phpolar/phpolar": "2.0.0b0",
+        "phpolar/validators": "^1.1"
     },
     "autoload": {
         "psr-4": {

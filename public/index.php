@@ -12,9 +12,10 @@ declare(strict_types=1);
 
 namespace Phpolar\Example;
 
+use Phpolar\Phpolar\App;
+use Phpolar\Phpolar\DependencyInjection\ClosureContainerFactory;
+use Phpolar\Phpolar\DependencyInjection\ContainerManager;
 use Phpolar\Phpolar\Routing\RouteRegistry;
-use Phpolar\Phpolar\WebServer\ContainerFactory;
-use Phpolar\Phpolar\WebServer\WebServer;
 
 ini_set("display_errors", true);
 chdir("../");
@@ -41,10 +42,12 @@ require "vendor/autoload.php";
  * Finally, use or change the factory below.
  */
 $dependencyMap = new \Pimple\Container();
-$containerFactory = new ContainerFactory(
-  static fn (\ArrayAccess $containerConf) => new \Pimple\Psr11\Container($containerConf)
+$containerManager = new ContainerManager(
+  new ClosureContainerFactory(
+    static fn (): \Pimple\Psr11\Container => new \Pimple\Psr11\Container($dependencyMap)
+  ),
+  $dependencyMap,
 );
-
 
 /**
  * ==========================================================
@@ -62,35 +65,27 @@ $request = \Laminas\Diactoros\ServerRequestFactory::fromGlobals(
   $_POST,
   $_COOKIE,
 );
-$person = new Person($request->getParsedBody());
-
-/**
- * ==========================================================
- * Set up request handlers
- * ==========================================================
- *
- * PHPolar uses type-safe PSR-15 request handlers
- * instead of Closures.
- */
-$getPersonForm = new GetPersonForm($person);
-$submitPersonForm = new SubmitPersonForm($person);
 
 /**
  * ==========================================================
  * Set up routes
  * ==========================================================
+ *
+ * PHPolar uses type-safe PSR-15 request handlers
+ * instead of Closures.
  */
 $routes = new RouteRegistry();
 $routes->add("GET", "/", new GetPeople());
-$routes->add("GET", "/person/form", $getPersonForm);
-$routes->add("POST", "/person/add", $person->isValid() === true ? $submitPersonForm : new GetPersonForm($person, true));
+$routes->add("GET", "/person/form", new GetPersonForm());
+$routes->add("POST", "/person/add", new SubmitPersonForm());
+$routes->add("POST", "/person/delete/{id}", new DeletePerson());
 
 /**
  * ==========================================================
  * Configure the web server
  * ==========================================================
  */
-$app = WebServer::createApp($containerFactory, $dependencyMap);
+$app = App::create($containerManager);
 $app->useRoutes($routes);
 // $app->useCsrfMiddleware();
 $app->receive($request);

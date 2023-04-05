@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e75ecaf8429a9fe6907a8f83399a13e1",
+    "content-hash": "46ec7370cfa74bffba2487b065cad317",
     "packages": [
         {
             "name": "laminas/laminas-diactoros",
@@ -178,21 +178,21 @@
         },
         {
             "name": "phpolar/csv-file-storage",
-            "version": "0.4.0",
+            "version": "0.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpolar/csv-file-storage.git",
-                "reference": "bb721b47462f1e97bffd4e90f7e013cd7c1f41f1"
+                "reference": "e9cc7e61bd25eb0cfcf1fbc552f26336bcb115c7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpolar/csv-file-storage/zipball/bb721b47462f1e97bffd4e90f7e013cd7c1f41f1",
-                "reference": "bb721b47462f1e97bffd4e90f7e013cd7c1f41f1",
+                "url": "https://api.github.com/repos/phpolar/csv-file-storage/zipball/e9cc7e61bd25eb0cfcf1fbc552f26336bcb115c7",
+                "reference": "e9cc7e61bd25eb0cfcf1fbc552f26336bcb115c7",
                 "shasum": ""
             },
             "require": {
                 "php": ">=8.1",
-                "phpolar/phpolar-storage": "^1.0"
+                "phpolar/phpolar-storage": "^1.2"
             },
             "require-dev": {
                 "ext-ast": "*",
@@ -217,9 +217,9 @@
             "description": "Adds support for storing data on disk in CSV format.",
             "support": {
                 "issues": "https://github.com/phpolar/csv-file-storage/issues",
-                "source": "https://github.com/phpolar/csv-file-storage/tree/0.4.0"
+                "source": "https://github.com/phpolar/csv-file-storage/tree/0.6.0"
             },
-            "time": "2023-02-12T19:37:48+00:00"
+            "time": "2023-03-27T04:16:01+00:00"
         },
         {
             "name": "phpolar/http-codes",
@@ -316,16 +316,16 @@
         },
         {
             "name": "phpolar/phpolar",
-            "version": "2.0.2-alpha",
+            "version": "2.0.0b0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpolar/phpolar.git",
-                "reference": "596165f6475f952589a840064e5d7a6fa3a612f6"
+                "reference": "bf05e080622a9917d42b41b03d2c5efb6a6759eb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpolar/phpolar/zipball/596165f6475f952589a840064e5d7a6fa3a612f6",
-                "reference": "596165f6475f952589a840064e5d7a6fa3a612f6",
+                "url": "https://api.github.com/repos/phpolar/phpolar/zipball/bf05e080622a9917d42b41b03d2c5efb6a6759eb",
+                "reference": "bf05e080622a9917d42b41b03d2c5efb6a6759eb",
                 "shasum": ""
             },
             "require": {
@@ -333,10 +333,11 @@
                 "php": ">=8.1",
                 "phpolar/csrf-protection": "^2.0",
                 "phpolar/http-response-extensions": "^0.1",
-                "phpolar/phpolar-core": "^0.2",
+                "phpolar/phpolar-core": "^2.1",
                 "phpolar/phpolar-storage": "^1.0",
                 "phpolar/pure-php": "^1.0",
                 "phpolar/storage-driver": "^1.0",
+                "phpolar/validator": "^1.0",
                 "psr/container": "^2.0",
                 "psr/http-message": "^1.0",
                 "psr/http-server-handler": "^1.0",
@@ -358,7 +359,8 @@
             "type": "library",
             "autoload": {
                 "files": [
-                    "src/Validation/Functions/getValidationAttributes.php"
+                    "src/Validation/Functions/getValidators.php",
+                    "src/Validation/Functions/getMessageGetters.php"
                 ],
                 "psr-4": {
                     "Phpolar\\Phpolar\\": "src/",
@@ -378,22 +380,22 @@
             "description": "A super-tiny, lightweight microframework for PHP projects",
             "support": {
                 "issues": "https://github.com/phpolar/phpolar/issues",
-                "source": "https://github.com/phpolar/phpolar/tree/2.0.2-alpha"
+                "source": "https://github.com/phpolar/phpolar/tree/2.0.0b0"
             },
-            "time": "2023-03-05T00:51:42+00:00"
+            "time": "2023-04-04T21:17:46+00:00"
         },
         {
             "name": "phpolar/phpolar-core",
-            "version": "0.2.4",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpolar/phpolar-core.git",
-                "reference": "50b277776e7537dc8f354bbd78db21af66ef2abe"
+                "reference": "8d97bb10e7c796ec51dca65cb32c606b112b370e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpolar/phpolar-core/zipball/50b277776e7537dc8f354bbd78db21af66ef2abe",
-                "reference": "50b277776e7537dc8f354bbd78db21af66ef2abe",
+                "url": "https://api.github.com/repos/phpolar/phpolar-core/zipball/8d97bb10e7c796ec51dca65cb32c606b112b370e",
+                "reference": "8d97bb10e7c796ec51dca65cb32c606b112b370e",
                 "shasum": ""
             },
             "require": {
@@ -410,11 +412,14 @@
                 "php-coveralls/php-coveralls": "^2.5.3",
                 "phpmd/phpmd": "^2.13",
                 "phpstan/phpstan": "^1.9.14",
-                "phpunit/phpunit": "^9.5.28",
+                "phpunit/phpunit": "^10.0",
                 "squizlabs/php_codesniffer": "^3.7.1"
             },
             "type": "library",
             "autoload": {
+                "files": [
+                    "src/Routing/constants.php"
+                ],
                 "psr-4": {
                     "Phpolar\\Phpolar\\Core\\": "src/"
                 }
@@ -432,22 +437,22 @@
             "description": "The internal, core components of the PHPolar Microframework",
             "support": {
                 "issues": "https://github.com/phpolar/phpolar-core/issues",
-                "source": "https://github.com/phpolar/phpolar-core/tree/0.2.4"
+                "source": "https://github.com/phpolar/phpolar-core/tree/2.1.0"
             },
-            "time": "2023-02-12T12:27:35+00:00"
+            "time": "2023-03-30T14:26:12+00:00"
         },
         {
             "name": "phpolar/phpolar-storage",
-            "version": "1.0.1",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpolar/phpolar-storage.git",
-                "reference": "b675fc48e0b401c50b56eab457cf60f18ab6fc60"
+                "reference": "dcbc547333cc9f6b1de31767c668b4061f86e3bb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpolar/phpolar-storage/zipball/b675fc48e0b401c50b56eab457cf60f18ab6fc60",
-                "reference": "b675fc48e0b401c50b56eab457cf60f18ab6fc60",
+                "url": "https://api.github.com/repos/phpolar/phpolar-storage/zipball/dcbc547333cc9f6b1de31767c668b4061f86e3bb",
+                "reference": "dcbc547333cc9f6b1de31767c668b4061f86e3bb",
                 "shasum": ""
             },
             "require": {
@@ -476,9 +481,9 @@
             "description": "A convenient tool to speed up the creation of data storage for application development.",
             "support": {
                 "issues": "https://github.com/phpolar/phpolar-storage/issues",
-                "source": "https://github.com/phpolar/phpolar-storage/tree/1.0.1"
+                "source": "https://github.com/phpolar/phpolar-storage/tree/1.2.0"
             },
-            "time": "2023-02-12T12:26:31+00:00"
+            "time": "2023-03-06T02:10:05+00:00"
         },
         {
             "name": "phpolar/pure-php",
@@ -581,6 +586,94 @@
                 "source": "https://github.com/phpolar/storage-driver/tree/1.0.0"
             },
             "time": "2023-02-06T04:46:21+00:00"
+        },
+        {
+            "name": "phpolar/validator",
+            "version": "1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpolar/validator.git",
+                "reference": "1bf27ee2d4c46702937e562a6dee17c8d6193164"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpolar/validator/zipball/1bf27ee2d4c46702937e562a6dee17c8d6193164",
+                "reference": "1bf27ee2d4c46702937e562a6dee17c8d6193164",
+                "shasum": ""
+            },
+            "suggest": {
+                "phpolar/validators": "A set of nifty validators"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Phpolar\\Validator\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Eric Fortmeyer",
+                    "email": "e.fortmeyer01@gmail.com"
+                }
+            ],
+            "description": "Unifies validator implementations",
+            "support": {
+                "issues": "https://github.com/phpolar/validator/issues",
+                "source": "https://github.com/phpolar/validator/tree/1.0.3"
+            },
+            "time": "2023-03-31T20:47:33+00:00"
+        },
+        {
+            "name": "phpolar/validators",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpolar/validators.git",
+                "reference": "1956c46b82257c94d513478a3ba2e080c1bc6e5e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpolar/validators/zipball/1956c46b82257c94d513478a3ba2e080c1bc6e5e",
+                "reference": "1956c46b82257c94d513478a3ba2e080c1bc6e5e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.1",
+                "phpolar/validator": "^1.0"
+            },
+            "provide": {
+                "phpolar/validator-implementation": "1.0.0"
+            },
+            "require-dev": {
+                "ext-ast": "*",
+                "ext-openssl": "*",
+                "phan/phan": "^5.4",
+                "php-coveralls/php-coveralls": "^2.5",
+                "phpmd/phpmd": "^2.13",
+                "phpstan/phpstan": "^1.9",
+                "phpunit/phpunit": "10.0",
+                "squizlabs/php_codesniffer": "^3.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Phpolar\\Validators\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A set of property validators",
+            "support": {
+                "issues": "https://github.com/phpolar/validators/issues",
+                "source": "https://github.com/phpolar/validators/tree/1.1.0"
+            },
+            "time": "2023-03-31T21:19:16+00:00"
         },
         {
             "name": "picocss/pico",
@@ -793,25 +886,25 @@
         },
         {
             "name": "psr/http-message",
-            "version": "1.0.1",
+            "version": "1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/http-message.git",
-                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363"
+                "reference": "cb6ce4845ce34a8ad9e68117c10ee90a29919eba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/http-message/zipball/f6561bf28d520154e4b0ec72be95418abe6d9363",
-                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/cb6ce4845ce34a8ad9e68117c10ee90a29919eba",
+                "reference": "cb6ce4845ce34a8ad9e68117c10ee90a29919eba",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.0"
+                "php": "^7.2 || ^8.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0.x-dev"
+                    "dev-master": "1.1.x-dev"
                 }
             },
             "autoload": {
@@ -840,9 +933,9 @@
                 "response"
             ],
             "support": {
-                "source": "https://github.com/php-fig/http-message/tree/master"
+                "source": "https://github.com/php-fig/http-message/tree/1.1"
             },
-            "time": "2016-08-06T14:39:51+00:00"
+            "time": "2023-04-04T09:50:52+00:00"
         },
         {
             "name": "psr/http-server-handler",
@@ -962,16 +1055,16 @@
     "packages-dev": [
         {
             "name": "myclabs/deep-copy",
-            "version": "1.11.0",
+            "version": "1.11.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/myclabs/DeepCopy.git",
-                "reference": "14daed4296fae74d9e3201d2c4925d1acb7aa614"
+                "reference": "7284c22080590fb39f2ffa3e9057f10a4ddd0e0c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/14daed4296fae74d9e3201d2c4925d1acb7aa614",
-                "reference": "14daed4296fae74d9e3201d2c4925d1acb7aa614",
+                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/7284c22080590fb39f2ffa3e9057f10a4ddd0e0c",
+                "reference": "7284c22080590fb39f2ffa3e9057f10a4ddd0e0c",
                 "shasum": ""
             },
             "require": {
@@ -1009,7 +1102,7 @@
             ],
             "support": {
                 "issues": "https://github.com/myclabs/DeepCopy/issues",
-                "source": "https://github.com/myclabs/DeepCopy/tree/1.11.0"
+                "source": "https://github.com/myclabs/DeepCopy/tree/1.11.1"
             },
             "funding": [
                 {
@@ -1017,20 +1110,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-03-03T13:19:32+00:00"
+            "time": "2023-03-08T13:26:56+00:00"
         },
         {
             "name": "nikic/php-parser",
-            "version": "v4.15.3",
+            "version": "v4.15.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "570e980a201d8ed0236b0a62ddf2c9cbb2034039"
+                "reference": "6bb5176bc4af8bcb7d926f88718db9b96a2d4290"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/570e980a201d8ed0236b0a62ddf2c9cbb2034039",
-                "reference": "570e980a201d8ed0236b0a62ddf2c9cbb2034039",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/6bb5176bc4af8bcb7d926f88718db9b96a2d4290",
+                "reference": "6bb5176bc4af8bcb7d926f88718db9b96a2d4290",
                 "shasum": ""
             },
             "require": {
@@ -1071,9 +1164,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nikic/PHP-Parser/issues",
-                "source": "https://github.com/nikic/PHP-Parser/tree/v4.15.3"
+                "source": "https://github.com/nikic/PHP-Parser/tree/v4.15.4"
             },
-            "time": "2023-01-16T22:05:37+00:00"
+            "time": "2023-03-05T19:49:14+00:00"
         },
         {
             "name": "phar-io/manifest",
@@ -1188,16 +1281,16 @@
         },
         {
             "name": "phpunit/php-code-coverage",
-            "version": "10.0.1",
+            "version": "10.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "b9c21a93dd8c8eed79879374884ee733259475cc"
+                "reference": "20800e84296ea4732f9a125e08ce86b4004ae3e4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/b9c21a93dd8c8eed79879374884ee733259475cc",
-                "reference": "b9c21a93dd8c8eed79879374884ee733259475cc",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/20800e84296ea4732f9a125e08ce86b4004ae3e4",
+                "reference": "20800e84296ea4732f9a125e08ce86b4004ae3e4",
                 "shasum": ""
             },
             "require": {
@@ -1219,8 +1312,8 @@
                 "phpunit/phpunit": "^10.0"
             },
             "suggest": {
-                "ext-pcov": "*",
-                "ext-xdebug": "*"
+                "ext-pcov": "PHP extension that provides line coverage",
+                "ext-xdebug": "PHP extension that provides line coverage as well as branch and path coverage"
             },
             "type": "library",
             "extra": {
@@ -1253,7 +1346,7 @@
             ],
             "support": {
                 "issues": "https://github.com/sebastianbergmann/php-code-coverage/issues",
-                "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/10.0.1"
+                "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/10.0.2"
             },
             "funding": [
                 {
@@ -1261,7 +1354,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-02-25T05:35:03+00:00"
+            "time": "2023-03-06T13:00:19+00:00"
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -1506,16 +1599,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "10.0.14",
+            "version": "10.0.19",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "7065dbebcb0f66cf16a45fc9cfc28c2351e06169"
+                "reference": "20c23e85c86e5c06d63538ba464e8054f4744e62"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/7065dbebcb0f66cf16a45fc9cfc28c2351e06169",
-                "reference": "7065dbebcb0f66cf16a45fc9cfc28c2351e06169",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/20c23e85c86e5c06d63538ba464e8054f4744e62",
+                "reference": "20c23e85c86e5c06d63538ba464e8054f4744e62",
                 "shasum": ""
             },
             "require": {
@@ -1547,7 +1640,7 @@
                 "sebastian/version": "^4.0"
             },
             "suggest": {
-                "ext-soap": "*"
+                "ext-soap": "To be able to generate mocks based on WSDL files"
             },
             "bin": [
                 "phpunit"
@@ -1586,7 +1679,8 @@
             ],
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/10.0.14"
+                "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/10.0.19"
             },
             "funding": [
                 {
@@ -1602,7 +1696,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-03-01T05:37:49+00:00"
+            "time": "2023-03-27T11:46:33+00:00"
         },
         {
             "name": "sebastian/cli-parser",
@@ -1906,16 +2000,16 @@
         },
         {
             "name": "sebastian/diff",
-            "version": "5.0.0",
+            "version": "5.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/diff.git",
-                "reference": "70dd1b20bc198da394ad542e988381b44e64e39f"
+                "reference": "aae9a0a43bff37bd5d8d0311426c87bf36153f02"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/diff/zipball/70dd1b20bc198da394ad542e988381b44e64e39f",
-                "reference": "70dd1b20bc198da394ad542e988381b44e64e39f",
+                "url": "https://api.github.com/repos/sebastianbergmann/diff/zipball/aae9a0a43bff37bd5d8d0311426c87bf36153f02",
+                "reference": "aae9a0a43bff37bd5d8d0311426c87bf36153f02",
                 "shasum": ""
             },
             "require": {
@@ -1960,7 +2054,8 @@
             ],
             "support": {
                 "issues": "https://github.com/sebastianbergmann/diff/issues",
-                "source": "https://github.com/sebastianbergmann/diff/tree/5.0.0"
+                "security": "https://github.com/sebastianbergmann/diff/security/policy",
+                "source": "https://github.com/sebastianbergmann/diff/tree/5.0.1"
             },
             "funding": [
                 {
@@ -1968,7 +2063,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-02-03T07:00:31+00:00"
+            "time": "2023-03-23T05:12:41+00:00"
         },
         {
             "name": "sebastian/environment",
@@ -2566,7 +2661,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "phpolar/phpolar": 15
+        "phpolar/phpolar": 10
     },
     "prefer-stable": false,
     "prefer-lowest": false,

@@ -18,9 +18,9 @@ $view = $this;
     <meta name="author" content="Some Dev" />
     <meta name="description" content="A PHPolar Example App" />
     <meta name="keywords" content="demo,example,microframework" />
-    <link rel="icon" href="/resources/images/phpolar.svg" />
-    <link rel="apple-touch-icon" href="/resources/images/phpolar.svg" />
-    <link rel="icon" href="/resources/images/phpolar.svg" />
+    <link rel="icon" href="/resources/images/logo.svg" />
+    <link rel="apple-touch-icon" href="/resources/images/logo.svg" />
+    <link rel="icon" href="/resources/images/logo.svg" />
     <link rel="stylesheet" href="/resources/css/pico.classless.min.css" />
     <link rel="stylesheet" href="/resources/css/overrides.css" />
 </head>
@@ -31,7 +31,7 @@ $view = $this;
             <ul>
                 <li>
                     <a href="/" arial-label="Back Home">
-                        <img width="48px" height="48px" src="/resources/images/phpolar.svg" alt="brand icon" />
+                        <img width="48px" height="48px" src="/resources/images/logo.svg" alt="brand icon" />
                     </a>
                 </li>
                 <li><strong>Example App</strong></li>
@@ -57,14 +57,20 @@ $view = $this;
                             <?php foreach ($view->people[0] as $propName => $propValue) : ?>
                                 <th><?= $view->people[0]->getColumnName($propName) ?></th>
                             <?php endforeach ?>
+                            <th>Action</th>
                         </tr>
                     </thead>
                     <tbody>
                         <?php foreach ($view->people as $person) : ?>
                             <tr>
                                 <?php foreach ($person as $cell) : ?>
-                                    <td><?= $cell ?></td>
+                                    <td><?= $cell instanceof DateTimeInterface ? $cell->format(DATE_RFC3339) : $cell ?></td>
                                 <?php endforeach ?>
+                                <td>
+                                    <form action="/person/delete/<?= $person->getPrimaryKey() ?>" method="post">
+                                        <button data-style="danger" type="submit">X</button>
+                                    </form>
+                                </td>
                             </tr>
                         <?php endforeach ?>
                     </tbody>
