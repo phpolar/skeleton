@@ -12,6 +12,7 @@ use Phpolar\CsrfProtection\Http\CsrfResponseFilterMiddleware;
 use Phpolar\CsrfProtection\Http\ResponseFilterStrategyInterface;
 use Phpolar\CsrfProtection\Storage\AbstractTokenStorage;
 use Phpolar\CsrfProtection\Storage\SessionTokenStorage;
+use Psr\Container\ContainerInterface;
 use Psr\Http\Message\ResponseFactoryInterface;
 
 use const Phpolar\CsrfProtection\REQUEST_ID_KEY;
@@ -23,26 +24,26 @@ return [
     "request_id_key" => REQUEST_ID_KEY,
     "session_vars" => [],
     "max_storerd_token_count" => TOKEN_MAX,
-    CsrfRequestCheckMiddleware::class => static fn (ArrayAccess $conf) =>
+    CsrfRequestCheckMiddleware::class => static fn (ContainerInterface $container) =>
     new CsrfRequestCheckMiddleware(
-        $conf[CsrfProtectionRequestHandler::class],
+        $container->get(CsrfProtectionRequestHandler::class),
     ),
-    CsrfResponseFilterMiddleware::class => static fn (ArrayAccess $conf) =>
+    CsrfResponseFilterMiddleware::class => static fn (ContainerInterface $container) =>
     new CsrfResponseFilterMiddleware(
-        $conf[AbstractTokenStorage::class],
-        $conf[CsrfTokenGenerator::class],
-        $conf[ResponseFilterStrategyInterface::class],
+        $container->get(AbstractTokenStorage::class),
+        $container->get(CsrfTokenGenerator::class),
+        $container->get(ResponseFilterStrategyInterface::class),
     ),
-    CsrfProtectionRequestHandler::class => static fn (ArrayAccess $conf) =>
+    CsrfProtectionRequestHandler::class => static fn (ContainerInterface $container) =>
     new CsrfProtectionRequestHandler(
-        $conf[ResponseFactoryInterface::class],
-        $conf[AbstractTokenStorage::class],
+        $container->get(ResponseFactoryInterface::class),
+        $container->get(AbstractTokenStorage::class),
     ),
-    AbstractTokenStorage::class => static fn (ArrayAccess $conf) =>
+    AbstractTokenStorage::class => static fn (ContainerInterface $container) =>
     new SessionTokenStorage(
-        $conf["session_vars"],
-        $conf["request_id_key"],
-        $conf["max_stored_token_count"],
+        $container->get("session_vars"),
+        $container->get("request_id_key"),
+        $container->get("max_stored_token_count"),
     ),
-    CsrfTokenGenerator::class => static fn (ArrayAccess $conf) => new CsrfTokenGenerator($conf["csrf_token_ttl"]),
+    CsrfTokenGenerator::class => static fn (ContainerInterface $container) => new CsrfTokenGenerator($container->get("csrf_token_ttl")),
 ];

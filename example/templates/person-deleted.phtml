@@ -2,7 +2,7 @@
 <html lang="en" data-theme="light">
 
 <head>
-    <title>MyApp Person Form</title>
+    <title>MyApp People List</title>
     <meta charset="utf-8" />
     <meta name="theme-color" content="#ffffff" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -31,18 +31,18 @@
     </header>
     <main>
         <section>
-            <h1>Sorry &HumpDownHump;, something went wrong. We're working on it.</h1>
+            <h1><ins>Person Deleted &checkmark;</ins></h1>
+            <a href="/">Go to list</a>
         </section>
     </main>
     <footer>
         <nav>
             <ul>
                 <li><strong>Phpolar</strong> - mimimal PHP</li>
-                <li>&copy; 2023</li>
+                <li>&copy; <?= (new DateTimeImmutable("now"))->format("Y") ?></li>
             </ul>
         </nav>
     </footer>
-
 </body>
 
 </html>
