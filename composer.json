@@ -8,7 +8,7 @@
         "phpolar/csv-file-storage": "^0.6",
         "laminas/laminas-diactoros": "^2.24",
         "pimple/pimple": "^3.5",
-        "picocss/pico": "^1.5",
+        "picocss/pico": "v2.0.0-alpha1",
         "phpolar/phpolar": "2.0.0b0",
         "phpolar/validators": "^1.1"
     },
@@ -29,8 +29,7 @@
             "composer exec \"launch\""
         ],
         "link-css-framework": [
-            "ln -s -f ../../../vendor/picocss/pico/css/pico.classless.min.css public/resources/css/",
-            "ln -s -f ../../../vendor/picocss/pico/css/pico.classless.min.css.map public/resources/css/"
+            "ln -s -f ../../../vendor/picocss/pico/css/pico.classless.min.css public/resources/css/"
         ],
         "post-root-package-install": [
             "mkdir data",
