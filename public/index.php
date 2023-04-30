@@ -43,10 +43,10 @@ require "vendor/autoload.php";
  */
 $dependencyMap = new \Pimple\Container();
 $containerManager = new ContainerManager(
-  new ClosureContainerFactory(
-    static fn (): \Pimple\Psr11\Container => new \Pimple\Psr11\Container($dependencyMap)
-  ),
-  $dependencyMap,
+    new ClosureContainerFactory(
+        static fn (): \Pimple\Psr11\Container => new \Pimple\Psr11\Container($dependencyMap)
+    ),
+    $dependencyMap,
 );
 
 /**
@@ -59,12 +59,17 @@ $containerManager = new ContainerManager(
  * then replace the configuration in
  * `src/config/dependencies/conf.d/http.php`
  */
-$request = \Laminas\Diactoros\ServerRequestFactory::fromGlobals(
-  $_SERVER,
-  $_GET,
-  $_POST,
-  $_COOKIE,
+
+$psr17Factory = new \Nyholm\Psr7\Factory\Psr17Factory();
+$creator = new \Nyholm\Psr7Server\ServerRequestCreator(
+    $psr17Factory, // ServerRequestFactory
+    $psr17Factory, // UriFactory
+    $psr17Factory, // UploadedFileFactory
+    $psr17Factory  // StreamFactory
 );
+
+$serverRequest = $creator->fromGlobals();
+
 
 /**
  * ==========================================================
@@ -80,12 +85,12 @@ $routes->add("GET", "/person/form", new GetPersonForm());
 $routes->add("POST", "/person/add", new SubmitPersonForm());
 $routes->add("POST", "/person/delete/{id}", new DeletePerson());
 
-/**
- * ==========================================================
- * Configure the web server
- * ==========================================================
- */
+// /**
+//  * ==========================================================
+//  * Configure the web application
+//  * ==========================================================
+//  */
 $app = App::create($containerManager);
 $app->useRoutes($routes);
 // $app->useCsrfMiddleware();
-$app->receive($request);
+$app->receive($serverRequest);
