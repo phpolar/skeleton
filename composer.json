@@ -6,11 +6,12 @@
     "license": "MIT",
     "require": {
         "phpolar/csv-file-storage": "^0.6",
-        "laminas/laminas-diactoros": "^2.24",
         "pimple/pimple": "^3.5",
         "picocss/pico": "v2.0.0-alpha1",
-        "phpolar/phpolar": "2.0.0b0",
-        "phpolar/validators": "^1.1"
+        "phpolar/validators": "^1.1",
+        "phpolar/phpolar": "2.0.0b1",
+        "nyholm/psr7": "^1.7",
+        "nyholm/psr7-server": "dev-master"
     },
     "autoload": {
         "psr-4": {
@@ -21,6 +22,14 @@
     "require-dev": {
         "phpunit/phpunit": "^10.0"
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:phpolar/psr7-server",
+            "canonical": false,
+            "only": ["nyholm/psr7-server"]
+        }
+    ],
     "scripts": {
         "test": [
             "composer exec \"phpunit\""
