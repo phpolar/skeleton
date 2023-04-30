@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e4f8256e131aee0f82250cbbc80cc76a",
+    "content-hash": "f8277b8c54fe97b86f2cf3627d413892",
     "packages": [
         {
             "name": "nyholm/psr7",
@@ -430,16 +430,16 @@
         },
         {
             "name": "phpolar/phpolar",
-            "version": "2.0.0b1",
+            "version": "2.0.0b2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpolar/phpolar.git",
-                "reference": "d57b114ad67a3c0b21f33c7d0f3e9f170c307e5e"
+                "reference": "7e79a83e7c9084290e0c68e88456b14150b9c0c9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpolar/phpolar/zipball/d57b114ad67a3c0b21f33c7d0f3e9f170c307e5e",
-                "reference": "d57b114ad67a3c0b21f33c7d0f3e9f170c307e5e",
+                "url": "https://api.github.com/repos/phpolar/phpolar/zipball/7e79a83e7c9084290e0c68e88456b14150b9c0c9",
+                "reference": "7e79a83e7c9084290e0c68e88456b14150b9c0c9",
                 "shasum": ""
             },
             "require": {
@@ -495,9 +495,9 @@
             "description": "A super-tiny, lightweight microframework for PHP projects",
             "support": {
                 "issues": "https://github.com/phpolar/phpolar/issues",
-                "source": "https://github.com/phpolar/phpolar/tree/2.0.0b1"
+                "source": "https://github.com/phpolar/phpolar/tree/2.0.0b2"
             },
-            "time": "2023-04-30T02:37:40+00:00"
+            "time": "2023-04-30T04:24:25+00:00"
         },
         {
             "name": "phpolar/phpolar-core",
@@ -2778,8 +2778,8 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "picocss/pico": 15,
-        "phpolar/phpolar": 10,
-        "nyholm/psr7-server": 20
+        "nyholm/psr7-server": 20,
+        "phpolar/phpolar": 10
     },
     "prefer-stable": false,
     "prefer-lowest": false,
