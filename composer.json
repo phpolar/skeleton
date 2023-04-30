@@ -9,9 +9,9 @@
         "pimple/pimple": "^3.5",
         "picocss/pico": "v2.0.0-alpha1",
         "phpolar/validators": "^1.1",
-        "phpolar/phpolar": "2.0.0b1",
         "nyholm/psr7": "^1.7",
-        "nyholm/psr7-server": "dev-master"
+        "nyholm/psr7-server": "dev-master",
+        "phpolar/phpolar": "2.0.0b2"
     },
     "autoload": {
         "psr-4": {
