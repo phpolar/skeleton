@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fe36d0afd2d24f979ebfd372162ca593",
+    "content-hash": "c3852c5e14832d377443d028f38b0351",
     "packages": [
         {
             "name": "nyholm/psr7",
@@ -598,6 +598,61 @@
                 "source": "https://github.com/phpolar/phpolar-storage/tree/1.2.1"
             },
             "time": "2023-04-30T17:33:59+00:00"
+        },
+        {
+            "name": "phpolar/pure-php",
+            "version": "1.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpolar/pure-php.git",
+                "reference": "dfe17daaef109c6931d61f65c70b701a4a51479f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpolar/pure-php/zipball/dfe17daaef109c6931d61f65c70b701a4a51479f",
+                "reference": "dfe17daaef109c6931d61f65c70b701a4a51479f",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "ext-mbstring": "*",
+                "phan/phan": "^5.4",
+                "php-coveralls/php-coveralls": "^2.5",
+                "phpmd/phpmd": "^2.13",
+                "phpstan/phpstan": "^1.9",
+                "phpunit/phpunit": "^10.0",
+                "squizlabs/php_codesniffer": "^3.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Phpolar\\PurePhp\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Eric Fortmeyer",
+                    "email": "e.fortmeyer01@gmail.com"
+                }
+            ],
+            "description": "Pure PHP Templates",
+            "keywords": [
+                "php",
+                "template-engine",
+                "template-language",
+                "templates"
+            ],
+            "support": {
+                "issues": "https://github.com/phpolar/pure-php/issues",
+                "source": "https://github.com/phpolar/pure-php/tree/1.0.4"
+            },
+            "time": "2023-04-30T17:37:13+00:00"
         },
         {
             "name": "phpolar/storage-driver",
