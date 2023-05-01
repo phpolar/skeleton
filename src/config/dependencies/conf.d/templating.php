@@ -9,6 +9,8 @@ use Phpolar\PurePhp\Dispatcher;
 use Phpolar\PurePhp\StreamContentStrategy;
 use Phpolar\PurePhp\TemplateEngine;
 
+
+
 return [
     TemplateEngine::class => static fn () => new TemplateEngine(
         new StreamContentStrategy(),
