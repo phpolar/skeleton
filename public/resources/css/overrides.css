@@ -1,4 +1,4 @@
 [data-style=danger] {
-  border-color: var(--del-color);
-  background-color: var(--del-color);
+  border-color: var(--pico-del-color);
+  background-color: var(--pico-del-color);
 }
