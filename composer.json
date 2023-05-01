@@ -11,7 +11,7 @@
         "phpolar/validators": "^1.1",
         "nyholm/psr7": "^1.7",
         "nyholm/psr7-server": "dev-master",
-        "phpolar/phpolar": "2.0.0b2"
+        "phpolar/phpolar": "^2.0"
     },
     "autoload": {
         "psr-4": {

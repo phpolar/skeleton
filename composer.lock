@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f8277b8c54fe97b86f2cf3627d413892",
+    "content-hash": "fe36d0afd2d24f979ebfd372162ca593",
     "packages": [
         {
             "name": "nyholm/psr7",
@@ -148,7 +148,7 @@
                 "psr-7"
             ],
             "support": {
-                "source": "https://github.com/phpolar/psr7-server/tree/master"
+                "source": "https://github.com/phpolar/psr7-server/tree/http-message-2"
             },
             "funding": [
                 {
@@ -430,16 +430,16 @@
         },
         {
             "name": "phpolar/phpolar",
-            "version": "2.0.0b2",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpolar/phpolar.git",
-                "reference": "7e79a83e7c9084290e0c68e88456b14150b9c0c9"
+                "reference": "80fda33c2f09b960af08c8d097001f463795dc03"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpolar/phpolar/zipball/7e79a83e7c9084290e0c68e88456b14150b9c0c9",
-                "reference": "7e79a83e7c9084290e0c68e88456b14150b9c0c9",
+                "url": "https://api.github.com/repos/phpolar/phpolar/zipball/80fda33c2f09b960af08c8d097001f463795dc03",
+                "reference": "80fda33c2f09b960af08c8d097001f463795dc03",
                 "shasum": ""
             },
             "require": {
@@ -448,8 +448,6 @@
                 "phpolar/csrf-protection": "^2.1",
                 "phpolar/http-response-extensions": "^1.0",
                 "phpolar/phpolar-core": "^2.2",
-                "phpolar/phpolar-storage": "^1.0",
-                "phpolar/pure-php": "^1.0",
                 "phpolar/storage-driver": "^1.0",
                 "phpolar/validator": "^1.0",
                 "psr/container": "^2.0",
@@ -464,6 +462,7 @@
                 "php-coveralls/php-coveralls": "^2.5",
                 "phpmd/phpmd": "^2.13",
                 "phpolar/http-message-test-utils": "^0.1.0",
+                "phpolar/pure-php": "^1.0",
                 "phpstan/phpstan": "^1.8",
                 "phpunit/phpunit": "^10.0",
                 "squizlabs/php_codesniffer": "^3.7"
@@ -492,12 +491,12 @@
                     "email": "e.fortmeyer01@gmail.com"
                 }
             ],
-            "description": "A super-tiny, lightweight microframework for PHP projects",
+            "description": "A minimal PHP framework",
             "support": {
                 "issues": "https://github.com/phpolar/phpolar/issues",
-                "source": "https://github.com/phpolar/phpolar/tree/2.0.0b2"
+                "source": "https://github.com/phpolar/phpolar/tree/2.0.0"
             },
-            "time": "2023-04-30T04:24:25+00:00"
+            "time": "2023-05-01T13:31:12+00:00"
         },
         {
             "name": "phpolar/phpolar-core",
@@ -558,16 +557,16 @@
         },
         {
             "name": "phpolar/phpolar-storage",
-            "version": "1.2.0",
+            "version": "1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpolar/phpolar-storage.git",
-                "reference": "dcbc547333cc9f6b1de31767c668b4061f86e3bb"
+                "reference": "f35f3cfb6e977764e655eff607f5b1ab375650e2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpolar/phpolar-storage/zipball/dcbc547333cc9f6b1de31767c668b4061f86e3bb",
-                "reference": "dcbc547333cc9f6b1de31767c668b4061f86e3bb",
+                "url": "https://api.github.com/repos/phpolar/phpolar-storage/zipball/f35f3cfb6e977764e655eff607f5b1ab375650e2",
+                "reference": "f35f3cfb6e977764e655eff607f5b1ab375650e2",
                 "shasum": ""
             },
             "require": {
@@ -596,64 +595,9 @@
             "description": "A convenient tool to speed up the creation of data storage for application development.",
             "support": {
                 "issues": "https://github.com/phpolar/phpolar-storage/issues",
-                "source": "https://github.com/phpolar/phpolar-storage/tree/1.2.0"
+                "source": "https://github.com/phpolar/phpolar-storage/tree/1.2.1"
             },
-            "time": "2023-03-06T02:10:05+00:00"
-        },
-        {
-            "name": "phpolar/pure-php",
-            "version": "1.0.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/phpolar/pure-php.git",
-                "reference": "5ec9c8488ed82e0247c7364f92e802c0d37e5669"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/phpolar/pure-php/zipball/5ec9c8488ed82e0247c7364f92e802c0d37e5669",
-                "reference": "5ec9c8488ed82e0247c7364f92e802c0d37e5669",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^8.1"
-            },
-            "require-dev": {
-                "ext-mbstring": "*",
-                "phan/phan": "^5.4",
-                "php-coveralls/php-coveralls": "^2.5",
-                "phpmd/phpmd": "^2.13",
-                "phpstan/phpstan": "^1.9",
-                "phpunit/phpunit": "^10.0",
-                "squizlabs/php_codesniffer": "^3.7"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Phpolar\\PurePhp\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Eric Fortmeyer",
-                    "email": "e.fortmeyer01@gmail.com"
-                }
-            ],
-            "description": "Pure PHP Templates",
-            "keywords": [
-                "php",
-                "template-engine",
-                "template-language",
-                "templates"
-            ],
-            "support": {
-                "issues": "https://github.com/phpolar/pure-php/issues",
-                "source": "https://github.com/phpolar/pure-php/tree/1.0.3"
-            },
-            "time": "2023-03-01T02:25:01+00:00"
+            "time": "2023-04-30T17:33:59+00:00"
         },
         {
             "name": "phpolar/storage-driver",
@@ -2115,16 +2059,16 @@
         },
         {
             "name": "sebastian/diff",
-            "version": "5.0.1",
+            "version": "5.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/diff.git",
-                "reference": "aae9a0a43bff37bd5d8d0311426c87bf36153f02"
+                "reference": "912dc2fbe3e3c1e7873313cc801b100b6c68c87b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/diff/zipball/aae9a0a43bff37bd5d8d0311426c87bf36153f02",
-                "reference": "aae9a0a43bff37bd5d8d0311426c87bf36153f02",
+                "url": "https://api.github.com/repos/sebastianbergmann/diff/zipball/912dc2fbe3e3c1e7873313cc801b100b6c68c87b",
+                "reference": "912dc2fbe3e3c1e7873313cc801b100b6c68c87b",
                 "shasum": ""
             },
             "require": {
@@ -2170,7 +2114,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/diff/issues",
                 "security": "https://github.com/sebastianbergmann/diff/security/policy",
-                "source": "https://github.com/sebastianbergmann/diff/tree/5.0.1"
+                "source": "https://github.com/sebastianbergmann/diff/tree/5.0.3"
             },
             "funding": [
                 {
@@ -2178,7 +2122,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-03-23T05:12:41+00:00"
+            "time": "2023-05-01T07:48:21+00:00"
         },
         {
             "name": "sebastian/environment",
@@ -2778,8 +2722,7 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "picocss/pico": 15,
-        "nyholm/psr7-server": 20,
-        "phpolar/phpolar": 10
+        "nyholm/psr7-server": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
