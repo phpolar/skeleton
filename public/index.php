@@ -25,22 +25,13 @@ require "vendor/autoload.php";
 
 /**
  * ==========================================================
- * Storage and templating is already set up
- * ==========================================================
- *
- * See `src/config/dependencies/conf.d/`.
- */
-
-/**
- * ==========================================================
  * Set up dependency injection
  * ==========================================================
  *
  * Use any PSR-11 container you like.
- * Just `composer install <the-container>`,
- * then replace the configuration in
- * `src/config/dependencies/conf.d/container.php`.
- * Finally, use or change the factory below.
+ * Just `composer require <the-container-implementation>`.
+ * Then, return an instance of the PSR-11 container
+ * implementation in the factory function below.
  */
 $dependencyMap = new \Pimple\Container();
 $containerManager = new ContainerManager(
@@ -55,21 +46,15 @@ $containerManager = new ContainerManager(
  * Get the request
  * ==========================================================
  *
- * Use any PSR-15 request factory you like.
- * Just `composer install <some-psr-15-factory>`,
+ * Use any PSR-17 request factory you like.
+ * Just `composer require <some-psr-17-factory>`,
  * then replace the configuration in
  * `src/config/dependencies/conf.d/http.php`
  */
 
-$psr17Factory = new \Nyholm\Psr7\Factory\Psr17Factory();
-$creator = new \Nyholm\Psr7Server\ServerRequestCreator(
-    $psr17Factory, // ServerRequestFactory
-    $psr17Factory, // UriFactory
-    $psr17Factory, // UploadedFileFactory
-    $psr17Factory  // StreamFactory
-);
-
-$serverRequest = $creator->fromGlobals();
+$serverRequest = (new \Nyholm\Psr7Server\ServerRequestCreator(
+    ...array_fill(0, 4, new \Nyholm\Psr7\Factory\Psr17Factory()),
+))->fromGlobals();
 
 
 /**
@@ -77,8 +62,7 @@ $serverRequest = $creator->fromGlobals();
  * Set up routes
  * ==========================================================
  *
- * PHPolar uses type-safe PSR-15 request handlers
- * instead of Closures.
+ * PHPolar route handlers must implement `AbstractContentDelegate`
  */
 $routes = new RouteRegistry();
 $routes->add("GET", "/", new GetPeople());
@@ -86,11 +70,11 @@ $routes->add("GET", "/person/form", new GetPersonForm());
 $routes->add("POST", "/person/add", new SubmitPersonForm());
 $routes->add("POST", "/person/delete/{id}", new DeletePerson());
 
-// /**
-//  * ==========================================================
-//  * Configure the web application
-//  * ==========================================================
-//  */
+/**
+ * ==========================================================
+ * Configure the web application
+ * ==========================================================
+ */
 $app = App::create($containerManager);
 $app->useRoutes($routes);
 // $app->useCsrfMiddleware();
