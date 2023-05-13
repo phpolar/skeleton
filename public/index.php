@@ -16,6 +16,7 @@ use Phpolar\Phpolar\App;
 use Phpolar\Phpolar\DependencyInjection\ClosureContainerFactory;
 use Phpolar\Phpolar\DependencyInjection\ContainerManager;
 use Phpolar\Phpolar\Routing\RouteRegistry;
+use Psr\Container\ContainerInterface;
 
 ini_set("display_errors", true);
 chdir("../");
@@ -44,7 +45,7 @@ require "vendor/autoload.php";
 $dependencyMap = new \Pimple\Container();
 $containerManager = new ContainerManager(
     new ClosureContainerFactory(
-        static fn (): \Pimple\Psr11\Container => new \Pimple\Psr11\Container($dependencyMap)
+        static fn (): ContainerInterface => new \Pimple\Psr11\Container($dependencyMap)
     ),
     $dependencyMap,
 );
