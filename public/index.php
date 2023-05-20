@@ -34,10 +34,11 @@ require "vendor/autoload.php";
  * implementation in the factory function below.
  */
 $dependencyMap = new \Pimple\Container();
+$containerFac = static fn (): ContainerInterface =>
+// add your PSR-11 container here
+new \Pimple\Psr11\Container($dependencyMap);
 $containerManager = new ContainerManager(
-    new ClosureContainerFactory(
-        static fn (): ContainerInterface => new \Pimple\Psr11\Container($dependencyMap)
-    ),
+    new ClosureContainerFactory($containerFac),
     $dependencyMap,
 );
 
