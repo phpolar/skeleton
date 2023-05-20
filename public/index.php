@@ -76,6 +76,6 @@ $routes->add("POST", "/person/delete/{id}", new DeletePerson());
  * ==========================================================
  */
 $app = App::create($containerManager);
-$app->useRoutes($routes);
 // $app->useCsrfMiddleware();
+$app->useRoutes($routes);
 $app->receive($serverRequest);
