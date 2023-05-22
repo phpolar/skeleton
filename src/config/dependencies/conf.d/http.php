@@ -10,7 +10,7 @@ use Psr\Http\Message\StreamFactoryInterface;
 
 $psr17Factory = new \Nyholm\Psr7\Factory\Psr17Factory();
 return [
-    RequestFactoryInterface::class => static fn () => $psr17Factory,
-    ResponseFactoryInterface::class => static fn () => $psr17Factory,
-    StreamFactoryInterface::class => static fn () => $psr17Factory,
+    RequestFactoryInterface::class => $psr17Factory,
+    ResponseFactoryInterface::class => $psr17Factory,
+    StreamFactoryInterface::class => $psr17Factory,
 ];
