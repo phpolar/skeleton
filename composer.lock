@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c3852c5e14832d377443d028f38b0351",
+    "content-hash": "9383c704d9922310355ced692e5beb4b",
     "packages": [
         {
             "name": "nyholm/psr7",
@@ -164,22 +164,23 @@
         },
         {
             "name": "phpolar/csrf-protection",
-            "version": "2.1.0",
+            "version": "3.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpolar/csrf-protection.git",
-                "reference": "5f333e950adea4b8e4eb8ebcfed6110a9166787a"
+                "reference": "d3f27d122f70a42d6d57cd864b49a0982ae668da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpolar/csrf-protection/zipball/5f333e950adea4b8e4eb8ebcfed6110a9166787a",
-                "reference": "5f333e950adea4b8e4eb8ebcfed6110a9166787a",
+                "url": "https://api.github.com/repos/phpolar/csrf-protection/zipball/d3f27d122f70a42d6d57cd864b49a0982ae668da",
+                "reference": "d3f27d122f70a42d6d57cd864b49a0982ae668da",
                 "shasum": ""
             },
             "require": {
                 "ext-mbstring": "*",
                 "php": ">=8.1",
                 "phpolar/http-codes": "^0.0.6",
+                "phpolar/response-filter": "^1.0",
                 "psr/http-message": "^2.0",
                 "psr/http-server-handler": "^1.0",
                 "psr/http-server-middleware": "^1.0"
@@ -194,13 +195,16 @@
                 "phan/phan": "^5.4",
                 "php-coveralls/php-coveralls": "^2.5",
                 "phpmd/phpmd": "^2.13",
+                "phpolar/csrf-response-filter": "^1.0",
+                "phpolar/http-message-test-utils": "^0.2.0",
                 "phpstan/phpstan": "^1.9",
                 "phpunit/phpunit": "^10.0",
                 "squizlabs/php_codesniffer": "^3.7"
             },
             "suggest": {
-                "laminas/laminas-diactoros": "Provides a PSR-7 implementation",
-                "monolog/monolog": "Allows for logging forbidden requests"
+                "monolog/monolog": "Allows for logging forbidden requests",
+                "nyholm/psr7": "A fast, simple PSR-7 implementation",
+                "phpolar/csrf-response-filter": "Attaches CSRF tokens to PSR-7 HTTP Responses"
             },
             "type": "library",
             "autoload": {
@@ -231,9 +235,59 @@
             ],
             "support": {
                 "issues": "https://github.com/phpolar/csrf-protection/issues",
-                "source": "https://github.com/phpolar/csrf-protection/tree/2.1.0"
+                "source": "https://github.com/phpolar/csrf-protection/tree/3.0.2"
             },
-            "time": "2023-04-29T22:41:58+00:00"
+            "time": "2023-05-22T17:38:02+00:00"
+        },
+        {
+            "name": "phpolar/csrf-response-filter",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpolar/csrf-response-filter.git",
+                "reference": "ae8b37d9f81450b54e4f53ebc9adcca598418043"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpolar/csrf-response-filter/zipball/ae8b37d9f81450b54e4f53ebc9adcca598418043",
+                "reference": "ae8b37d9f81450b54e4f53ebc9adcca598418043",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.1",
+                "phpolar/response-filter": "^1.0",
+                "psr/http-message": "^2.0"
+            },
+            "provide": {
+                "phpolar/response-filter-implementation": "^1.0"
+            },
+            "require-dev": {
+                "ext-ast": "*",
+                "ext-openssl": "*",
+                "phan/phan": "^5.4",
+                "php-coveralls/php-coveralls": "^2.5",
+                "phpmd/phpmd": "^2.13",
+                "phpolar/http-message-test-utils": "^0.1.0",
+                "phpstan/phpstan": "^1.9",
+                "phpunit/phpunit": "10.0",
+                "squizlabs/php_codesniffer": "^3.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Phpolar\\CsrfResponseFilter\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Adds CSRF tokens to PSR-7 HTTP Responses",
+            "support": {
+                "issues": "https://github.com/phpolar/csrf-response-filter/issues",
+                "source": "https://github.com/phpolar/csrf-response-filter/tree/1.0.0"
+            },
+            "time": "2023-05-21T02:08:36+00:00"
         },
         {
             "name": "phpolar/csv-file-storage",
@@ -376,22 +430,21 @@
         },
         {
             "name": "phpolar/phpolar",
-            "version": "2.0.0",
+            "version": "2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpolar/phpolar.git",
-                "reference": "80fda33c2f09b960af08c8d097001f463795dc03"
+                "reference": "1e0f24eccc4c9b9da4bdaf6a0e2b655bcbb3b86d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpolar/phpolar/zipball/80fda33c2f09b960af08c8d097001f463795dc03",
-                "reference": "80fda33c2f09b960af08c8d097001f463795dc03",
+                "url": "https://api.github.com/repos/phpolar/phpolar/zipball/1e0f24eccc4c9b9da4bdaf6a0e2b655bcbb3b86d",
+                "reference": "1e0f24eccc4c9b9da4bdaf6a0e2b655bcbb3b86d",
                 "shasum": ""
             },
             "require": {
                 "ext-mbstring": "*",
                 "php": ">=8.1",
-                "phpolar/csrf-protection": "^2.1",
                 "phpolar/http-response-extensions": "^1.0",
                 "phpolar/phpolar-core": "^2.2",
                 "phpolar/storage-driver": "^1.0",
@@ -407,10 +460,12 @@
                 "phan/phan": "^5.3",
                 "php-coveralls/php-coveralls": "^2.5",
                 "phpmd/phpmd": "^2.13",
-                "phpolar/http-message-test-utils": "^0.1.0",
+                "phpolar/csrf-protection": "^3.0",
+                "phpolar/http-message-test-utils": "^0.1.0 || ^0.2.0",
                 "phpolar/pure-php": "^1.0",
                 "phpstan/phpstan": "^1.8",
                 "phpunit/phpunit": "^10.0",
+                "picocss/pico": "2.0.0alpha1",
                 "squizlabs/php_codesniffer": "^3.7"
             },
             "bin": [
@@ -440,9 +495,9 @@
             "description": "A minimal PHP framework",
             "support": {
                 "issues": "https://github.com/phpolar/phpolar/issues",
-                "source": "https://github.com/phpolar/phpolar/tree/2.0.0"
+                "source": "https://github.com/phpolar/phpolar/tree/2.0.1"
             },
-            "time": "2023-05-01T13:31:12+00:00"
+            "time": "2023-05-22T13:20:10+00:00"
         },
         {
             "name": "phpolar/phpolar-core",
@@ -599,6 +654,44 @@
                 "source": "https://github.com/phpolar/pure-php/tree/1.0.4"
             },
             "time": "2023-04-30T17:37:13+00:00"
+        },
+        {
+            "name": "phpolar/response-filter",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpolar/response-filter.git",
+                "reference": "40490cf5d246bc44c3809fefa9b81e17a1cd8670"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpolar/response-filter/zipball/40490cf5d246bc44c3809fefa9b81e17a1cd8670",
+                "reference": "40490cf5d246bc44c3809fefa9b81e17a1cd8670",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7",
+                "psr/http-message": "^2.0"
+            },
+            "require-dev": {
+                "squizlabs/php_codesniffer": "^3.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Phpolar\\Http\\Message\\": "src/Http/Message/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Supports filtering PSR-7 HTTP Responses",
+            "support": {
+                "issues": "https://github.com/phpolar/response-filter/issues",
+                "source": "https://github.com/phpolar/response-filter/tree/1.0.1"
+            },
+            "time": "2023-05-21T00:31:42+00:00"
         },
         {
             "name": "phpolar/storage-driver",
@@ -1173,16 +1266,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v4.15.4",
+            "version": "v4.15.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "6bb5176bc4af8bcb7d926f88718db9b96a2d4290"
+                "reference": "11e2663a5bc9db5d714eedb4277ee300403b4a9e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/6bb5176bc4af8bcb7d926f88718db9b96a2d4290",
-                "reference": "6bb5176bc4af8bcb7d926f88718db9b96a2d4290",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/11e2663a5bc9db5d714eedb4277ee300403b4a9e",
+                "reference": "11e2663a5bc9db5d714eedb4277ee300403b4a9e",
                 "shasum": ""
             },
             "require": {
@@ -1223,9 +1316,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nikic/PHP-Parser/issues",
-                "source": "https://github.com/nikic/PHP-Parser/tree/v4.15.4"
+                "source": "https://github.com/nikic/PHP-Parser/tree/v4.15.5"
             },
-            "time": "2023-03-05T19:49:14+00:00"
+            "time": "2023-05-19T20:20:00+00:00"
         },
         {
             "name": "phar-io/manifest",
@@ -1340,16 +1433,16 @@
         },
         {
             "name": "phpunit/php-code-coverage",
-            "version": "10.1.1",
+            "version": "10.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "884a0da7f9f46f28b2cb69134217fd810b793974"
+                "reference": "db1497ec8dd382e82c962f7abbe0320e4882ee4e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/884a0da7f9f46f28b2cb69134217fd810b793974",
-                "reference": "884a0da7f9f46f28b2cb69134217fd810b793974",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/db1497ec8dd382e82c962f7abbe0320e4882ee4e",
+                "reference": "db1497ec8dd382e82c962f7abbe0320e4882ee4e",
                 "shasum": ""
             },
             "require": {
@@ -1406,7 +1499,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/php-code-coverage/issues",
                 "security": "https://github.com/sebastianbergmann/php-code-coverage/security/policy",
-                "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/10.1.1"
+                "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/10.1.2"
             },
             "funding": [
                 {
@@ -1414,7 +1507,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-04-17T12:15:40+00:00"
+            "time": "2023-05-22T09:04:27+00:00"
         },
         {
             "name": "phpunit/php-file-iterator",
