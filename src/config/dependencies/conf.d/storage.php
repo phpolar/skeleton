@@ -7,16 +7,13 @@ namespace Phpolar\MyApp;
 use Phpolar\CsvFileStorage\CsvFileStorage;
 use Phpolar\Example\Person;
 use Phpolar\Phpolar\Storage\AbstractStorage;
-use Psr\Container\ContainerInterface;
 
+const CSV_STORAGE = "data/example.csv";
 /**
  * This contains the services/dependencies required
  * by the PHPolar Microframework.
  */
 return [
-    "csv_storage" => "data/example.csv",
-    AbstractStorage::class => static fn (
-        ContainerInterface $container
-    ) => new CsvFileStorage($container->get("csv_storage")),
-    "PEOPLE_STORAGE" => static fn (ContainerInterface $container) => new CsvFileStorage($container->get("csv_storage"), Person::class),
+    AbstractStorage::class => new CsvFileStorage(CSV_STORAGE),
+    "PEOPLE_STORAGE" => new CsvFileStorage(CSV_STORAGE, Person::class),
 ];
