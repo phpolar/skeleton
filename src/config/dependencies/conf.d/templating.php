@@ -12,7 +12,7 @@ use Phpolar\PurePhp\TemplateEngine;
 
 
 return [
-    TemplateEngine::class => static fn () => new TemplateEngine(
+    TemplateEngine::class => new TemplateEngine(
         new StreamContentStrategy(),
         new Binder(),
         new Dispatcher(),
