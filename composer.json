@@ -11,10 +11,11 @@
         "phpolar/validators": "^1.1",
         "nyholm/psr7": "^1.7",
         "nyholm/psr7-server": "dev-master",
-        "phpolar/phpolar": "^2.0",
+        "phpolar/phpolar": "3.0.0a0",
         "phpolar/pure-php": "^1.0",
         "phpolar/csrf-protection": "^3.0",
-        "phpolar/csrf-response-filter": "^1.0"
+        "phpolar/csrf-response-filter": "^1.0",
+        "phpolar/model": "^1.1"
     },
     "autoload": {
         "psr-4": {
