@@ -4,16 +4,16 @@ declare(strict_types=1);
 
 namespace Phpolar\Example;
 
-use Phpolar\Phpolar\Routing\AbstractContentDelegate;
+use Phpolar\Phpolar\Http\RoutableInterface;
 use Phpolar\Phpolar\Storage\AbstractStorage;
 use Phpolar\Phpolar\Storage\ItemKey;
 use Phpolar\Phpolar\Storage\KeyNotFound;
 use Phpolar\PurePhp\TemplateEngine;
 use Psr\Container\ContainerInterface;
 
-final class DeletePerson extends AbstractContentDelegate
+final class DeletePerson implements RoutableInterface
 {
-    public function getResponseContent(ContainerInterface $container, string $id = ""): string
+    public function process(ContainerInterface $container, string $id = ""): string
     {
         /**
          * @var TemplateEngine $templateEngine

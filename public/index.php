@@ -13,10 +13,7 @@ declare(strict_types=1);
 namespace Phpolar\Example;
 
 use Phpolar\Phpolar\App;
-use Phpolar\Phpolar\DependencyInjection\ClosureContainerFactory;
-use Phpolar\Phpolar\DependencyInjection\ContainerManager;
-use Phpolar\Phpolar\Routing\RouteRegistry;
-use Psr\Container\ContainerInterface;
+use Phpolar\Phpolar\Core\ContainerLoader;
 
 ini_set("display_errors", true);
 chdir("../");
@@ -34,13 +31,8 @@ require "vendor/autoload.php";
  * implementation in the factory function below.
  */
 $dependencyMap = new \Pimple\Container();
-$containerFac = static fn (): ContainerInterface =>
-// add your PSR-11 container here
-new \Pimple\Psr11\Container($dependencyMap);
-$containerManager = new ContainerManager(
-    new ClosureContainerFactory($containerFac),
-    $dependencyMap,
-);
+$psr11Container = new \Pimple\Psr11\Container($dependencyMap);
+(new ContainerLoader())->load($dependencyMap, $psr11Container);
 
 /**
  * ==========================================================
@@ -57,26 +49,11 @@ $serverRequest = (new \Nyholm\Psr7Server\ServerRequestCreator(
     ...array_fill(0, 4, new \Nyholm\Psr7\Factory\Psr17Factory()),
 ))->fromGlobals();
 
-
-/**
- * ==========================================================
- * Set up routes
- * ==========================================================
- *
- * PHPolar route handlers must implement `AbstractContentDelegate`
- */
-$routes = new RouteRegistry();
-$routes->add("GET", "/", new GetPeople());
-$routes->add("GET", "/person/form", new GetPersonForm());
-$routes->add("POST", "/person/add", new SubmitPersonForm());
-$routes->add("POST", "/person/delete/{id}", new DeletePerson());
-
 /**
  * ==========================================================
  * Configure the web application
  * ==========================================================
  */
-$app = App::create($containerManager);
+$app = App::create($psr11Container);
 // $app->useCsrfMiddleware();
-$app->useRoutes($routes);
 $app->receive($serverRequest);
