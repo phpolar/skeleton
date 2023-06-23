@@ -5,11 +5,11 @@ declare(strict_types=1);
 namespace Phpolar\Example;
 
 use DateTimeImmutable;
-use Phpolar\Phpolar\Model\AbstractModel;
-use Phpolar\Phpolar\Model\Column;
-use Phpolar\Phpolar\Model\Label;
-use Phpolar\Phpolar\Model\Hidden;
-use Phpolar\Phpolar\Model\PrimaryKey;
+use Phpolar\Model\AbstractModel;
+use Phpolar\Model\Column;
+use Phpolar\Model\Label;
+use Phpolar\Model\Hidden;
+use Phpolar\Model\PrimaryKey;
 use Phpolar\Validators\Max;
 use Phpolar\Validators\MaxLength;
 use Phpolar\Validators\Pattern;

@@ -4,14 +4,14 @@ declare(strict_types=1);
 
 namespace Phpolar\Example;
 
-use Phpolar\Phpolar\Routing\AbstractContentDelegate;
+use Phpolar\Phpolar\Http\RoutableInterface;
 use Phpolar\PurePhp\HtmlSafeContext;
 use Phpolar\PurePhp\TemplateEngine;
 use Psr\Container\ContainerInterface;
 
-final class GetPeople extends AbstractContentDelegate
+final class GetPeople implements RoutableInterface
 {
-    public function getResponseContent(ContainerInterface $container): string
+    public function process(ContainerInterface $container): string
     {
         $storage = $container->get("PEOPLE_STORAGE");
         $templateEngine = $container->get(TemplateEngine::class);
