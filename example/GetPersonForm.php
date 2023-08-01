@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Phpolar\Example;
 
 use Phpolar\Model\Model;
-use Phpolar\Phpolar\Http\RoutableInterface;
+use Phpolar\Routable\RoutableInterface;
 use Phpolar\PurePhp\HtmlSafeContext;
 use Phpolar\PurePhp\TemplateEngine;
 use Psr\Container\ContainerInterface;

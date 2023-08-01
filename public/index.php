@@ -13,7 +13,7 @@ declare(strict_types=1);
 namespace Phpolar\Example;
 
 use Phpolar\Phpolar\App;
-use Phpolar\Phpolar\Core\ContainerLoader;
+use Phpolar\Phpolar\DependencyInjection\ContainerLoader;
 
 ini_set("display_errors", true);
 chdir("../");

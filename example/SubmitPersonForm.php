@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Phpolar\Example;
 
 use Phpolar\Model\Model;
-use Phpolar\Phpolar\Http\RoutableInterface;
+use Phpolar\Routable\RoutableInterface;
 use Phpolar\Phpolar\Storage\AbstractStorage;
 use Phpolar\Phpolar\Storage\Item;
 use Phpolar\Phpolar\Storage\ItemKey;
