@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Phpolar\Example;
 
-use Phpolar\Phpolar\Http\RoutableInterface;
+use Phpolar\Routable\RoutableInterface;
 use Phpolar\Phpolar\Storage\AbstractStorage;
 use Phpolar\Phpolar\Storage\ItemKey;
 use Phpolar\Phpolar\Storage\KeyNotFound;
