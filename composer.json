@@ -11,7 +11,7 @@
         "phpolar/validators": "^1.1",
         "nyholm/psr7": "^1.7",
         "nyholm/psr7-server": "dev-master",
-        "phpolar/phpolar": "^3.0",
+        "phpolar/phpolar": "^4.0",
         "phpolar/pure-php": "^1.0",
         "phpolar/csrf-protection": "^3.0",
         "phpolar/csrf-response-filter": "^1.0",
