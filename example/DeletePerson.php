@@ -8,33 +8,31 @@ use Phpolar\Routable\RoutableInterface;
 use Phpolar\Phpolar\Storage\AbstractStorage;
 use Phpolar\Phpolar\Storage\ItemKey;
 use Phpolar\Phpolar\Storage\KeyNotFound;
+use Phpolar\PropertyInjector\Inject;
 use Phpolar\PurePhp\TemplateEngine;
-use Psr\Container\ContainerInterface;
 
 final class DeletePerson implements RoutableInterface
 {
-    public function process(ContainerInterface $container, string $id = ""): string
+    #[Inject]
+    public TemplateEngine $templateEngine;
+
+    #[Inject("PEOPLE_STORAGE")]
+    public AbstractStorage $storage;
+
+    public function process(string $id = ""): string
     {
-        /**
-         * @var TemplateEngine $templateEngine
-         */
-        $templateEngine = $container->get(TemplateEngine::class);
-        $key = $this->deletePerson($id, $container);
+        $key = $this->deletePerson($id);
         if ($key instanceof KeyNotFound) {
-            return $templateEngine->apply("404");
+            return $this->templateEngine->apply("404");
         }
-        return $templateEngine->apply("example/templates/person-deleted.phtml");
+        return $this->templateEngine->apply("example/templates/person-deleted.phtml");
     }
 
-    private function deletePerson(string $personId, ContainerInterface $container): ItemKey|KeyNotFound
+    private function deletePerson(string $personId): ItemKey|KeyNotFound
     {
-        /**
-         * @var AbstractStorage $storage
-         */
-        $storage = $container->get("PEOPLE_STORAGE");
         $key = new ItemKey($personId);
-        $storage->removeByKey($key);
-        $storage->commit();
+        $this->storage->removeByKey($key);
+        $this->storage->commit();
         return $key;
     }
 }
