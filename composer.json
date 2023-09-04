@@ -11,13 +11,14 @@
         "phpolar/validators": "^1.1",
         "nyholm/psr7": "^1.7",
         "nyholm/psr7-server": "dev-master",
-        "phpolar/phpolar": "^4.0",
+        "phpolar/phpolar": "^5.0",
         "phpolar/pure-php": "^2.0",
         "phpolar/csrf-protection": "^3.0",
         "phpolar/csrf-response-filter": "^1.0",
         "phpolar/model": "^1.1",
         "phpolar/model-resolver": "^1.0",
-        "phpolar/property-injector": "^1.0"
+        "phpolar/property-injector": "^1.0",
+        "laminas/laminas-httphandlerrunner": "^2.9"
     },
     "autoload": {
         "psr-4": {

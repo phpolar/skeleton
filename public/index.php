@@ -32,7 +32,7 @@ require "vendor/autoload.php";
  */
 $dependencyMap = new \Pimple\Container();
 $psr11Container = new \Pimple\Psr11\Container($dependencyMap);
-(new ContainerLoader())->load($dependencyMap, $psr11Container);
+(new ContainerLoader())->load($psr11Container, $dependencyMap);
 
 /**
  * ==========================================================

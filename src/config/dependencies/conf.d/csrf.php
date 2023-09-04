@@ -5,6 +5,8 @@ declare(strict_types=1);
 namespace Phpolar\MyApp;
 
 use DateTimeImmutable;
+use PhpContrib\Http\Message\ResponseFilterInterface;
+use PhpContrib\Http\Message\ResponseFilterStrategyInterface;
 use Phpolar\CsrfProtection\CsrfToken;
 use Phpolar\CsrfProtection\Http\CsrfProtectionRequestHandler;
 use Phpolar\CsrfProtection\Http\CsrfRequestCheckMiddleware;
@@ -14,8 +16,6 @@ use Phpolar\CsrfProtection\Storage\SessionTokenStorage;
 use Phpolar\CsrfProtection\Storage\SessionWrapper;
 use Phpolar\CsrfResponseFilter\Http\Message\CsrfResponseFilter;
 use Phpolar\CsrfResponseFilter\Http\Message\ResponseFilterPatternStrategy;
-use Phpolar\Http\Message\ResponseFilterInterface;
-use Phpolar\Http\Message\ResponseFilterStrategyInterface;
 use Phpolar\Phpolar\DependencyInjection\DiTokens;
 use Psr\Container\ContainerInterface;
 use Psr\Http\Message\ResponseFactoryInterface;
