@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f891e7b1807bc9cc4c11b4545e1f58ce",
+    "content-hash": "d5a52dcc9f6a4616346d7c415180d85a",
     "packages": [
         {
             "name": "laminas/laminas-httphandlerrunner",
@@ -336,16 +336,16 @@
         },
         {
             "name": "phpolar/core",
-            "version": "3.0.0",
+            "version": "4.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpolar/core.git",
-                "reference": "de4dc9f73c4d6c2c966cd0ee8a7ca52b49e6d889"
+                "reference": "3b17c8b3b4545a4b18165be163977a2bd95eb2a1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpolar/core/zipball/de4dc9f73c4d6c2c966cd0ee8a7ca52b49e6d889",
-                "reference": "de4dc9f73c4d6c2c966cd0ee8a7ca52b49e6d889",
+                "url": "https://api.github.com/repos/phpolar/core/zipball/3b17c8b3b4545a4b18165be163977a2bd95eb2a1",
+                "reference": "3b17c8b3b4545a4b18165be163977a2bd95eb2a1",
                 "shasum": ""
             },
             "require": {
@@ -363,7 +363,7 @@
                 "phpmd/phpmd": "^2.13",
                 "phpolar/http-message-test-utils": "^0.1.0 || ^0.2.0",
                 "phpstan/phpstan": "^1.9.14",
-                "phpunit/phpunit": "^10.0",
+                "phpunit/phpunit": "^11.4",
                 "squizlabs/php_codesniffer": "^3.7.1"
             },
             "type": "library",
@@ -388,22 +388,22 @@
             "description": "The internal components of the PHPolar Microframework",
             "support": {
                 "issues": "https://github.com/phpolar/core/issues",
-                "source": "https://github.com/phpolar/core/tree/3.0.0"
+                "source": "https://github.com/phpolar/core/tree/4.0.0"
             },
-            "time": "2023-07-04T00:46:34+00:00"
+            "time": "2024-12-01T21:27:03+00:00"
         },
         {
             "name": "phpolar/csrf-protection",
-            "version": "3.1.0",
+            "version": "3.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpolar/csrf-protection.git",
-                "reference": "29535d3e1a321e9ba3d4e0bb968c85afa9560a98"
+                "reference": "cee9cbd2c53cb7a28d12bc862dd458b7d6929a8a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpolar/csrf-protection/zipball/29535d3e1a321e9ba3d4e0bb968c85afa9560a98",
-                "reference": "29535d3e1a321e9ba3d4e0bb968c85afa9560a98",
+                "url": "https://api.github.com/repos/phpolar/csrf-protection/zipball/cee9cbd2c53cb7a28d12bc862dd458b7d6929a8a",
+                "reference": "cee9cbd2c53cb7a28d12bc862dd458b7d6929a8a",
                 "shasum": ""
             },
             "require": {
@@ -428,7 +428,7 @@
                 "phpolar/csrf-response-filter": "^1.0",
                 "phpolar/http-message-test-utils": "^0.2.0",
                 "phpstan/phpstan": "^1.9",
-                "phpunit/phpunit": "^10.0",
+                "phpunit/phpunit": "^11.1.3",
                 "squizlabs/php_codesniffer": "^3.7"
             },
             "suggest": {
@@ -465,22 +465,22 @@
             ],
             "support": {
                 "issues": "https://github.com/phpolar/csrf-protection/issues",
-                "source": "https://github.com/phpolar/csrf-protection/tree/3.1.0"
+                "source": "https://github.com/phpolar/csrf-protection/tree/3.1.1"
             },
-            "time": "2023-09-02T22:12:00+00:00"
+            "time": "2024-12-01T21:19:08+00:00"
         },
         {
             "name": "phpolar/csrf-response-filter",
-            "version": "1.1.0",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpolar/csrf-response-filter.git",
-                "reference": "99cf1e0f4efac21a73d07dad633a0f4d021b5e3b"
+                "reference": "3bb1c59ba6e475e455b25f0be17c35f457b40037"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpolar/csrf-response-filter/zipball/99cf1e0f4efac21a73d07dad633a0f4d021b5e3b",
-                "reference": "99cf1e0f4efac21a73d07dad633a0f4d021b5e3b",
+                "url": "https://api.github.com/repos/phpolar/csrf-response-filter/zipball/3bb1c59ba6e475e455b25f0be17c35f457b40037",
+                "reference": "3bb1c59ba6e475e455b25f0be17c35f457b40037",
                 "shasum": ""
             },
             "require": {
@@ -499,7 +499,7 @@
                 "phpmd/phpmd": "^2.13",
                 "phpolar/http-message-test-utils": "^0.1.0 || ^0.2.0",
                 "phpstan/phpstan": "^1.9",
-                "phpunit/phpunit": "10.3.2",
+                "phpunit/phpunit": "^11.1.3",
                 "squizlabs/php_codesniffer": "^3.7"
             },
             "type": "library",
@@ -515,9 +515,9 @@
             "description": "Adds CSRF tokens to PSR-7 HTTP Responses",
             "support": {
                 "issues": "https://github.com/phpolar/csrf-response-filter/issues",
-                "source": "https://github.com/phpolar/csrf-response-filter/tree/1.1.0"
+                "source": "https://github.com/phpolar/csrf-response-filter/tree/1.1.1"
             },
-            "time": "2023-09-02T22:27:41+00:00"
+            "time": "2024-12-01T21:22:17+00:00"
         },
         {
             "name": "phpolar/csv-file-storage",
@@ -614,22 +614,22 @@
         },
         {
             "name": "phpolar/model",
-            "version": "1.2.0",
+            "version": "1.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpolar/model.git",
-                "reference": "84e02b2f72b8b7ab3e2a36d7c597a635b4c11c78"
+                "reference": "c98f60559fdc28cd9d58169e2f4b8119e8d938a4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpolar/model/zipball/84e02b2f72b8b7ab3e2a36d7c597a635b4c11c78",
-                "reference": "84e02b2f72b8b7ab3e2a36d7c597a635b4c11c78",
+                "url": "https://api.github.com/repos/phpolar/model/zipball/c98f60559fdc28cd9d58169e2f4b8119e8d938a4",
+                "reference": "c98f60559fdc28cd9d58169e2f4b8119e8d938a4",
                 "shasum": ""
             },
             "require": {
                 "php": ">=8.1",
                 "php-contrib/validator": "^1.0",
-                "phpolar/core": "^3.0",
+                "phpolar/core": "^4.0.0",
                 "phpolar/model-resolver": "^1.0",
                 "phpolar/storage-driver": "^1.0"
             },
@@ -640,7 +640,7 @@
                 "php-coveralls/php-coveralls": "^2.5",
                 "phpmd/phpmd": "^2.13",
                 "phpstan/phpstan": "^1.9",
-                "phpunit/phpunit": "^10",
+                "phpunit/phpunit": "^11.1.3",
                 "squizlabs/php_codesniffer": "^3.7"
             },
             "type": "library",
@@ -658,9 +658,9 @@
             "description": "Provides support for configuring the properties of an object for validation, formatting, and storage.",
             "support": {
                 "issues": "https://github.com/phpolar/model/issues",
-                "source": "https://github.com/phpolar/model/tree/1.2.0"
+                "source": "https://github.com/phpolar/model/tree/1.2.2"
             },
-            "time": "2023-09-02T17:39:25+00:00"
+            "time": "2024-12-01T21:33:41+00:00"
         },
         {
             "name": "phpolar/model-resolver",
@@ -704,16 +704,16 @@
         },
         {
             "name": "phpolar/phpolar",
-            "version": "5.0.0",
+            "version": "5.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpolar/phpolar.git",
-                "reference": "7e349c6e30d52b832085c09034c20513970d8a46"
+                "reference": "acc6f267e6222a270f5f11fcb49576bba7640e98"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpolar/phpolar/zipball/7e349c6e30d52b832085c09034c20513970d8a46",
-                "reference": "7e349c6e30d52b832085c09034c20513970d8a46",
+                "url": "https://api.github.com/repos/phpolar/phpolar/zipball/acc6f267e6222a270f5f11fcb49576bba7640e98",
+                "reference": "acc6f267e6222a270f5f11fcb49576bba7640e98",
                 "shasum": ""
             },
             "require": {
@@ -723,7 +723,7 @@
                 "php-contrib/authenticator": "^1.0",
                 "php-contrib/response-filter": "^1.0",
                 "php-contrib/validator": "^1.0",
-                "phpolar/core": "^3.0",
+                "phpolar/core": "^4.0.0",
                 "phpolar/model-resolver": "^1.0",
                 "phpolar/property-injector-contract": "^1.0",
                 "phpolar/routable": "^2.0",
@@ -742,11 +742,11 @@
                 "phpmd/phpmd": "^2.13",
                 "phpolar/csrf-protection": "^3.1",
                 "phpolar/http-message-test-utils": "^0.1.0 || ^0.2.0",
-                "phpolar/model": "^1.2",
-                "phpolar/pure-php": "^2.0",
-                "phpstan/phpstan": "^1.8",
-                "phpunit/phpunit": "dev-main",
-                "picocss/pico": "2.0.0alpha1",
+                "phpolar/model": "^1.2.2",
+                "phpolar/pure-php": "^3.0",
+                "phpstan/phpstan": "^2.0.3",
+                "phpunit/phpunit": "^11.1.3",
+                "picocss/pico": "^2.0.6",
                 "squizlabs/php_codesniffer": "^3.7"
             },
             "type": "library",
@@ -768,9 +768,9 @@
             "description": "A minimal PHP framework",
             "support": {
                 "issues": "https://github.com/phpolar/phpolar/issues",
-                "source": "https://github.com/phpolar/phpolar/tree/5.0.0"
+                "source": "https://github.com/phpolar/phpolar/tree/5.0.1"
             },
-            "time": "2023-09-04T14:53:12+00:00"
+            "time": "2024-12-01T21:44:54+00:00"
         },
         {
             "name": "phpolar/property-injector",
@@ -863,20 +863,20 @@
         },
         {
             "name": "phpolar/pure-php",
-            "version": "2.0.0",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpolar/pure-php.git",
-                "reference": "e356addc05c8c8a3abcdb3e1783a57e5f9c4f0bc"
+                "reference": "17ed6c6b8d6c010a5e33c2b4fdd7c56311c8db8a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpolar/pure-php/zipball/e356addc05c8c8a3abcdb3e1783a57e5f9c4f0bc",
-                "reference": "e356addc05c8c8a3abcdb3e1783a57e5f9c4f0bc",
+                "url": "https://api.github.com/repos/phpolar/pure-php/zipball/17ed6c6b8d6c010a5e33c2b4fdd7c56311c8db8a",
+                "reference": "17ed6c6b8d6c010a5e33c2b4fdd7c56311c8db8a",
                 "shasum": ""
             },
             "require": {
-                "php": ">= 8.1"
+                "php": "^8.3"
             },
             "require-dev": {
                 "ext-mbstring": "*",
@@ -884,7 +884,7 @@
                 "php-coveralls/php-coveralls": "^2.5",
                 "phpmd/phpmd": "^2.13",
                 "phpstan/phpstan": "^1.9",
-                "phpunit/phpunit": "^10.0",
+                "phpunit/phpunit": "^11.1.3",
                 "squizlabs/php_codesniffer": "^3.7"
             },
             "type": "library",
@@ -912,22 +912,22 @@
             ],
             "support": {
                 "issues": "https://github.com/phpolar/pure-php/issues",
-                "source": "https://github.com/phpolar/pure-php/tree/2.0.0"
+                "source": "https://github.com/phpolar/pure-php/tree/3.0.0"
             },
-            "time": "2023-09-02T23:44:22+00:00"
+            "time": "2024-12-01T20:25:56+00:00"
         },
         {
             "name": "phpolar/routable",
-            "version": "2.0.0",
+            "version": "2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpolar/routable.git",
-                "reference": "a8218f07eec68639cd53daf6c7139fbd739e93b2"
+                "reference": "ebac0e080b948f3c13b5e43d785956091e37a0f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpolar/routable/zipball/a8218f07eec68639cd53daf6c7139fbd739e93b2",
-                "reference": "a8218f07eec68639cd53daf6c7139fbd739e93b2",
+                "url": "https://api.github.com/repos/phpolar/routable/zipball/ebac0e080b948f3c13b5e43d785956091e37a0f2",
+                "reference": "ebac0e080b948f3c13b5e43d785956091e37a0f2",
                 "shasum": ""
             },
             "require": {
@@ -949,22 +949,22 @@
             "description": "Supports route handling interoperability.",
             "support": {
                 "issues": "https://github.com/phpolar/routable/issues",
-                "source": "https://github.com/phpolar/routable/tree/2.0.0"
+                "source": "https://github.com/phpolar/routable/tree/2.0.1"
             },
-            "time": "2023-09-02T19:38:43+00:00"
+            "time": "2024-12-01T20:09:34+00:00"
         },
         {
             "name": "phpolar/routable-factory",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpolar/routable-factory.git",
-                "reference": "6be8862cfa55992cadcb7240ff344b99bd0acc1b"
+                "reference": "d069af024bcc926c8a573e0a866a297e85bf55ab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpolar/routable-factory/zipball/6be8862cfa55992cadcb7240ff344b99bd0acc1b",
-                "reference": "6be8862cfa55992cadcb7240ff344b99bd0acc1b",
+                "url": "https://api.github.com/repos/phpolar/routable-factory/zipball/d069af024bcc926c8a573e0a866a297e85bf55ab",
+                "reference": "d069af024bcc926c8a573e0a866a297e85bf55ab",
                 "shasum": ""
             },
             "require": {
@@ -997,9 +997,9 @@
             "description": "Unifies implementations of factories used to create route targets",
             "support": {
                 "issues": "https://github.com/phpolar/routable-factory/issues",
-                "source": "https://github.com/phpolar/routable-factory/tree/1.0.0"
+                "source": "https://github.com/phpolar/routable-factory/tree/1.0.1"
             },
-            "time": "2023-09-02T19:34:49+00:00"
+            "time": "2024-12-01T20:04:07+00:00"
         },
         {
             "name": "phpolar/storage",

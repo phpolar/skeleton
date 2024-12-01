@@ -12,7 +12,7 @@
         "nyholm/psr7": "^1.7",
         "nyholm/psr7-server": "~1.1.0",
         "phpolar/phpolar": "^5.0",
-        "phpolar/pure-php": "^2.0",
+        "phpolar/pure-php": "^3.0",
         "phpolar/csrf-protection": "^3.0",
         "phpolar/csrf-response-filter": "^1.0",
         "phpolar/model": "^1.1",
