@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "baef6d2e789ba8174e911a49b9939123",
+    "content-hash": "7fb6c7515e2f90a5e741a6d45c940c4d",
     "packages": [
         {
             "name": "laminas/laminas-httphandlerrunner",
@@ -1154,16 +1154,16 @@
         },
         {
             "name": "picocss/pico",
-            "version": "v2.0.0-alpha1",
+            "version": "v2.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/picocss/pico.git",
-                "reference": "2e8cd6e786b6bbdbba7362936ae47d0c619652d3"
+                "reference": "6dc6489e69cc1f22daa938ebd38c02400032428c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/picocss/pico/zipball/2e8cd6e786b6bbdbba7362936ae47d0c619652d3",
-                "reference": "2e8cd6e786b6bbdbba7362936ae47d0c619652d3",
+                "url": "https://api.github.com/repos/picocss/pico/zipball/6dc6489e69cc1f22daa938ebd38c02400032428c",
+                "reference": "6dc6489e69cc1f22daa938ebd38c02400032428c",
                 "shasum": ""
             },
             "type": "library",
@@ -1196,9 +1196,9 @@
             ],
             "support": {
                 "issues": "https://github.com/picocss/pico/issues/",
-                "source": "https://github.com/picocss/pico/tree/v2.0.0-alpha1"
+                "source": "https://github.com/picocss/pico/tree/v2.0.6"
             },
-            "time": "2023-04-23T03:53:13+00:00"
+            "time": "2024-03-03T15:09:25+00:00"
         },
         {
             "name": "pimple/pimple",
@@ -2088,16 +2088,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "10.5.35",
+            "version": "10.5.36",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "7ac8b4e63f456046dcb4c9787da9382831a1874b"
+                "reference": "aa0a8ce701ea7ee314b0dfaa8970dc94f3f8c870"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/7ac8b4e63f456046dcb4c9787da9382831a1874b",
-                "reference": "7ac8b4e63f456046dcb4c9787da9382831a1874b",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/aa0a8ce701ea7ee314b0dfaa8970dc94f3f8c870",
+                "reference": "aa0a8ce701ea7ee314b0dfaa8970dc94f3f8c870",
                 "shasum": ""
             },
             "require": {
@@ -2169,7 +2169,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
                 "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/10.5.35"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/10.5.36"
             },
             "funding": [
                 {
@@ -2185,7 +2185,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-09-19T10:52:21+00:00"
+            "time": "2024-10-08T15:36:51+00:00"
         },
         {
             "name": "sebastian/cli-parser",
@@ -3157,8 +3157,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "nyholm/psr7-server": 20,
-        "picocss/pico": 15
+        "nyholm/psr7-server": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
