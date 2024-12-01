@@ -17,8 +17,7 @@
         "phpolar/csrf-response-filter": "^1.0",
         "phpolar/model": "^1.1",
         "phpolar/model-resolver": "^1.0",
-        "phpolar/property-injector": "^1.0",
-        "laminas/laminas-httphandlerrunner": "^2.9"
+        "phpolar/property-injector": "^1.0"
     },
     "autoload": {
         "psr-4": {
