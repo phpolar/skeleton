@@ -38,7 +38,9 @@
         "post-root-package-install": [
             "mkdir data",
             "mkdir -p src/templates",
-            "mkdir tests"
+            "mkdir tests",
+            "rm .github/",
+            "rm LICENSE"
         ],
         "post-install-cmd": [
             "@link-css-framework"
