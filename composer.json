@@ -39,7 +39,7 @@
             "mkdir data",
             "mkdir -p src/templates",
             "mkdir tests",
-            "rm .github/",
+            "rm -rf .github/",
             "rm LICENSE"
         ],
         "post-install-cmd": [
