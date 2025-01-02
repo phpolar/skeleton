@@ -394,16 +394,16 @@
         },
         {
             "name": "phpolar/csrf-protection",
-            "version": "3.1.1",
+            "version": "3.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpolar/csrf-protection.git",
-                "reference": "cee9cbd2c53cb7a28d12bc862dd458b7d6929a8a"
+                "reference": "8c3df5633f8f94efb1e1a9bd6b2e7a3162b28539"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpolar/csrf-protection/zipball/cee9cbd2c53cb7a28d12bc862dd458b7d6929a8a",
-                "reference": "cee9cbd2c53cb7a28d12bc862dd458b7d6929a8a",
+                "url": "https://api.github.com/repos/phpolar/csrf-protection/zipball/8c3df5633f8f94efb1e1a9bd6b2e7a3162b28539",
+                "reference": "8c3df5633f8f94efb1e1a9bd6b2e7a3162b28539",
                 "shasum": ""
             },
             "require": {
@@ -465,9 +465,9 @@
             ],
             "support": {
                 "issues": "https://github.com/phpolar/csrf-protection/issues",
-                "source": "https://github.com/phpolar/csrf-protection/tree/3.1.1"
+                "source": "https://github.com/phpolar/csrf-protection/tree/3.1.2"
             },
-            "time": "2024-12-01T21:19:08+00:00"
+            "time": "2025-01-02T03:38:31+00:00"
         },
         {
             "name": "phpolar/csrf-response-filter",
@@ -521,16 +521,16 @@
         },
         {
             "name": "phpolar/csv-file-storage",
-            "version": "0.6.1",
+            "version": "0.6.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpolar/csv-file-storage.git",
-                "reference": "e86f6620a1c9ab4dabbb5ad894251db084fe676f"
+                "reference": "4bede837dcfe27b9aea4fd79d1fb699318847d87"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpolar/csv-file-storage/zipball/e86f6620a1c9ab4dabbb5ad894251db084fe676f",
-                "reference": "e86f6620a1c9ab4dabbb5ad894251db084fe676f",
+                "url": "https://api.github.com/repos/phpolar/csv-file-storage/zipball/4bede837dcfe27b9aea4fd79d1fb699318847d87",
+                "reference": "4bede837dcfe27b9aea4fd79d1fb699318847d87",
                 "shasum": ""
             },
             "require": {
@@ -543,8 +543,8 @@
                 "phan/phan": "^5.4",
                 "php-coveralls/php-coveralls": "^2.5",
                 "phpmd/phpmd": "^2.13",
-                "phpstan/phpstan": "^1.9",
-                "phpunit/phpunit": "10.3.2",
+                "phpstan/phpstan": "^1.9 || ^2.0",
+                "phpunit/phpunit": "10.4.2",
                 "squizlabs/php_codesniffer": "^3.7"
             },
             "type": "library",
@@ -560,9 +560,9 @@
             "description": "Adds support for storing data on disk in CSV format.",
             "support": {
                 "issues": "https://github.com/phpolar/csv-file-storage/issues",
-                "source": "https://github.com/phpolar/csv-file-storage/tree/0.6.1"
+                "source": "https://github.com/phpolar/csv-file-storage/tree/0.6.2"
             },
-            "time": "2023-09-02T22:34:56+00:00"
+            "time": "2025-01-02T03:38:11+00:00"
         },
         {
             "name": "phpolar/http-codes",
@@ -955,16 +955,16 @@
         },
         {
             "name": "phpolar/routable-factory",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpolar/routable-factory.git",
-                "reference": "d069af024bcc926c8a573e0a866a297e85bf55ab"
+                "reference": "625d1b437e3f73efe2bd297b41d2017fcaa4b6d6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpolar/routable-factory/zipball/d069af024bcc926c8a573e0a866a297e85bf55ab",
-                "reference": "d069af024bcc926c8a573e0a866a297e85bf55ab",
+                "url": "https://api.github.com/repos/phpolar/routable-factory/zipball/625d1b437e3f73efe2bd297b41d2017fcaa4b6d6",
+                "reference": "625d1b437e3f73efe2bd297b41d2017fcaa4b6d6",
                 "shasum": ""
             },
             "require": {
@@ -997,9 +997,9 @@
             "description": "Unifies implementations of factories used to create route targets",
             "support": {
                 "issues": "https://github.com/phpolar/routable-factory/issues",
-                "source": "https://github.com/phpolar/routable-factory/tree/1.0.1"
+                "source": "https://github.com/phpolar/routable-factory/tree/1.0.2"
             },
-            "time": "2024-12-01T20:04:07+00:00"
+            "time": "2025-01-02T03:35:11+00:00"
         },
         {
             "name": "phpolar/storage",
