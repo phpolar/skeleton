@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d5a52dcc9f6a4616346d7c415180d85a",
+    "content-hash": "d4e10917fb8c2bdbad2e1f594ff2f353",
     "packages": [
         {
             "name": "laminas/laminas-httphandlerrunner",
@@ -521,21 +521,21 @@
         },
         {
             "name": "phpolar/csv-file-storage",
-            "version": "0.6.2",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpolar/csv-file-storage.git",
-                "reference": "4bede837dcfe27b9aea4fd79d1fb699318847d87"
+                "reference": "d1650dfebd42e6b80257015349bc7c8daac0fe44"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpolar/csv-file-storage/zipball/4bede837dcfe27b9aea4fd79d1fb699318847d87",
-                "reference": "4bede837dcfe27b9aea4fd79d1fb699318847d87",
+                "url": "https://api.github.com/repos/phpolar/csv-file-storage/zipball/d1650dfebd42e6b80257015349bc7c8daac0fe44",
+                "reference": "d1650dfebd42e6b80257015349bc7c8daac0fe44",
                 "shasum": ""
             },
             "require": {
                 "php": ">=8.1",
-                "phpolar/storage": "^2.0"
+                "phpolar/storage": "^3.0"
             },
             "require-dev": {
                 "ext-ast": "*",
@@ -544,7 +544,7 @@
                 "php-coveralls/php-coveralls": "^2.5",
                 "phpmd/phpmd": "^2.13",
                 "phpstan/phpstan": "^1.9 || ^2.0",
-                "phpunit/phpunit": "10.4.2",
+                "phpunit/phpunit": "^11.4",
                 "squizlabs/php_codesniffer": "^3.7"
             },
             "type": "library",
@@ -560,9 +560,9 @@
             "description": "Adds support for storing data on disk in CSV format.",
             "support": {
                 "issues": "https://github.com/phpolar/csv-file-storage/issues",
-                "source": "https://github.com/phpolar/csv-file-storage/tree/0.6.2"
+                "source": "https://github.com/phpolar/csv-file-storage/tree/1.0.0"
             },
-            "time": "2025-01-02T03:38:11+00:00"
+            "time": "2025-01-19T12:27:52+00:00"
         },
         {
             "name": "phpolar/http-codes",
@@ -704,16 +704,16 @@
         },
         {
             "name": "phpolar/phpolar",
-            "version": "5.0.2",
+            "version": "5.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpolar/phpolar.git",
-                "reference": "a67d9817615d5ce0f231eadecd56da11c5c9ba27"
+                "reference": "922910ba11970088fa6547ae21d55f9069eb067a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpolar/phpolar/zipball/a67d9817615d5ce0f231eadecd56da11c5c9ba27",
-                "reference": "a67d9817615d5ce0f231eadecd56da11c5c9ba27",
+                "url": "https://api.github.com/repos/phpolar/phpolar/zipball/922910ba11970088fa6547ae21d55f9069eb067a",
+                "reference": "922910ba11970088fa6547ae21d55f9069eb067a",
                 "shasum": ""
             },
             "require": {
@@ -743,9 +743,9 @@
                 "phpolar/csrf-protection": "^3.1",
                 "phpolar/http-message-test-utils": "^0.1.0 || ^0.2.0",
                 "phpolar/model": "^1.2.2",
-                "phpolar/pure-php": "^3.0",
+                "phpolar/pure-php": "^2.0",
                 "phpstan/phpstan": "^2.0.3",
-                "phpunit/phpunit": "^11.1.3",
+                "phpunit/phpunit": "^10 || ^11.4",
                 "picocss/pico": "^2.0.6",
                 "squizlabs/php_codesniffer": "^3.7"
             },
@@ -768,9 +768,9 @@
             "description": "A minimal PHP framework",
             "support": {
                 "issues": "https://github.com/phpolar/phpolar/issues",
-                "source": "https://github.com/phpolar/phpolar/tree/5.0.2"
+                "source": "https://github.com/phpolar/phpolar/tree/5.0.4"
             },
-            "time": "2024-12-02T02:55:35+00:00"
+            "time": "2025-01-19T15:16:42+00:00"
         },
         {
             "name": "phpolar/property-injector",
@@ -1003,16 +1003,16 @@
         },
         {
             "name": "phpolar/storage",
-            "version": "2.0.0",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpolar/storage.git",
-                "reference": "0c72e6ec91d7be7fd3f60adc1064949c54567c4c"
+                "reference": "eb2716c49a938b952d2787ca397dd643962491bd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpolar/storage/zipball/0c72e6ec91d7be7fd3f60adc1064949c54567c4c",
-                "reference": "0c72e6ec91d7be7fd3f60adc1064949c54567c4c",
+                "url": "https://api.github.com/repos/phpolar/storage/zipball/eb2716c49a938b952d2787ca397dd643962491bd",
+                "reference": "eb2716c49a938b952d2787ca397dd643962491bd",
                 "shasum": ""
             },
             "require": {
@@ -1022,11 +1022,11 @@
                 "ext-ast": "*",
                 "ext-openssl": "*",
                 "phan/phan": "^5.4",
-                "php-coveralls/php-coveralls": "^2.5",
-                "phpmd/phpmd": "^2.13",
+                "php-coveralls/php-coveralls": "^2.7.0",
+                "phpmd/phpmd": "^2.15.0",
                 "phpstan/phpstan": "^1.9",
-                "phpunit/phpunit": "^10.0",
-                "squizlabs/php_codesniffer": "^3.7"
+                "phpunit/phpunit": "^11.4.4",
+                "squizlabs/php_codesniffer": "^3.11.1"
             },
             "type": "library",
             "autoload": {
@@ -1041,9 +1041,9 @@
             "description": "A convenient tool to speed up the creation of data storage for application development.",
             "support": {
                 "issues": "https://github.com/phpolar/storage/issues",
-                "source": "https://github.com/phpolar/storage/tree/2.0.0"
+                "source": "https://github.com/phpolar/storage/tree/3.0.0"
             },
-            "time": "2023-09-02T23:34:51+00:00"
+            "time": "2025-01-19T01:50:21+00:00"
         },
         {
             "name": "phpolar/storage-driver",
@@ -2076,16 +2076,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "10.5.40",
+            "version": "10.5.41",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "e6ddda95af52f69c1e0c7b4f977cccb58048798c"
+                "reference": "e76586fa3d49714f230221734b44892e384109d7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/e6ddda95af52f69c1e0c7b4f977cccb58048798c",
-                "reference": "e6ddda95af52f69c1e0c7b4f977cccb58048798c",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/e76586fa3d49714f230221734b44892e384109d7",
+                "reference": "e76586fa3d49714f230221734b44892e384109d7",
                 "shasum": ""
             },
             "require": {
@@ -2157,7 +2157,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
                 "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/10.5.40"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/10.5.41"
             },
             "funding": [
                 {
@@ -2173,7 +2173,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-12-21T05:49:06+00:00"
+            "time": "2025-01-13T09:33:05+00:00"
         },
         {
             "name": "sebastian/cli-parser",

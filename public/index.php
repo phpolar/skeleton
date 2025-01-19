@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 /**
- * ==========================================================
+ *
  * An application using the PHPolar Microframework
  * ==========================================================
  *
@@ -21,7 +21,7 @@ chdir("../");
 require "vendor/autoload.php";
 
 /**
- * ==========================================================
+ *
  * Set up dependency injection
  * ==========================================================
  *
@@ -35,7 +35,7 @@ $psr11Container = new \Pimple\Psr11\Container($dependencyMap);
 (new ContainerLoader())->load($psr11Container, $dependencyMap);
 
 /**
- * ==========================================================
+ *
  * Get the request
  * ==========================================================
  *
@@ -50,7 +50,7 @@ $serverRequest = (new \Nyholm\Psr7Server\ServerRequestCreator(
 ))->fromGlobals();
 
 /**
- * ==========================================================
+ *
  * Configure the web application
  * ==========================================================
  */
