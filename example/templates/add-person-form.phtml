@@ -1,14 +1,11 @@
-<!DOCTYPE html>
 <?php
 
 use Phpolar\Example\Person;
 use Phpolar\Model\InputTypes;
 
-/**
- * @var Person $view
- */
-$view = $this;
+(function (Person $view) {
 ?>
+<!DOCTYPE html>
 <html lang="en" data-theme="light">
 
 <head>
@@ -67,3 +64,5 @@ $view = $this;
 </body>
 
 </html>
+<?php
+})($this);

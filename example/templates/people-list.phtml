@@ -1,13 +1,10 @@
-<!DOCTYPE html>
 <?php
 
 use Phpolar\Example\PeopleList;
 
-/**
- * @var PeopleList $view
- */
-$view = $this;
+(function (PeopleList $view) {
 ?>
+<!DOCTYPE html>
 <html lang="en" data-theme="light">
 
 <head>
@@ -88,3 +85,5 @@ $view = $this;
 </body>
 
 </html>
+<?php
+})($this);
