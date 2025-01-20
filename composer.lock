@@ -864,20 +864,20 @@
         },
         {
             "name": "phpolar/pure-php",
-            "version": "3.0.1",
+            "version": "3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpolar/pure-php.git",
-                "reference": "86bbc4b96c05818a421bfb73fd5f6d65265b8ea2"
+                "reference": "1f7848364f568f86000a86b7fe4be0aa16c234d9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpolar/pure-php/zipball/86bbc4b96c05818a421bfb73fd5f6d65265b8ea2",
-                "reference": "86bbc4b96c05818a421bfb73fd5f6d65265b8ea2",
+                "url": "https://api.github.com/repos/phpolar/pure-php/zipball/1f7848364f568f86000a86b7fe4be0aa16c234d9",
+                "reference": "1f7848364f568f86000a86b7fe4be0aa16c234d9",
                 "shasum": ""
             },
             "require": {
-                "php": ">= 8.1"
+                "php": "^7.4 || ^8.0"
             },
             "require-dev": {
                 "ext-mbstring": "*",
@@ -913,9 +913,9 @@
             ],
             "support": {
                 "issues": "https://github.com/phpolar/pure-php/issues",
-                "source": "https://github.com/phpolar/pure-php/tree/3.0.1"
+                "source": "https://github.com/phpolar/pure-php/tree/3.1.0"
             },
-            "time": "2025-01-19T20:43:59+00:00"
+            "time": "2025-01-20T16:48:37+00:00"
         },
         {
             "name": "phpolar/routable",
@@ -3209,10 +3209,10 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {},
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": {},
-    "platform-dev": {},
-    "plugin-api-version": "2.6.0"
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.3.0"
 }
