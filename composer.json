@@ -16,7 +16,8 @@
         "phpolar/csrf-response-filter": "^1.0",
         "phpolar/model": "^1.1",
         "phpolar/model-resolver": "^1.0",
-        "phpolar/property-injector": "^1.0"
+        "phpolar/property-injector": "^1.0",
+        "php": "7.4 - 8.4"
     },
     "autoload": {
         "psr-4": {

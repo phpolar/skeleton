@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b57820352a3097402aeed0d34ef50c77",
+    "content-hash": "d240c77c9de5d2135d88bf6bcc75c8b7",
     "packages": [
         {
             "name": "laminas/laminas-httphandlerrunner",
@@ -3212,7 +3212,9 @@
     "stability-flags": {},
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": {},
+    "platform": {
+        "php": "7.4 - 8.4"
+    },
     "platform-dev": {},
     "plugin-api-version": "2.6.0"
 }
