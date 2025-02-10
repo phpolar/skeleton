@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ec474319beacd7d2d8e1a1b149c6cfc1",
+    "content-hash": "cfe1a4658a1533add57da671d98e1b03",
     "packages": [
         {
             "name": "laminas/laminas-httphandlerrunner",
@@ -705,16 +705,16 @@
         },
         {
             "name": "phpolar/phpolar",
-            "version": "5.1.0",
+            "version": "5.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpolar/phpolar.git",
-                "reference": "2aad378c1bdcbb862dc511caceb7ddc75a1fa327"
+                "reference": "e293794106ad203deb843c52034df7d152f6926e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpolar/phpolar/zipball/2aad378c1bdcbb862dc511caceb7ddc75a1fa327",
-                "reference": "2aad378c1bdcbb862dc511caceb7ddc75a1fa327",
+                "url": "https://api.github.com/repos/phpolar/phpolar/zipball/e293794106ad203deb843c52034df7d152f6926e",
+                "reference": "e293794106ad203deb843c52034df7d152f6926e",
                 "shasum": ""
             },
             "require": {
@@ -769,9 +769,9 @@
             "description": "A minimal PHP framework",
             "support": {
                 "issues": "https://github.com/phpolar/phpolar/issues",
-                "source": "https://github.com/phpolar/phpolar/tree/5.1.0"
+                "source": "https://github.com/phpolar/phpolar/tree/5.2.0"
             },
-            "time": "2025-01-20T16:35:00+00:00"
+            "time": "2025-02-10T03:04:57+00:00"
         },
         {
             "name": "phpolar/property-injector",
