@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cfe1a4658a1533add57da671d98e1b03",
+    "content-hash": "a18b44f557a10e8790e7dec1f4072ed6",
     "packages": [
         {
             "name": "laminas/laminas-httphandlerrunner",
@@ -615,16 +615,16 @@
         },
         {
             "name": "phpolar/model",
-            "version": "1.2.4",
+            "version": "1.2.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpolar/model.git",
-                "reference": "3675756387199c4774eecbb21d09dcd78a2f7f1a"
+                "reference": "d692d35842abfbf0172cb09d99a1b258fe752815"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpolar/model/zipball/3675756387199c4774eecbb21d09dcd78a2f7f1a",
-                "reference": "3675756387199c4774eecbb21d09dcd78a2f7f1a",
+                "url": "https://api.github.com/repos/phpolar/model/zipball/d692d35842abfbf0172cb09d99a1b258fe752815",
+                "reference": "d692d35842abfbf0172cb09d99a1b258fe752815",
                 "shasum": ""
             },
             "require": {
@@ -640,7 +640,7 @@
                 "phan/phan": "^5.4",
                 "php-coveralls/php-coveralls": "^2.5",
                 "phpmd/phpmd": "^2.13",
-                "phpstan/phpstan": "^1.9",
+                "phpstan/phpstan": "^2.0",
                 "phpunit/phpunit": "^10.0 || ^11.4",
                 "squizlabs/php_codesniffer": "^3.7"
             },
@@ -659,9 +659,9 @@
             "description": "Provides support for configuring the properties of an object for validation, formatting, and storage.",
             "support": {
                 "issues": "https://github.com/phpolar/model/issues",
-                "source": "https://github.com/phpolar/model/tree/1.2.4"
+                "source": "https://github.com/phpolar/model/tree/1.2.5"
             },
-            "time": "2025-01-20T14:19:19+00:00"
+            "time": "2025-02-14T04:22:40+00:00"
         },
         {
             "name": "phpolar/model-resolver",
@@ -864,16 +864,16 @@
         },
         {
             "name": "phpolar/pure-php",
-            "version": "3.1.0",
+            "version": "3.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpolar/pure-php.git",
-                "reference": "1f7848364f568f86000a86b7fe4be0aa16c234d9"
+                "reference": "41dba7c771697ff6ccc2f46ab5f0402191435189"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpolar/pure-php/zipball/1f7848364f568f86000a86b7fe4be0aa16c234d9",
-                "reference": "1f7848364f568f86000a86b7fe4be0aa16c234d9",
+                "url": "https://api.github.com/repos/phpolar/pure-php/zipball/41dba7c771697ff6ccc2f46ab5f0402191435189",
+                "reference": "41dba7c771697ff6ccc2f46ab5f0402191435189",
                 "shasum": ""
             },
             "require": {
@@ -913,9 +913,9 @@
             ],
             "support": {
                 "issues": "https://github.com/phpolar/pure-php/issues",
-                "source": "https://github.com/phpolar/pure-php/tree/3.1.0"
+                "source": "https://github.com/phpolar/pure-php/tree/3.1.1"
             },
-            "time": "2025-01-20T16:48:37+00:00"
+            "time": "2025-02-14T04:27:05+00:00"
         },
         {
             "name": "phpolar/routable",
@@ -1095,16 +1095,16 @@
         },
         {
             "name": "phpolar/validators",
-            "version": "1.2.1",
+            "version": "1.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpolar/validators.git",
-                "reference": "c1dee163ce6a62dd3ca639680601366994d160c6"
+                "reference": "a9e94707e53abb337dbc667fa50e5936744883b2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpolar/validators/zipball/c1dee163ce6a62dd3ca639680601366994d160c6",
-                "reference": "c1dee163ce6a62dd3ca639680601366994d160c6",
+                "url": "https://api.github.com/repos/phpolar/validators/zipball/a9e94707e53abb337dbc667fa50e5936744883b2",
+                "reference": "a9e94707e53abb337dbc667fa50e5936744883b2",
                 "shasum": ""
             },
             "require": {
@@ -1137,9 +1137,9 @@
             "description": "A set of property validators",
             "support": {
                 "issues": "https://github.com/phpolar/validators/issues",
-                "source": "https://github.com/phpolar/validators/tree/1.2.1"
+                "source": "https://github.com/phpolar/validators/tree/1.2.3"
             },
-            "time": "2025-01-20T14:16:29+00:00"
+            "time": "2025-02-14T04:40:59+00:00"
         },
         {
             "name": "picocss/pico",

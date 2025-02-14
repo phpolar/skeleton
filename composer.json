@@ -7,7 +7,7 @@
         "phpolar/csv-file-storage": "^1.1",
         "pimple/pimple": "^3.5",
         "picocss/pico": "^v2.0.6",
-        "phpolar/validators": "^1.1",
+        "phpolar/validators": "^1.2",
         "nyholm/psr7": "^1.7",
         "nyholm/psr7-server": "~1.1.0",
         "phpolar/phpolar": "^5.2",
