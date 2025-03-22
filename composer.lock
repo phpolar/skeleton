@@ -522,20 +522,20 @@
         },
         {
             "name": "phpolar/csv-file-storage",
-            "version": "1.1.2",
+            "version": "1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpolar/csv-file-storage.git",
-                "reference": "2304144b2b8da544d116b6486b7567d9bcfad384"
+                "reference": "1bb8fb59a1c305635d9a7b091a24cc651a4a7eb6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpolar/csv-file-storage/zipball/2304144b2b8da544d116b6486b7567d9bcfad384",
-                "reference": "2304144b2b8da544d116b6486b7567d9bcfad384",
+                "url": "https://api.github.com/repos/phpolar/csv-file-storage/zipball/1bb8fb59a1c305635d9a7b091a24cc651a4a7eb6",
+                "reference": "1bb8fb59a1c305635d9a7b091a24cc651a4a7eb6",
                 "shasum": ""
             },
             "require": {
-                "php": "~8.1 | ~8.2 | ~8.3 | ~8.4",
+                "php": "~8.3 | ~8.4",
                 "phpolar/storage": "^3.0"
             },
             "require-dev": {
@@ -561,9 +561,9 @@
             "description": "Adds support for storing data on disk in CSV format.",
             "support": {
                 "issues": "https://github.com/phpolar/csv-file-storage/issues",
-                "source": "https://github.com/phpolar/csv-file-storage/tree/1.1.2"
+                "source": "https://github.com/phpolar/csv-file-storage/tree/1.2.1"
             },
-            "time": "2025-01-31T04:06:45+00:00"
+            "time": "2025-03-21T09:15:07+00:00"
         },
         {
             "name": "phpolar/http-codes",
@@ -1004,20 +1004,20 @@
         },
         {
             "name": "phpolar/storage",
-            "version": "3.0.0",
+            "version": "3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpolar/storage.git",
-                "reference": "eb2716c49a938b952d2787ca397dd643962491bd"
+                "reference": "d53e7119026c993d94b8b803f826df94c1de2a6b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpolar/storage/zipball/eb2716c49a938b952d2787ca397dd643962491bd",
-                "reference": "eb2716c49a938b952d2787ca397dd643962491bd",
+                "url": "https://api.github.com/repos/phpolar/storage/zipball/d53e7119026c993d94b8b803f826df94c1de2a6b",
+                "reference": "d53e7119026c993d94b8b803f826df94c1de2a6b",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.1"
+                "php": ">=8.3"
             },
             "require-dev": {
                 "ext-ast": "*",
@@ -1042,9 +1042,9 @@
             "description": "A convenient tool to speed up the creation of data storage for application development.",
             "support": {
                 "issues": "https://github.com/phpolar/storage/issues",
-                "source": "https://github.com/phpolar/storage/tree/3.0.0"
+                "source": "https://github.com/phpolar/storage/tree/3.1.0"
             },
-            "time": "2025-01-19T01:50:21+00:00"
+            "time": "2025-03-20T04:39:08+00:00"
         },
         {
             "name": "phpolar/storage-driver",
