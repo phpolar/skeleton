@@ -11,6 +11,9 @@ permissions:
 
 jobs:
   dependabot:
+    env:
+      PR_URL: ${{github.event.pull_request.html_url}}
+      GH_TOKEN: ${{secrets.GITHUB_TOKEN}}
     runs-on: ubuntu-24.04
     if: github.event.pull_request.user.login == 'dependabot[bot]' || github.actor == 'dependabot[bot]'
 
@@ -32,14 +35,8 @@ jobs:
           contains(fromJSON('["version-update:semver-patch","version-update:semver-minor"]'), steps.dependabot-metadata.outputs.update-type) &&
           contains('direct:development', steps.dependabot-metadata.outputs.dependency-type)
         run: gh pr merge --auto --merge "$PR_URL"
-        env:
-          PR_URL: ${{github.event.pull_request.html_url}}
-          GH_TOKEN: ${{secrets.GITHUB_TOKEN}}
       - name: Enable auto-merge for Dependabot PRs of prod dependencies
         if: |
           contains(fromJSON('["version-update:semver-patch","version-update:semver-minor"]'), steps.dependabot-metadata.outputs.update-type) &&
           contains('direct:production', steps.dependabot-metadata.outputs.dependency-type)
         run: gh pr merge --auto --merge "$PR_URL"
-        env:
-          PR_URL: ${{github.event.pull_request.html_url}}
-          GH_TOKEN: ${{secrets.GITHUB_TOKEN}}
