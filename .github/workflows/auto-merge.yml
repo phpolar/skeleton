@@ -30,7 +30,7 @@ jobs:
       - name: Enable auto-merge for Dependabot PRs of dev dependencies
         if: |
           contains(fromJSON('["version-update:semver-patch","version-update:semver-minor"]'), steps.dependabot-metadata.outputs.update-type) &&
-        steps.dependabot-metadata.outputs.dependency-type == 'direct:development'
+          contains('direct:development', steps.dependabot-metadata.outputs.dependency-type)
         run: gh pr merge --auto --merge "$PR_URL"
         env:
           PR_URL: ${{github.event.pull_request.html_url}}
@@ -38,7 +38,7 @@ jobs:
       - name: Enable auto-merge for Dependabot PRs of prod dependencies
         if: |
           contains(fromJSON('["version-update:semver-patch","version-update:semver-minor"]'), steps.dependabot-metadata.outputs.update-type) &&
-        steps.dependabot-metadata.outputs.dependency-type == 'direct:production'
+          contains('direct:production', steps.dependabot-metadata.outputs.dependency-type)
         run: gh pr merge --auto --merge "$PR_URL"
         env:
           PR_URL: ${{github.event.pull_request.html_url}}
