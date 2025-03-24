@@ -10,7 +10,7 @@
         "phpolar/validators": "^1.2",
         "nyholm/psr7": "^1.7",
         "nyholm/psr7-server": "~1.1.0",
-        "phpolar/phpolar": "^5.2",
+        "phpolar/phpolar": "^6.0",
         "phpolar/pure-php": "^2.0 || ^3.0",
         "phpolar/csrf-protection": "^3.0",
         "phpolar/csrf-response-filter": "^1.0",
