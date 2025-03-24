@@ -1094,20 +1094,20 @@
         },
         {
             "name": "phpolar/validators",
-            "version": "1.2.3",
+            "version": "1.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpolar/validators.git",
-                "reference": "a9e94707e53abb337dbc667fa50e5936744883b2"
+                "reference": "da6a751cb5283853a6645c431836c9d1a7fc03d0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpolar/validators/zipball/a9e94707e53abb337dbc667fa50e5936744883b2",
-                "reference": "a9e94707e53abb337dbc667fa50e5936744883b2",
+                "url": "https://api.github.com/repos/phpolar/validators/zipball/da6a751cb5283853a6645c431836c9d1a7fc03d0",
+                "reference": "da6a751cb5283853a6645c431836c9d1a7fc03d0",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.1",
+                "php": ">=8.3",
                 "php-contrib/validator": "^2.0"
             },
             "provide": {
@@ -1136,9 +1136,9 @@
             "description": "A set of property validators",
             "support": {
                 "issues": "https://github.com/phpolar/validators/issues",
-                "source": "https://github.com/phpolar/validators/tree/1.2.3"
+                "source": "https://github.com/phpolar/validators/tree/1.2.4"
             },
-            "time": "2025-02-14T04:40:59+00:00"
+            "time": "2025-03-20T04:35:26+00:00"
         },
         {
             "name": "picocss/pico",
