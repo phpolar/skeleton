@@ -864,20 +864,20 @@
         },
         {
             "name": "phpolar/pure-php",
-            "version": "3.1.1",
+            "version": "3.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpolar/pure-php.git",
-                "reference": "41dba7c771697ff6ccc2f46ab5f0402191435189"
+                "reference": "0cac1d9547c9ec7e30a8fcf848eb82899276997e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpolar/pure-php/zipball/41dba7c771697ff6ccc2f46ab5f0402191435189",
-                "reference": "41dba7c771697ff6ccc2f46ab5f0402191435189",
+                "url": "https://api.github.com/repos/phpolar/pure-php/zipball/0cac1d9547c9ec7e30a8fcf848eb82899276997e",
+                "reference": "0cac1d9547c9ec7e30a8fcf848eb82899276997e",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.4 || ^8.0"
+                "php": ">=8.3"
             },
             "require-dev": {
                 "ext-mbstring": "*",
@@ -913,9 +913,9 @@
             ],
             "support": {
                 "issues": "https://github.com/phpolar/pure-php/issues",
-                "source": "https://github.com/phpolar/pure-php/tree/3.1.1"
+                "source": "https://github.com/phpolar/pure-php/tree/3.1.2"
             },
-            "time": "2025-02-14T04:27:05+00:00"
+            "time": "2025-03-21T03:18:04+00:00"
         },
         {
             "name": "phpolar/routable",
