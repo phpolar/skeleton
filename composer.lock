@@ -337,21 +337,20 @@
         },
         {
             "name": "phpolar/core",
-            "version": "4.0.1",
+            "version": "4.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpolar/core.git",
-                "reference": "fcb3f229133cafb135efe35a18b18cf2fe8ecf6b"
+                "reference": "53c753a5a85b9a5f173d5642f397d33f0e5991bc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpolar/core/zipball/fcb3f229133cafb135efe35a18b18cf2fe8ecf6b",
-                "reference": "fcb3f229133cafb135efe35a18b18cf2fe8ecf6b",
+                "url": "https://api.github.com/repos/phpolar/core/zipball/53c753a5a85b9a5f173d5642f397d33f0e5991bc",
+                "reference": "53c753a5a85b9a5f173d5642f397d33f0e5991bc",
                 "shasum": ""
             },
             "require": {
                 "ext-mbstring": "*",
-                "php": ">=8.1",
                 "psr/http-message": "^2.0",
                 "psr/http-server-handler": "^1.0",
                 "psr/http-server-middleware": "^1.0"
@@ -363,7 +362,7 @@
                 "php-coveralls/php-coveralls": "^2.5.3",
                 "phpmd/phpmd": "^2.13",
                 "phpolar/http-message-test-utils": "^0.1.0 || ^0.2.0",
-                "phpstan/phpstan": "^1.9.14",
+                "phpstan/phpstan": "^1.9.14 || ^2.0.0",
                 "phpunit/phpunit": "^11.4",
                 "squizlabs/php_codesniffer": "^3.7.1"
             },
@@ -389,9 +388,9 @@
             "description": "The internal components of the PHPolar Microframework",
             "support": {
                 "issues": "https://github.com/phpolar/core/issues",
-                "source": "https://github.com/phpolar/core/tree/4.0.1"
+                "source": "https://github.com/phpolar/core/tree/4.0.2"
             },
-            "time": "2024-12-02T02:39:30+00:00"
+            "time": "2025-03-20T03:55:55+00:00"
         },
         {
             "name": "phpolar/csrf-protection",
@@ -615,20 +614,20 @@
         },
         {
             "name": "phpolar/model",
-            "version": "1.2.5",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpolar/model.git",
-                "reference": "d692d35842abfbf0172cb09d99a1b258fe752815"
+                "reference": "b31236340769f0e81900f46076573576eb832646"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpolar/model/zipball/d692d35842abfbf0172cb09d99a1b258fe752815",
-                "reference": "d692d35842abfbf0172cb09d99a1b258fe752815",
+                "url": "https://api.github.com/repos/phpolar/model/zipball/b31236340769f0e81900f46076573576eb832646",
+                "reference": "b31236340769f0e81900f46076573576eb832646",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.1",
+                "php": ">=8.3",
                 "php-contrib/validator": "^2.0",
                 "phpolar/core": "^4.0.0",
                 "phpolar/model-resolver": "^1.0",
@@ -659,9 +658,9 @@
             "description": "Provides support for configuring the properties of an object for validation, formatting, and storage.",
             "support": {
                 "issues": "https://github.com/phpolar/model/issues",
-                "source": "https://github.com/phpolar/model/tree/1.2.5"
+                "source": "https://github.com/phpolar/model/tree/1.3.0"
             },
-            "time": "2025-02-14T04:22:40+00:00"
+            "time": "2025-03-21T03:08:11+00:00"
         },
         {
             "name": "phpolar/model-resolver",
@@ -864,20 +863,20 @@
         },
         {
             "name": "phpolar/pure-php",
-            "version": "3.1.1",
+            "version": "3.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpolar/pure-php.git",
-                "reference": "41dba7c771697ff6ccc2f46ab5f0402191435189"
+                "reference": "0cac1d9547c9ec7e30a8fcf848eb82899276997e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpolar/pure-php/zipball/41dba7c771697ff6ccc2f46ab5f0402191435189",
-                "reference": "41dba7c771697ff6ccc2f46ab5f0402191435189",
+                "url": "https://api.github.com/repos/phpolar/pure-php/zipball/0cac1d9547c9ec7e30a8fcf848eb82899276997e",
+                "reference": "0cac1d9547c9ec7e30a8fcf848eb82899276997e",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.4 || ^8.0"
+                "php": ">=8.3"
             },
             "require-dev": {
                 "ext-mbstring": "*",
@@ -913,9 +912,9 @@
             ],
             "support": {
                 "issues": "https://github.com/phpolar/pure-php/issues",
-                "source": "https://github.com/phpolar/pure-php/tree/3.1.1"
+                "source": "https://github.com/phpolar/pure-php/tree/3.1.2"
             },
-            "time": "2025-02-14T04:27:05+00:00"
+            "time": "2025-03-21T03:18:04+00:00"
         },
         {
             "name": "phpolar/routable",
@@ -1048,24 +1047,24 @@
         },
         {
             "name": "phpolar/storage-driver",
-            "version": "1.0.0",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpolar/storage-driver.git",
-                "reference": "1bf2a8049e4273e29fb6022cd07f2cbbaf3e983a"
+                "reference": "9486c75b122433d02e5fc413fd163ecabc9dac23"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpolar/storage-driver/zipball/1bf2a8049e4273e29fb6022cd07f2cbbaf3e983a",
-                "reference": "1bf2a8049e4273e29fb6022cd07f2cbbaf3e983a",
+                "url": "https://api.github.com/repos/phpolar/storage-driver/zipball/9486c75b122433d02e5fc413fd163ecabc9dac23",
+                "reference": "9486c75b122433d02e5fc413fd163ecabc9dac23",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.0"
+                "php": ">=8.3"
             },
             "require-dev": {
-                "php-coveralls/php-coveralls": "^2.5",
-                "phpunit/phpunit": "^9.5"
+                "php-coveralls/php-coveralls": "^2.7",
+                "phpunit/phpunit": "^10.0 || ^11.4"
             },
             "type": "library",
             "autoload": {
@@ -1089,26 +1088,26 @@
             "description": "Provides an interface for database storage driver implementations.",
             "support": {
                 "issues": "https://github.com/phpolar/storage-driver/issues",
-                "source": "https://github.com/phpolar/storage-driver/tree/1.0.0"
+                "source": "https://github.com/phpolar/storage-driver/tree/1.0.2"
             },
-            "time": "2023-09-02T23:30:29+00:00"
+            "time": "2025-03-20T04:42:30+00:00"
         },
         {
             "name": "phpolar/validators",
-            "version": "1.2.3",
+            "version": "1.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpolar/validators.git",
-                "reference": "a9e94707e53abb337dbc667fa50e5936744883b2"
+                "reference": "da6a751cb5283853a6645c431836c9d1a7fc03d0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpolar/validators/zipball/a9e94707e53abb337dbc667fa50e5936744883b2",
-                "reference": "a9e94707e53abb337dbc667fa50e5936744883b2",
+                "url": "https://api.github.com/repos/phpolar/validators/zipball/da6a751cb5283853a6645c431836c9d1a7fc03d0",
+                "reference": "da6a751cb5283853a6645c431836c9d1a7fc03d0",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.1",
+                "php": ">=8.3",
                 "php-contrib/validator": "^2.0"
             },
             "provide": {
@@ -1137,9 +1136,9 @@
             "description": "A set of property validators",
             "support": {
                 "issues": "https://github.com/phpolar/validators/issues",
-                "source": "https://github.com/phpolar/validators/tree/1.2.3"
+                "source": "https://github.com/phpolar/validators/tree/1.2.4"
             },
-            "time": "2025-02-14T04:40:59+00:00"
+            "time": "2025-03-20T04:35:26+00:00"
         },
         {
             "name": "picocss/pico",
@@ -2078,16 +2077,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "12.0.9",
+            "version": "12.0.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "7835bb4276780e0bbb385ce0a777b839e03096db"
+                "reference": "6075843014de23bcd6992842d69ca99d25d6a433"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/7835bb4276780e0bbb385ce0a777b839e03096db",
-                "reference": "7835bb4276780e0bbb385ce0a777b839e03096db",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/6075843014de23bcd6992842d69ca99d25d6a433",
+                "reference": "6075843014de23bcd6992842d69ca99d25d6a433",
                 "shasum": ""
             },
             "require": {
@@ -2155,7 +2154,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
                 "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/12.0.9"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/12.0.10"
             },
             "funding": [
                 {
@@ -2171,7 +2170,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-03-19T13:47:33+00:00"
+            "time": "2025-03-23T16:03:59+00:00"
         },
         {
             "name": "sebastian/cli-parser",
