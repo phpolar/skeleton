@@ -32,6 +32,9 @@
         "test": [
             "composer exec \"phpunit\""
         ],
+	"ci:test": {
+	    "@test"
+	},
         "link-css-framework": [
             "ln -s -f ../../../vendor/picocss/pico/css/pico.classless.min.css public/resources/css/"
         ],
