@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ccc4378d38e60b7bf5a0ac4dd68ca49f",
+    "content-hash": "37550267b99a27a002f8fe758a5773ef",
     "packages": [
         {
             "name": "laminas/laminas-httphandlerrunner",
@@ -704,22 +704,22 @@
         },
         {
             "name": "phpolar/phpolar",
-            "version": "5.2.0",
+            "version": "6.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpolar/phpolar.git",
-                "reference": "e293794106ad203deb843c52034df7d152f6926e"
+                "reference": "7a786486008622ac924a2320506a188b7556437c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpolar/phpolar/zipball/e293794106ad203deb843c52034df7d152f6926e",
-                "reference": "e293794106ad203deb843c52034df7d152f6926e",
+                "url": "https://api.github.com/repos/phpolar/phpolar/zipball/7a786486008622ac924a2320506a188b7556437c",
+                "reference": "7a786486008622ac924a2320506a188b7556437c",
                 "shasum": ""
             },
             "require": {
                 "ext-mbstring": "*",
                 "laminas/laminas-httphandlerrunner": "^2.9",
-                "php": ">=8.1",
+                "php": ">=8.3",
                 "php-contrib/authenticator": "^2.0",
                 "php-contrib/response-filter": "^2.0",
                 "php-contrib/validator": "^2.0",
@@ -768,9 +768,9 @@
             "description": "A minimal PHP framework",
             "support": {
                 "issues": "https://github.com/phpolar/phpolar/issues",
-                "source": "https://github.com/phpolar/phpolar/tree/5.2.0"
+                "source": "https://github.com/phpolar/phpolar/tree/6.0.0"
             },
-            "time": "2025-02-10T03:04:57+00:00"
+            "time": "2025-03-20T03:25:15+00:00"
         },
         {
             "name": "phpolar/property-injector",
