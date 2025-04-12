@@ -30,10 +30,10 @@
     },
     "scripts": {
         "test": [
-            "composer exec \"phpunit\""
+            "phpunit --color=always"
         ],
 	"ci:test": [
-	    "@test"
+	    "composer exec \"@test --configuration=phpunit.ci.xml\""
 	],
         "link-css-framework": [
             "ln -s -f ../../../vendor/picocss/pico/css/pico.classless.min.css public/resources/css/"
