@@ -32,16 +32,14 @@
         "test": [
             "phpunit --color=always"
         ],
-	"ci:test": [
-	    "composer exec \"@test --configuration=phpunit.ci.xml\""
-	],
+        "ci:test": [
+            "composer exec \"@test --configuration=phpunit.ci.xml\""
+        ],
         "link-css-framework": [
             "ln -s -f ../../../vendor/picocss/pico/css/pico.classless.min.css public/resources/css/"
         ],
         "post-root-package-install": [
-            "mkdir data",
-            "mkdir -p src/templates",
-            "mkdir tests",
+            "mkdir --parent data tests src/templates",
             "rm -rf .github/",
             "rm LICENSE"
         ],
