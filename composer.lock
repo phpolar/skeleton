@@ -774,16 +774,16 @@
         },
         {
             "name": "phpolar/property-injector",
-            "version": "1.1.0",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpolar/property-injector.git",
-                "reference": "0be538aad59020bd74d3774f735ef13821a8d199"
+                "reference": "13cffe8872f5cedaa76e76297f5c70a455be4b4a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpolar/property-injector/zipball/0be538aad59020bd74d3774f735ef13821a8d199",
-                "reference": "0be538aad59020bd74d3774f735ef13821a8d199",
+                "url": "https://api.github.com/repos/phpolar/property-injector/zipball/13cffe8872f5cedaa76e76297f5c70a455be4b4a",
+                "reference": "13cffe8872f5cedaa76e76297f5c70a455be4b4a",
                 "shasum": ""
             },
             "require": {
@@ -801,7 +801,7 @@
                 "php-coveralls/php-coveralls": "^2.5",
                 "phpmd/phpmd": "^2.13",
                 "phpstan/phpstan": "^1.9",
-                "phpunit/phpunit": "10.3.2",
+                "phpunit/phpunit": "^10.0 || ^11.4",
                 "squizlabs/php_codesniffer": "^3.7"
             },
             "type": "library",
@@ -817,9 +817,9 @@
             "description": "Provides automatic dependency injection for properties.",
             "support": {
                 "issues": "https://github.com/phpolar/property-injector/issues",
-                "source": "https://github.com/phpolar/property-injector/tree/1.1.0"
+                "source": "https://github.com/phpolar/property-injector/tree/1.1.1"
             },
-            "time": "2023-09-02T19:49:19+00:00"
+            "time": "2025-04-30T01:02:49+00:00"
         },
         {
             "name": "phpolar/property-injector-contract",
