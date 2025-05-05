@@ -704,16 +704,16 @@
         },
         {
             "name": "phpolar/phpolar",
-            "version": "6.1.0",
+            "version": "6.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpolar/phpolar.git",
-                "reference": "aa3c7c99784980c7fe3a0f43bc6c2a2fa58a041e"
+                "reference": "d220dbced7c9605a2355390310b283756ec6fc57"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpolar/phpolar/zipball/aa3c7c99784980c7fe3a0f43bc6c2a2fa58a041e",
-                "reference": "aa3c7c99784980c7fe3a0f43bc6c2a2fa58a041e",
+                "url": "https://api.github.com/repos/phpolar/phpolar/zipball/d220dbced7c9605a2355390310b283756ec6fc57",
+                "reference": "d220dbced7c9605a2355390310b283756ec6fc57",
                 "shasum": ""
             },
             "require": {
@@ -768,9 +768,9 @@
             "description": "A minimal PHP framework",
             "support": {
                 "issues": "https://github.com/phpolar/phpolar/issues",
-                "source": "https://github.com/phpolar/phpolar/tree/6.1.0"
+                "source": "https://github.com/phpolar/phpolar/tree/6.1.1"
             },
-            "time": "2025-04-24T02:56:42+00:00"
+            "time": "2025-04-30T00:39:34+00:00"
         },
         {
             "name": "phpolar/property-injector",
