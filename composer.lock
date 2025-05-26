@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "laminas/laminas-httphandlerrunner",
-            "version": "2.11.0",
+            "version": "2.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-httphandlerrunner.git",
-                "reference": "c428d9f67f280d155637cbe2b7245b5188c8cdae"
+                "reference": "b14da3519c650e9436e410cfedee6f860312eff9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-httphandlerrunner/zipball/c428d9f67f280d155637cbe2b7245b5188c8cdae",
-                "reference": "c428d9f67f280d155637cbe2b7245b5188c8cdae",
+                "url": "https://api.github.com/repos/laminas/laminas-httphandlerrunner/zipball/b14da3519c650e9436e410cfedee6f860312eff9",
+                "reference": "b14da3519c650e9436e410cfedee6f860312eff9",
                 "shasum": ""
             },
             "require": {
@@ -27,11 +27,11 @@
                 "psr/http-server-handler": "^1.0"
             },
             "require-dev": {
-                "laminas/laminas-coding-standard": "~3.0.0",
-                "laminas/laminas-diactoros": "^3.4.0",
-                "phpunit/phpunit": "^10.5.36",
-                "psalm/plugin-phpunit": "^0.19.0",
-                "vimeo/psalm": "^5.26.1"
+                "laminas/laminas-coding-standard": "~3.1.0",
+                "laminas/laminas-diactoros": "^3.6.0",
+                "phpunit/phpunit": "^10.5.46",
+                "psalm/plugin-phpunit": "^0.19.5",
+                "vimeo/psalm": "^6.10.3"
             },
             "type": "library",
             "extra": {
@@ -71,7 +71,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2024-10-17T20:37:17+00:00"
+            "time": "2025-05-13T21:21:16+00:00"
         },
         {
             "name": "nyholm/psr7",
@@ -704,16 +704,16 @@
         },
         {
             "name": "phpolar/phpolar",
-            "version": "6.1.1",
+            "version": "6.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpolar/phpolar.git",
-                "reference": "d220dbced7c9605a2355390310b283756ec6fc57"
+                "reference": "c6c0ead6d9c3afdda227521d23475cd5a71b2504"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpolar/phpolar/zipball/d220dbced7c9605a2355390310b283756ec6fc57",
-                "reference": "d220dbced7c9605a2355390310b283756ec6fc57",
+                "url": "https://api.github.com/repos/phpolar/phpolar/zipball/c6c0ead6d9c3afdda227521d23475cd5a71b2504",
+                "reference": "c6c0ead6d9c3afdda227521d23475cd5a71b2504",
                 "shasum": ""
             },
             "require": {
@@ -768,9 +768,9 @@
             "description": "A minimal PHP framework",
             "support": {
                 "issues": "https://github.com/phpolar/phpolar/issues",
-                "source": "https://github.com/phpolar/phpolar/tree/6.1.1"
+                "source": "https://github.com/phpolar/phpolar/tree/6.1.2"
             },
-            "time": "2025-04-30T00:39:34+00:00"
+            "time": "2025-05-19T01:51:18+00:00"
         },
         {
             "name": "phpolar/property-injector",
