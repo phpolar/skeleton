@@ -14,7 +14,7 @@
         "phpolar/pure-php": "^2.0 || ^3.0",
         "phpolar/csrf-protection": "^3.0",
         "phpolar/csrf-response-filter": "^1.0",
-        "phpolar/model": "^1.1",
+        "phpolar/model": "^2.0",
         "phpolar/model-resolver": "^1.0",
         "phpolar/property-injector": "^1.0",
         "php": "8.3 - 8.4"

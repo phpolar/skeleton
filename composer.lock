@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "566fe74122c3782b4d6705afeb1a1e69",
+    "content-hash": "1285d9741b50294dc814146d7b643d21",
     "packages": [
         {
             "name": "laminas/laminas-httphandlerrunner",
@@ -614,16 +614,16 @@
         },
         {
             "name": "phpolar/model",
-            "version": "1.3.3",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpolar/model.git",
-                "reference": "fab4a9d3d51a04a113a9b04424e681532d538ff2"
+                "reference": "106fb195a2e150e27501522074024029fff6bf4d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpolar/model/zipball/fab4a9d3d51a04a113a9b04424e681532d538ff2",
-                "reference": "fab4a9d3d51a04a113a9b04424e681532d538ff2",
+                "url": "https://api.github.com/repos/phpolar/model/zipball/106fb195a2e150e27501522074024029fff6bf4d",
+                "reference": "106fb195a2e150e27501522074024029fff6bf4d",
                 "shasum": ""
             },
             "require": {
@@ -631,7 +631,8 @@
                 "php-contrib/validator": "^2.0",
                 "phpolar/core": "^4.0.0",
                 "phpolar/model-resolver": "^1.0",
-                "phpolar/storage-driver": "^1.0"
+                "phpolar/storage-driver": "^1.0",
+                "psr/http-message": "^2.0"
             },
             "require-dev": {
                 "ext-ast": "*",
@@ -658,9 +659,9 @@
             "description": "Provides support for configuring the properties of an object for validation, formatting, and storage.",
             "support": {
                 "issues": "https://github.com/phpolar/model/issues",
-                "source": "https://github.com/phpolar/model/tree/1.3.3"
+                "source": "https://github.com/phpolar/model/tree/2.0.0"
             },
-            "time": "2025-04-03T10:59:04+00:00"
+            "time": "2025-05-30T03:26:14+00:00"
         },
         {
             "name": "phpolar/model-resolver",
