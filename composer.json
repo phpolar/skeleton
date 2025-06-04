@@ -32,6 +32,9 @@
         "test": [
             "phpunit --color=always"
         ],
+        "ci:lint": [
+            "echo 'linting skipped'"
+        ],
         "ci:test": [
             "composer exec \"@test --configuration=phpunit.ci.xml\""
         ],
@@ -39,9 +42,7 @@
             "ln -s -f ../../../vendor/picocss/pico/css/pico.classless.min.css public/resources/css/"
         ],
         "post-root-package-install": [
-            "mkdir --parent data tests src/templates",
-            "rm -rf .github/",
-            "rm LICENSE"
+            "mkdir --parent data tests src/templates"
         ],
         "post-install-cmd": [
             "@link-css-framework"
