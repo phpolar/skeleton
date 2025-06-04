@@ -17,10 +17,9 @@ final class GetPersonForm implements RoutableInterface
 
     public function process(#[Model] ?Person $person = null): string
     {
-        $htmlSafe = new HtmlSafeContext($person);
         return $this->templateEngine->apply(
             "example/templates/add-person-form.phtml",
-            $htmlSafe,
+            new HtmlSafeContext($person),
         );
     }
 }

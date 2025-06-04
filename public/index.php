@@ -14,6 +14,7 @@ namespace Phpolar\Example;
 
 use Phpolar\Phpolar\App;
 use Phpolar\Phpolar\DependencyInjection\ContainerLoader;
+use Psr\Http\Message\ServerRequestInterface;
 
 ini_set("display_errors", true);
 chdir("../");
@@ -32,8 +33,6 @@ require "vendor/autoload.php";
  */
 $dependencyMap = new \Pimple\Container();
 $psr11Container = new \Pimple\Psr11\Container($dependencyMap);
-(new ContainerLoader())->load($psr11Container, $dependencyMap);
-
 /**
  *
  * Get the request
@@ -49,6 +48,8 @@ $serverRequest = (new \Nyholm\Psr7Server\ServerRequestCreator(
     ...array_fill(0, 4, new \Nyholm\Psr7\Factory\Psr17Factory()),
 ))->fromGlobals();
 
+$dependencyMap[ServerRequestInterface::class] = $serverRequest;
+(new ContainerLoader())->load($psr11Container, $dependencyMap);
 /**
  *
  * Configure the web application
