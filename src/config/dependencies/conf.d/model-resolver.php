@@ -13,5 +13,6 @@ return [
     ModelResolverInterface::class => static fn(ContainerInterface $container) =>
     new ParsedBodyResolver(
         $container->get(ServerRequestInterface::class)
+            ->getParsedBody()
     ),
 ];
