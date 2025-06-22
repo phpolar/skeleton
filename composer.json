@@ -32,6 +32,7 @@
         "test": [
             "phpunit --color=always"
         ],
+        "ci:test-build": "composer exec \"@test --configuration=phpunit.ci.xml\"",
         "ci:lint": [
             "echo 'linting skipped'"
         ],
