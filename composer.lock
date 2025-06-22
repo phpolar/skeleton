@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e503ff89205bc0417d597370f9957966",
+    "content-hash": "7195534e4e879ca57b5dfd7b38436c30",
     "packages": [
         {
             "name": "laminas/laminas-httphandlerrunner",
@@ -843,16 +843,16 @@
         },
         {
             "name": "phpolar/phpolar",
-            "version": "dev-main",
+            "version": "7.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpolar/phpolar.git",
-                "reference": "c34e51c64b6c0b9c2c6c79d8e51a29daa9062688"
+                "reference": "32bb11f184b58ef3b26f232d37c036b9a6427b09"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpolar/phpolar/zipball/c34e51c64b6c0b9c2c6c79d8e51a29daa9062688",
-                "reference": "c34e51c64b6c0b9c2c6c79d8e51a29daa9062688",
+                "url": "https://api.github.com/repos/phpolar/phpolar/zipball/32bb11f184b58ef3b26f232d37c036b9a6427b09",
+                "reference": "32bb11f184b58ef3b26f232d37c036b9a6427b09",
                 "shasum": ""
             },
             "require": {
@@ -890,7 +890,6 @@
                 "picocss/pico": "^v2.1.1",
                 "squizlabs/php_codesniffer": "^3.7"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -910,9 +909,9 @@
             "description": "A minimal PHP framework",
             "support": {
                 "issues": "https://github.com/phpolar/phpolar/issues",
-                "source": "https://github.com/phpolar/phpolar/tree/main"
+                "source": "https://github.com/phpolar/phpolar/tree/7.0.0"
             },
-            "time": "2025-06-22T03:29:44+00:00"
+            "time": "2025-06-22T13:14:27+00:00"
         },
         {
             "name": "phpolar/property-injector",
@@ -3276,9 +3275,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "phpolar/phpolar": 20
-    },
+    "stability-flags": {},
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

@@ -6,8 +6,6 @@ namespace Phpolar\MyApp;
 
 use Phpolar\PurePhp\TemplateEngine;
 
-
-
 return [
     TemplateEngine::class => new TemplateEngine(),
 ];

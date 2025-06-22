@@ -1,54 +1,57 @@
 {
-    "name": "phpolar/skeleton",
-    "description": "A minimal starting point for a PHPolar application.",
-    "type": "project",
-    "license": "MIT",
-    "require": {
-        "phpolar/csv-file-storage": "^3.1",
-        "pimple/pimple": "^3.5",
-        "picocss/pico": "^v2.0.6",
-        "phpolar/validators": "^1.2",
-        "nyholm/psr7": "^1.7",
-        "nyholm/psr7-server": "~1.1.0",
-        "phpolar/phpolar": "dev-main",
-        "phpolar/pure-php": "^2.0 || ^3.0",
-        "phpolar/csrf-protection": "^3.0",
-        "phpolar/csrf-response-filter": "^1.0",
-        "phpolar/model": "^2.0",
-        "phpolar/model-resolver": "^1.0",
-        "phpolar/property-injector": "^1.0",
-        "php": ">=8.4"
-    },
-    "autoload": {
-        "psr-4": {
-            "Phpolar\\App\\": "src/",
-            "Phpolar\\Example\\": "example/"
-        }
-    },
-    "require-dev": {
-        "phpunit/phpunit": "^12.0.9"
-    },
-    "scripts": {
-        "test": [
-            "phpunit --color=always"
-        ],
-        "ci:lint": [
-            "echo 'linting skipped'"
-        ],
-        "ci:test": [
-            "composer exec \"@test --configuration=phpunit.ci.xml\""
-        ],
-        "link-css-framework": [
-            "ln -s -f ../../../vendor/picocss/pico/css/pico.classless.min.css public/resources/css/"
-        ],
-        "post-root-package-install": [
-            "mkdir --parent data tests src/templates"
-        ],
-        "post-install-cmd": [
-            "@link-css-framework"
-        ],
-        "post-update-cmd": [
-            "@link-css-framework"
-        ]
+  "name": "phpolar/skeleton",
+  "description": "A minimal starting point for a PHPolar application.",
+  "type": "project",
+  "license": "MIT",
+  "require": {
+    "php": ">=8.4",
+    "nyholm/psr7": "^1.7",
+    "nyholm/psr7-server": "~1.1.0",
+    "phpolar/csrf-protection": "^3.0",
+    "phpolar/csrf-response-filter": "^1.0",
+    "phpolar/csv-file-storage": "^3.1",
+    "phpolar/model": "^2.0",
+    "phpolar/model-resolver": "^1.0",
+    "phpolar/phpolar": "^7.0",
+    "phpolar/property-injector": "^1.0",
+    "phpolar/pure-php": "^2.0 || ^3.0",
+    "phpolar/validators": "^1.2",
+    "picocss/pico": "^v2.0.6",
+    "pimple/pimple": "^3.5"
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "autoload": {
+    "psr-4": {
+      "Phpolar\\App\\": "src/",
+      "Phpolar\\Example\\": "example/"
     }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^12.0.9"
+  },
+  "scripts": {
+    "test": [
+      "phpunit --color=always"
+    ],
+    "ci:lint": [
+      "echo 'linting skipped'"
+    ],
+    "ci:test": [
+      "composer exec \"@test --configuration=phpunit.ci.xml\""
+    ],
+    "link-css-framework": [
+      "ln -s -f ../../../vendor/picocss/pico/css/pico.classless.min.css public/resources/css/"
+    ],
+    "post-root-package-install": [
+      "mkdir --parent data tests src/templates"
+    ],
+    "post-install-cmd": [
+      "@link-css-framework"
+    ],
+    "post-update-cmd": [
+      "@link-css-framework"
+    ]
+  }
 }
