@@ -847,12 +847,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpolar/phpolar.git",
-                "reference": "0f4a8a2b2c7ae5d07c0874aab1c1089e9338df8a"
+                "reference": "c34e51c64b6c0b9c2c6c79d8e51a29daa9062688"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpolar/phpolar/zipball/0f4a8a2b2c7ae5d07c0874aab1c1089e9338df8a",
-                "reference": "0f4a8a2b2c7ae5d07c0874aab1c1089e9338df8a",
+                "url": "https://api.github.com/repos/phpolar/phpolar/zipball/c34e51c64b6c0b9c2c6c79d8e51a29daa9062688",
+                "reference": "c34e51c64b6c0b9c2c6c79d8e51a29daa9062688",
                 "shasum": ""
             },
             "require": {
@@ -912,7 +912,7 @@
                 "issues": "https://github.com/phpolar/phpolar/issues",
                 "source": "https://github.com/phpolar/phpolar/tree/main"
             },
-            "time": "2025-06-22T03:10:50+00:00"
+            "time": "2025-06-22T03:29:44+00:00"
         },
         {
             "name": "phpolar/property-injector",

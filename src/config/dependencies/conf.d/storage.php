@@ -6,6 +6,7 @@ namespace Phpolar\MyApp;
 
 use Phpolar\CsvFileStorage\CsvFileStorage;
 use Phpolar\Example\Person;
+use Psr\Container\ContainerInterface;
 
 const CSV_STORAGE = "data/example.csv";
 /**
@@ -13,5 +14,6 @@ const CSV_STORAGE = "data/example.csv";
  * by the PHPolar Microframework.
  */
 return [
-    "PEOPLE_STORAGE" => new CsvFileStorage(CSV_STORAGE, Person::class),
+    "csv_file" => join(DIRECTORY_SEPARATOR, [getcwd(), CSV_STORAGE]),
+    "PEOPLE_STORAGE" => static fn(ContainerInterface $container) => new CsvFileStorage($container->get("csv_file"), Person::class),
 ];
