@@ -19,7 +19,7 @@ final class SubmitPersonForm implements RoutableInterface
     #[Inject("PEOPLE_STORAGE")]
     public StorageContext $storage;
 
-    public function process(#[Model] ?Person $person = null): string
+    public function process(#[Model] ?Person $person = new Person()): string
     {
         if ($person->isValid() === true) {
             $person->create();
