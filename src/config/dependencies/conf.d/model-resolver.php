@@ -10,9 +10,10 @@ use Psr\Container\ContainerInterface;
 use Psr\Http\Message\ServerRequestInterface;
 
 return [
-    ModelResolverInterface::class => static fn(ContainerInterface $container) =>
-    new ParsedBodyResolver(
-        $container->get(ServerRequestInterface::class)
-            ->getParsedBody()
-    ),
+    ModelResolverInterface::class => static function (ContainerInterface $container) {
+        return new ParsedBodyResolver(
+            $container->get(ServerRequestInterface::class)
+                ->getParsedBody()
+        );
+    }
 ];

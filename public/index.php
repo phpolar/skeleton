@@ -12,6 +12,7 @@ declare(strict_types=1);
 
 namespace Phpolar\Example;
 
+use PhpCommonEnums\MimeType\Enumeration\MimeTypeEnum as MimeType;
 use Phpolar\Phpolar\App;
 use Phpolar\Phpolar\DependencyInjection\ContainerLoader;
 use Psr\Http\Message\ServerRequestInterface;
@@ -46,9 +47,11 @@ $psr11Container = new \Pimple\Psr11\Container($dependencyMap);
 
 $serverRequest = (new \Nyholm\Psr7Server\ServerRequestCreator(
     ...array_fill(0, 4, new \Nyholm\Psr7\Factory\Psr17Factory()),
-))->fromGlobals();
+))->fromGlobals()
+    ->withHeader("Accept", [MimeType::TextHtml->value]);
 
 $dependencyMap[ServerRequestInterface::class] = $serverRequest;
+
 (new ContainerLoader())->load($psr11Container, $dependencyMap);
 /**
  *

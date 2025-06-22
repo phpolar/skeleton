@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "87139a8a3470fab93b3f30ab463d4efc",
+    "content-hash": "e503ff89205bc0417d597370f9957966",
     "packages": [
         {
             "name": "laminas/laminas-httphandlerrunner",
@@ -216,6 +216,144 @@
                 }
             ],
             "time": "2023-11-08T09:30:43+00:00"
+        },
+        {
+            "name": "php-common-enums/http-method",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-common-enums/http-method.git",
+                "reference": "09b86ccebecbdc9bec1647af7495a891ea9a87d8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-common-enums/http-method/zipball/09b86ccebecbdc9bec1647af7495a891ea9a87d8",
+                "reference": "09b86ccebecbdc9bec1647af7495a891ea9a87d8",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.5 | ^9.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PhpCommonEnums\\HttpMethod\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP Common Enums",
+                    "homepage": "https://github.com/php-common-enums"
+                }
+            ],
+            "description": "Provides a backed enum for HTTP request methods",
+            "keywords": [
+                "enum"
+            ],
+            "support": {
+                "issues": "https://github.com/php-common-enums/http-method/issues",
+                "source": "https://github.com/php-common-enums/http-method/tree/v1.0.0"
+            },
+            "time": "2022-06-03T10:39:49+00:00"
+        },
+        {
+            "name": "php-common-enums/http-response-code",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-common-enums/http-response-code.git",
+                "reference": "4ddece38005140789b06af6cd822fd3e9fd24c53"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-common-enums/http-response-code/zipball/4ddece38005140789b06af6cd822fd3e9fd24c53",
+                "reference": "4ddece38005140789b06af6cd822fd3e9fd24c53",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.5 | ^9.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PhpCommonEnums\\HttpResponseCode\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP Common Enums",
+                    "homepage": "https://github.com/php-common-enums"
+                }
+            ],
+            "description": "Provides a backed enum for HTTP response codes",
+            "keywords": [
+                "enum"
+            ],
+            "support": {
+                "issues": "https://github.com/php-common-enums/http-response-code/issues",
+                "source": "https://github.com/php-common-enums/http-response-code/tree/v1.0.0"
+            },
+            "time": "2022-06-03T12:03:59+00:00"
+        },
+        {
+            "name": "php-common-enums/mime-type",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-common-enums/mime-type.git",
+                "reference": "233596cd8b46781d30bb48a97f6afdfe4191dfd0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-common-enums/mime-type/zipball/233596cd8b46781d30bb48a97f6afdfe4191dfd0",
+                "reference": "233596cd8b46781d30bb48a97f6afdfe4191dfd0",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.5 | ^9.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PhpCommonEnums\\MimeType\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP Common Enums",
+                    "homepage": "https://github.com/php-common-enums"
+                }
+            ],
+            "description": "Provides a backed enum for MIME types",
+            "keywords": [
+                "enum"
+            ],
+            "support": {
+                "issues": "https://github.com/php-common-enums/mime-type/issues",
+                "source": "https://github.com/php-common-enums/mime-type/tree/v1.0.0"
+            },
+            "time": "2022-06-02T19:58:16+00:00"
         },
         {
             "name": "php-contrib/authenticator",
@@ -705,29 +843,31 @@
         },
         {
             "name": "phpolar/phpolar",
-            "version": "6.1.2",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpolar/phpolar.git",
-                "reference": "c6c0ead6d9c3afdda227521d23475cd5a71b2504"
+                "reference": "0f4a8a2b2c7ae5d07c0874aab1c1089e9338df8a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpolar/phpolar/zipball/c6c0ead6d9c3afdda227521d23475cd5a71b2504",
-                "reference": "c6c0ead6d9c3afdda227521d23475cd5a71b2504",
+                "url": "https://api.github.com/repos/phpolar/phpolar/zipball/0f4a8a2b2c7ae5d07c0874aab1c1089e9338df8a",
+                "reference": "0f4a8a2b2c7ae5d07c0874aab1c1089e9338df8a",
                 "shasum": ""
             },
             "require": {
                 "ext-mbstring": "*",
                 "laminas/laminas-httphandlerrunner": "^2.9",
-                "php": ">=8.3",
+                "php": ">=8.4",
+                "php-common-enums/http-method": "^1.0.0",
+                "php-common-enums/http-response-code": "^1.0.0",
+                "php-common-enums/mime-type": "^1.0.0",
                 "php-contrib/authenticator": "^2.0",
                 "php-contrib/response-filter": "^2.0",
                 "php-contrib/validator": "^2.0",
-                "phpolar/core": "^4.0.0",
                 "phpolar/model-resolver": "^1.0",
                 "phpolar/property-injector-contract": "^1.0",
-                "phpolar/routable": "^2.0",
+                "phpolar/routable": "^3.0",
                 "phpolar/routable-factory": "^1.0",
                 "phpolar/storage-driver": "^1.0",
                 "psr/container": "^2.0",
@@ -743,13 +883,14 @@
                 "phpmd/phpmd": "^2.13",
                 "phpolar/csrf-protection": "^3.1",
                 "phpolar/http-message-test-utils": "^0.1.0 || ^0.2.0",
-                "phpolar/model": "^1.2.4",
+                "phpolar/model": "^1.2.4 || ^2.0.0",
                 "phpolar/pure-php": "^2.0 || ^3.0",
                 "phpstan/phpstan": "^2.0.3",
                 "phpunit/phpunit": "^10 || ^11.4 || ^12",
-                "picocss/pico": "^2.0.6",
+                "picocss/pico": "^v2.1.1",
                 "squizlabs/php_codesniffer": "^3.7"
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -769,9 +910,9 @@
             "description": "A minimal PHP framework",
             "support": {
                 "issues": "https://github.com/phpolar/phpolar/issues",
-                "source": "https://github.com/phpolar/phpolar/tree/6.1.2"
+                "source": "https://github.com/phpolar/phpolar/tree/main"
             },
-            "time": "2025-05-19T01:51:18+00:00"
+            "time": "2025-06-22T03:10:50+00:00"
         },
         {
             "name": "phpolar/property-injector",
@@ -919,16 +1060,16 @@
         },
         {
             "name": "phpolar/routable",
-            "version": "2.0.1",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpolar/routable.git",
-                "reference": "ebac0e080b948f3c13b5e43d785956091e37a0f2"
+                "reference": "4da7ff0151aae66f9a3c9f48fa8624ca48fb795d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpolar/routable/zipball/ebac0e080b948f3c13b5e43d785956091e37a0f2",
-                "reference": "ebac0e080b948f3c13b5e43d785956091e37a0f2",
+                "url": "https://api.github.com/repos/phpolar/routable/zipball/4da7ff0151aae66f9a3c9f48fa8624ca48fb795d",
+                "reference": "4da7ff0151aae66f9a3c9f48fa8624ca48fb795d",
                 "shasum": ""
             },
             "require": {
@@ -950,27 +1091,27 @@
             "description": "Supports route handling interoperability.",
             "support": {
                 "issues": "https://github.com/phpolar/routable/issues",
-                "source": "https://github.com/phpolar/routable/tree/2.0.1"
+                "source": "https://github.com/phpolar/routable/tree/3.0.0"
             },
-            "time": "2024-12-01T20:09:34+00:00"
+            "time": "2025-06-05T03:30:16+00:00"
         },
         {
             "name": "phpolar/routable-factory",
-            "version": "1.0.2",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpolar/routable-factory.git",
-                "reference": "625d1b437e3f73efe2bd297b41d2017fcaa4b6d6"
+                "reference": "7c5d7c43894d9496dab425fc3fa7807b9b3d192a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpolar/routable-factory/zipball/625d1b437e3f73efe2bd297b41d2017fcaa4b6d6",
-                "reference": "625d1b437e3f73efe2bd297b41d2017fcaa4b6d6",
+                "url": "https://api.github.com/repos/phpolar/routable-factory/zipball/7c5d7c43894d9496dab425fc3fa7807b9b3d192a",
+                "reference": "7c5d7c43894d9496dab425fc3fa7807b9b3d192a",
                 "shasum": ""
             },
             "require": {
                 "php": ">=8.1",
-                "phpolar/routable": "^2.0"
+                "phpolar/routable": "^3.0"
             },
             "require-dev": {
                 "ext-ast": "*",
@@ -998,9 +1139,9 @@
             "description": "Unifies implementations of factories used to create route targets",
             "support": {
                 "issues": "https://github.com/phpolar/routable-factory/issues",
-                "source": "https://github.com/phpolar/routable-factory/tree/1.0.2"
+                "source": "https://github.com/phpolar/routable-factory/tree/1.1.0"
             },
-            "time": "2025-01-02T03:35:11+00:00"
+            "time": "2025-06-05T03:38:49+00:00"
         },
         {
             "name": "phpolar/storage",
@@ -1756,16 +1897,16 @@
         },
         {
             "name": "phpunit/php-code-coverage",
-            "version": "12.3.0",
+            "version": "12.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "9075a8efc66e11bc55c319062e147bdb06777267"
+                "reference": "ddec29dfc128eba9c204389960f2063f3b7fa170"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/9075a8efc66e11bc55c319062e147bdb06777267",
-                "reference": "9075a8efc66e11bc55c319062e147bdb06777267",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/ddec29dfc128eba9c204389960f2063f3b7fa170",
+                "reference": "ddec29dfc128eba9c204389960f2063f3b7fa170",
                 "shasum": ""
             },
             "require": {
@@ -1821,7 +1962,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/php-code-coverage/issues",
                 "security": "https://github.com/sebastianbergmann/php-code-coverage/security/policy",
-                "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/12.3.0"
+                "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/12.3.1"
             },
             "funding": [
                 {
@@ -1841,7 +1982,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-05-23T15:49:03+00:00"
+            "time": "2025-06-18T08:58:13+00:00"
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -2090,16 +2231,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "12.2.2",
+            "version": "12.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "19e25c2da3f8071a683ee1e445b0e24bba25de61"
+                "reference": "60a8ea2d8b2f070000051b56778009e11576e7d1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/19e25c2da3f8071a683ee1e445b0e24bba25de61",
-                "reference": "19e25c2da3f8071a683ee1e445b0e24bba25de61",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/60a8ea2d8b2f070000051b56778009e11576e7d1",
+                "reference": "60a8ea2d8b2f070000051b56778009e11576e7d1",
                 "shasum": ""
             },
             "require": {
@@ -2113,13 +2254,13 @@
                 "phar-io/manifest": "^2.0.4",
                 "phar-io/version": "^3.2.1",
                 "php": ">=8.3",
-                "phpunit/php-code-coverage": "^12.3.0",
+                "phpunit/php-code-coverage": "^12.3.1",
                 "phpunit/php-file-iterator": "^6.0.0",
                 "phpunit/php-invoker": "^6.0.0",
                 "phpunit/php-text-template": "^5.0.0",
                 "phpunit/php-timer": "^8.0.0",
                 "sebastian/cli-parser": "^4.0.0",
-                "sebastian/comparator": "^7.0.1",
+                "sebastian/comparator": "^7.1.0",
                 "sebastian/diff": "^7.0.0",
                 "sebastian/environment": "^8.0.2",
                 "sebastian/exporter": "^7.0.0",
@@ -2167,7 +2308,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
                 "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/12.2.2"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/12.2.3"
             },
             "funding": [
                 {
@@ -2191,7 +2332,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-06-13T05:49:28+00:00"
+            "time": "2025-06-20T11:33:06+00:00"
         },
         {
             "name": "sebastian/cli-parser",
@@ -2252,16 +2393,16 @@
         },
         {
             "name": "sebastian/comparator",
-            "version": "7.0.1",
+            "version": "7.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/comparator.git",
-                "reference": "b478f34614f934e0291598d0c08cbaba9644bee5"
+                "reference": "03d905327dccc0851c9a08d6a979dfc683826b6f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/b478f34614f934e0291598d0c08cbaba9644bee5",
-                "reference": "b478f34614f934e0291598d0c08cbaba9644bee5",
+                "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/03d905327dccc0851c9a08d6a979dfc683826b6f",
+                "reference": "03d905327dccc0851c9a08d6a979dfc683826b6f",
                 "shasum": ""
             },
             "require": {
@@ -2272,7 +2413,7 @@
                 "sebastian/exporter": "^7.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^12.0"
+                "phpunit/phpunit": "^12.2"
             },
             "suggest": {
                 "ext-bcmath": "For comparing BcMath\\Number objects"
@@ -2280,7 +2421,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "7.0-dev"
+                    "dev-main": "7.1-dev"
                 }
             },
             "autoload": {
@@ -2320,15 +2461,27 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/comparator/issues",
                 "security": "https://github.com/sebastianbergmann/comparator/security/policy",
-                "source": "https://github.com/sebastianbergmann/comparator/tree/7.0.1"
+                "source": "https://github.com/sebastianbergmann/comparator/tree/7.1.0"
             },
             "funding": [
                 {
                     "url": "https://github.com/sebastianbergmann",
                     "type": "github"
+                },
+                {
+                    "url": "https://liberapay.com/sebastianbergmann",
+                    "type": "liberapay"
+                },
+                {
+                    "url": "https://thanks.dev/u/gh/sebastianbergmann",
+                    "type": "thanks_dev"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/sebastian/comparator",
+                    "type": "tidelift"
                 }
             ],
-            "time": "2025-03-07T07:00:32+00:00"
+            "time": "2025-06-17T07:41:58+00:00"
         },
         {
             "name": "sebastian/complexity",
@@ -3123,12 +3276,14 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "phpolar/phpolar": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": "8.3 - 8.4"
+        "php": ">=8.4"
     },
-    "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "platform-dev": {},
+    "plugin-api-version": "2.6.0"
 }

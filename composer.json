@@ -10,14 +10,14 @@
         "phpolar/validators": "^1.2",
         "nyholm/psr7": "^1.7",
         "nyholm/psr7-server": "~1.1.0",
-        "phpolar/phpolar": "^6.0",
+        "phpolar/phpolar": "dev-main",
         "phpolar/pure-php": "^2.0 || ^3.0",
         "phpolar/csrf-protection": "^3.0",
         "phpolar/csrf-response-filter": "^1.0",
         "phpolar/model": "^2.0",
         "phpolar/model-resolver": "^1.0",
         "phpolar/property-injector": "^1.0",
-        "php": "8.3 - 8.4"
+        "php": ">=8.4"
     },
     "autoload": {
         "psr-4": {

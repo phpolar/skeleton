@@ -19,7 +19,7 @@ final class GetPersonForm implements RoutableInterface
     {
         return $this->templateEngine->apply(
             "example/templates/add-person-form.phtml",
-            new HtmlSafeContext($person),
+            new HtmlSafeContext($person ?? new Person()),
         );
     }
 }
