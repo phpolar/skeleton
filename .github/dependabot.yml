@@ -1,26 +1,26 @@
 version: 2
 updates:
-  - package-ecosystem: "github-actions"
-    directory: "/"
+  - package-ecosystem: 'github-actions'
+    directory: '/'
     schedule:
-      interval: "weekly"
-      day: "sunday"
+      interval: 'weekly'
+      day: 'sunday'
     groups:
       all-actions:
-        patterns: [ "*" ]
+        patterns: ['*']
 
-  - package-ecosystem: "composer"
-    directory: "/"
-    allow: 
-      - dependency-type: "development"
-    schedule:
-      interval: "daily"
-  - package-ecosystem: "composer"
-    directory: "/"
-    target-branch: "main"
+  - package-ecosystem: 'composer'
+    directory: '/'
     allow:
-      - dependency-type: "production"
+      - dependency-type: 'development'
     schedule:
-      interval: "weekly"
-      day: "monday"
-      time: "02:00"
+      interval: 'daily'
+  - package-ecosystem: 'composer'
+    directory: '/'
+    target-branch: 'main'
+    allow:
+      - dependency-type: 'production'
+    schedule:
+      interval: 'weekly'
+      day: 'monday'
+      time: '02:00'
