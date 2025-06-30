@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7195534e4e879ca57b5dfd7b38436c30",
+    "content-hash": "ba0335140d6ab9aa392a324ae31dd579",
     "packages": [
         {
             "name": "laminas/laminas-httphandlerrunner",
@@ -549,23 +549,23 @@
         },
         {
             "name": "phpolar/csrf-protection",
-            "version": "3.1.6",
+            "version": "3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpolar/csrf-protection.git",
-                "reference": "62c995fe9dab8a9f792a5461ee7eb74a2f11f3ec"
+                "reference": "d52dd3c2ffc7d8601260e89067391d59a2478133"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpolar/csrf-protection/zipball/62c995fe9dab8a9f792a5461ee7eb74a2f11f3ec",
-                "reference": "62c995fe9dab8a9f792a5461ee7eb74a2f11f3ec",
+                "url": "https://api.github.com/repos/phpolar/csrf-protection/zipball/d52dd3c2ffc7d8601260e89067391d59a2478133",
+                "reference": "d52dd3c2ffc7d8601260e89067391d59a2478133",
                 "shasum": ""
             },
             "require": {
                 "ext-mbstring": "*",
                 "php": ">=8.3",
+                "php-common-enums/http-response-code": "^1.0.0",
                 "php-contrib/response-filter": "^2.0",
-                "phpolar/http-codes": "^0.0.6",
                 "psr/http-message": "^2.0",
                 "psr/http-server-handler": "^1.0",
                 "psr/http-server-middleware": "^1.0"
@@ -581,7 +581,7 @@
                 "php-coveralls/php-coveralls": "^2.5",
                 "phpmd/phpmd": "^2.13",
                 "phpolar/csrf-response-filter": "^1.1.2",
-                "phpolar/http-message-test-utils": "^0.2.0",
+                "phpolar/http-message-test-utils": "^0.2.0 || ^0.3.0",
                 "phpstan/phpstan": "^2.1",
                 "phpunit/phpunit": "^10.0 || ^11.4 || ^12.0",
                 "squizlabs/php_codesniffer": "^3.7"
@@ -620,9 +620,9 @@
             ],
             "support": {
                 "issues": "https://github.com/phpolar/csrf-protection/issues",
-                "source": "https://github.com/phpolar/csrf-protection/tree/3.1.6"
+                "source": "https://github.com/phpolar/csrf-protection/tree/3.2.0"
             },
-            "time": "2025-04-16T04:11:21+00:00"
+            "time": "2025-06-30T00:35:44+00:00"
         },
         {
             "name": "phpolar/csrf-response-filter",
@@ -720,52 +720,41 @@
             "time": "2025-06-02T02:02:52+00:00"
         },
         {
-            "name": "phpolar/http-codes",
-            "version": "0.0.6",
+            "name": "phpolar/http-request-processor",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/phpolar/http-codes.git",
-                "reference": "b889110e8d497395a2b77e254e57d835adc476f2"
+                "url": "https://github.com/phpolar/http-request-processor.git",
+                "reference": "4b57d68ccbe080aa531dc658eabd016b04b34ac5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpolar/http-codes/zipball/b889110e8d497395a2b77e254e57d835adc476f2",
-                "reference": "b889110e8d497395a2b77e254e57d835adc476f2",
+                "url": "https://api.github.com/repos/phpolar/http-request-processor/zipball/4b57d68ccbe080aa531dc658eabd016b04b34ac5",
+                "reference": "4b57d68ccbe080aa531dc658eabd016b04b34ac5",
                 "shasum": ""
             },
+            "require": {
+                "php": ">=8.1"
+            },
             "require-dev": {
-                "phan/phan": "v5.x-dev",
-                "phpunit/phpunit": "^9.5",
-                "squizlabs/php_codesniffer": "4.0.x-dev"
+                "squizlabs/php_codesniffer": "^3.13"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Phpolar\\HttpCodes\\": "src/"
-                },
-                "exclude-from-classmap": [
-                    "/tests/**/*"
-                ]
+                    "Phpolar\\HttpRequestProcessor\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
-            "authors": [
-                {
-                    "name": "Prince Dorcis",
-                    "email": "princedorcis@gmail.com"
-                },
-                {
-                    "name": "Eric Fortmeyer",
-                    "email": "e.fortmeyer01@gmail.com"
-                }
-            ],
-            "description": "PHP class for HTTP Response Codes",
+            "description": "Supports request processing interoperability.",
             "support": {
-                "source": "https://github.com/phpolar/http-codes/tree/0.0.6"
+                "issues": "https://github.com/phpolar/http-request-processor/issues",
+                "source": "https://github.com/phpolar/http-request-processor/tree/1.1.0"
             },
-            "time": "2023-01-16T19:44:19+00:00"
+            "time": "2025-06-30T00:56:01+00:00"
         },
         {
             "name": "phpolar/model",
@@ -859,16 +848,16 @@
         },
         {
             "name": "phpolar/phpolar",
-            "version": "7.2.0",
+            "version": "8.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpolar/phpolar.git",
-                "reference": "8174bb2c12bf42ee708da691749910ff156b5d25"
+                "reference": "d3fe0489e8da1b46e4e0c587053e7f35c8bdaacf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpolar/phpolar/zipball/8174bb2c12bf42ee708da691749910ff156b5d25",
-                "reference": "8174bb2c12bf42ee708da691749910ff156b5d25",
+                "url": "https://api.github.com/repos/phpolar/phpolar/zipball/d3fe0489e8da1b46e4e0c587053e7f35c8bdaacf",
+                "reference": "d3fe0489e8da1b46e4e0c587053e7f35c8bdaacf",
                 "shasum": ""
             },
             "require": {
@@ -881,11 +870,10 @@
                 "php-contrib/authenticator": "^2.0",
                 "php-contrib/response-filter": "^2.0",
                 "php-contrib/validator": "^2.0",
+                "phpolar/http-request-processor": "^1.1",
                 "phpolar/model-resolver": "^1.0",
                 "phpolar/property-injector-contract": "^1.0",
                 "phpolar/representations": "^1.0",
-                "phpolar/routable": "^3.0",
-                "phpolar/routable-factory": "^1.0",
                 "phpolar/storage-driver": "^1.0",
                 "psr/container": "^2.0",
                 "psr/http-message": "^2.0",
@@ -898,7 +886,7 @@
                 "phan/phan": "^5.3",
                 "php-coveralls/php-coveralls": "^2.5",
                 "phpmd/phpmd": "^2.13",
-                "phpolar/csrf-protection": "^3.1",
+                "phpolar/csrf-protection": "^3.2",
                 "phpolar/http-message-test-utils": "^0.3.0",
                 "phpolar/model": "^1.2.4 || ^2.0.0",
                 "phpolar/pure-php": "^2.0 || ^3.0",
@@ -923,12 +911,12 @@
                     "email": "e.fortmeyer01@gmail.com"
                 }
             ],
-            "description": "A minimal PHP framework",
+            "description": "A PHP framework for minimalists",
             "support": {
                 "issues": "https://github.com/phpolar/phpolar/issues",
-                "source": "https://github.com/phpolar/phpolar/tree/7.2.0"
+                "source": "https://github.com/phpolar/phpolar/tree/8.0.1"
             },
-            "time": "2025-06-28T04:15:05+00:00"
+            "time": "2025-06-30T01:00:58+00:00"
         },
         {
             "name": "phpolar/property-injector",
@@ -1120,91 +1108,6 @@
                 "source": "https://github.com/phpolar/representations/tree/1.0.0"
             },
             "time": "2025-06-28T03:58:27+00:00"
-        },
-        {
-            "name": "phpolar/routable",
-            "version": "3.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/phpolar/routable.git",
-                "reference": "4da7ff0151aae66f9a3c9f48fa8624ca48fb795d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/phpolar/routable/zipball/4da7ff0151aae66f9a3c9f48fa8624ca48fb795d",
-                "reference": "4da7ff0151aae66f9a3c9f48fa8624ca48fb795d",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=8.1"
-            },
-            "require-dev": {
-                "squizlabs/php_codesniffer": "^3.7"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Phpolar\\Routable\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Supports route handling interoperability.",
-            "support": {
-                "issues": "https://github.com/phpolar/routable/issues",
-                "source": "https://github.com/phpolar/routable/tree/3.0.0"
-            },
-            "time": "2025-06-05T03:30:16+00:00"
-        },
-        {
-            "name": "phpolar/routable-factory",
-            "version": "1.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/phpolar/routable-factory.git",
-                "reference": "7c5d7c43894d9496dab425fc3fa7807b9b3d192a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/phpolar/routable-factory/zipball/7c5d7c43894d9496dab425fc3fa7807b9b3d192a",
-                "reference": "7c5d7c43894d9496dab425fc3fa7807b9b3d192a",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=8.1",
-                "phpolar/routable": "^3.0"
-            },
-            "require-dev": {
-                "ext-ast": "*",
-                "ext-openssl": "*",
-                "phan/phan": "^5.4",
-                "phpmd/phpmd": "^2.13",
-                "squizlabs/php_codesniffer": "^3.7"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Phpolar\\RoutableFactory\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Eric Fortmeyer",
-                    "email": "e.fortmeyer01@gmail.com"
-                }
-            ],
-            "description": "Unifies implementations of factories used to create route targets",
-            "support": {
-                "issues": "https://github.com/phpolar/routable-factory/issues",
-                "source": "https://github.com/phpolar/routable-factory/tree/1.1.0"
-            },
-            "time": "2025-06-05T03:38:49+00:00"
         },
         {
             "name": "phpolar/serializers",

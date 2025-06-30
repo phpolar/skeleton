@@ -1,5 +1,6 @@
 LICENSE         export-ignore
 phpunit.ci.xml  export-ignore
+phpcs.xml  export-ignore
 .gitattributes  export-ignore
 /.idea/         export-ignore
 /.github        export-ignore

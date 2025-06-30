@@ -4,12 +4,12 @@ declare(strict_types=1);
 
 namespace Phpolar\Example;
 
-use Phpolar\Routable\RoutableInterface;
+use Phpolar\HttpRequestProcessor\RequestProcessorInterface;
 use Phpolar\PropertyInjector\Inject;
 use Phpolar\PurePhp\TemplateEngine;
 use Phpolar\Storage\StorageContext;
 
-final class DeletePerson implements RoutableInterface
+final class DeletePerson implements RequestProcessorInterface
 {
     #[Inject]
     public TemplateEngine $templateEngine;
@@ -23,6 +23,9 @@ final class DeletePerson implements RoutableInterface
             ->remove($id)
             ->orElse(static fn() => $this->templateEngine->apply("404"))
             ->tryUnwrap();
-        return $result instanceof Person ? $this->templateEngine->apply("example/templates/person-deleted.phtml") : $result;
+        if ($result instanceof Person) {
+            return (string) $this->templateEngine->apply("example/templates/person-deleted.phtml");
+        }
+        return $result;
     }
 }
