@@ -2,6 +2,8 @@
 
 declare(strict_types=1);
 
+namespace Phpolar\Example;
+
 use PHPUnit\Framework\Attributes\TestDox;
 use PHPUnit\Framework\TestCase;
 

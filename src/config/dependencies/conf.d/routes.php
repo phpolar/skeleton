@@ -15,7 +15,6 @@ use Phpolar\Phpolar\Http\Server;
 use Phpolar\Phpolar\Http\ServerInterface;
 use Phpolar\Phpolar\Http\Target;
 
-
 return [
     ServerInterface::class => new Server(
         interface: [
