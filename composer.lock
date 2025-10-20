@@ -848,16 +848,16 @@
         },
         {
             "name": "phpolar/phpolar",
-            "version": "8.1.2",
+            "version": "8.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpolar/phpolar.git",
-                "reference": "d561d3532ac02907ab4e346042a78bfaea4f8015"
+                "reference": "05137353bac6b9a5aae08f30d246bf5d77ef46eb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpolar/phpolar/zipball/d561d3532ac02907ab4e346042a78bfaea4f8015",
-                "reference": "d561d3532ac02907ab4e346042a78bfaea4f8015",
+                "url": "https://api.github.com/repos/phpolar/phpolar/zipball/05137353bac6b9a5aae08f30d246bf5d77ef46eb",
+                "reference": "05137353bac6b9a5aae08f30d246bf5d77ef46eb",
                 "shasum": ""
             },
             "require": {
@@ -914,9 +914,9 @@
             "description": "A PHP framework for minimalists",
             "support": {
                 "issues": "https://github.com/phpolar/phpolar/issues",
-                "source": "https://github.com/phpolar/phpolar/tree/8.1.2"
+                "source": "https://github.com/phpolar/phpolar/tree/8.1.3"
             },
-            "time": "2025-10-06T01:29:04+00:00"
+            "time": "2025-10-13T01:24:45+00:00"
         },
         {
             "name": "phpolar/property-injector",
