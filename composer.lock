@@ -848,16 +848,16 @@
         },
         {
             "name": "phpolar/phpolar",
-            "version": "8.1.4",
+            "version": "8.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpolar/phpolar.git",
-                "reference": "c38b06a049f0a618ce4df6084fe1e010bbddd5a2"
+                "reference": "c13ff82f6eab099e3b3e3226212d3b61bf8dbff9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpolar/phpolar/zipball/c38b06a049f0a618ce4df6084fe1e010bbddd5a2",
-                "reference": "c38b06a049f0a618ce4df6084fe1e010bbddd5a2",
+                "url": "https://api.github.com/repos/phpolar/phpolar/zipball/c13ff82f6eab099e3b3e3226212d3b61bf8dbff9",
+                "reference": "c13ff82f6eab099e3b3e3226212d3b61bf8dbff9",
                 "shasum": ""
             },
             "require": {
@@ -914,9 +914,9 @@
             "description": "A PHP framework for minimalists",
             "support": {
                 "issues": "https://github.com/phpolar/phpolar/issues",
-                "source": "https://github.com/phpolar/phpolar/tree/8.1.4"
+                "source": "https://github.com/phpolar/phpolar/tree/8.1.5"
             },
-            "time": "2025-10-23T01:31:23+00:00"
+            "time": "2025-11-13T02:19:18+00:00"
         },
         {
             "name": "phpolar/property-injector",
@@ -1344,16 +1344,16 @@
         },
         {
             "name": "pimple/pimple",
-            "version": "v3.5.0",
+            "version": "v3.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silexphp/Pimple.git",
-                "reference": "a94b3a4db7fb774b3d78dad2315ddc07629e1bed"
+                "reference": "a70f552d338f9266eec6606c1f0b324da5514c96"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silexphp/Pimple/zipball/a94b3a4db7fb774b3d78dad2315ddc07629e1bed",
-                "reference": "a94b3a4db7fb774b3d78dad2315ddc07629e1bed",
+                "url": "https://api.github.com/repos/silexphp/Pimple/zipball/a70f552d338f9266eec6606c1f0b324da5514c96",
+                "reference": "a70f552d338f9266eec6606c1f0b324da5514c96",
                 "shasum": ""
             },
             "require": {
@@ -1361,7 +1361,7 @@
                 "psr/container": "^1.1 || ^2.0"
             },
             "require-dev": {
-                "symfony/phpunit-bridge": "^5.4@dev"
+                "phpunit/phpunit": "*"
             },
             "type": "library",
             "extra": {
@@ -1391,9 +1391,9 @@
                 "dependency injection"
             ],
             "support": {
-                "source": "https://github.com/silexphp/Pimple/tree/v3.5.0"
+                "source": "https://github.com/silexphp/Pimple/tree/v3.6.0"
             },
-            "time": "2021-10-28T11:13:42+00:00"
+            "time": "2025-11-12T12:31:38+00:00"
         },
         {
             "name": "psr/container",
