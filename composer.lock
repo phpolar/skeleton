@@ -848,16 +848,16 @@
         },
         {
             "name": "phpolar/phpolar",
-            "version": "8.2.2",
+            "version": "8.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpolar/phpolar.git",
-                "reference": "fdb54a38df892d9aa82547d6d6d3049ee2e38a10"
+                "reference": "cb05c65aa1e13061e5883b3824f6415515483793"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpolar/phpolar/zipball/fdb54a38df892d9aa82547d6d6d3049ee2e38a10",
-                "reference": "fdb54a38df892d9aa82547d6d6d3049ee2e38a10",
+                "url": "https://api.github.com/repos/phpolar/phpolar/zipball/cb05c65aa1e13061e5883b3824f6415515483793",
+                "reference": "cb05c65aa1e13061e5883b3824f6415515483793",
                 "shasum": ""
             },
             "require": {
@@ -914,9 +914,9 @@
             "description": "A PHP framework for minimalists",
             "support": {
                 "issues": "https://github.com/phpolar/phpolar/issues",
-                "source": "https://github.com/phpolar/phpolar/tree/8.2.2"
+                "source": "https://github.com/phpolar/phpolar/tree/8.2.4"
             },
-            "time": "2025-11-24T03:14:44+00:00"
+            "time": "2025-12-05T00:36:15+00:00"
         },
         {
             "name": "phpolar/property-injector",
@@ -1064,16 +1064,16 @@
         },
         {
             "name": "phpolar/representations",
-            "version": "1.0.5",
+            "version": "1.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpolar/representations.git",
-                "reference": "7d486347589dd1681ab7f3a4e6c2438550e5808d"
+                "reference": "37275c73bf8de408aa4b57aaf2c8e45970de6e92"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpolar/representations/zipball/7d486347589dd1681ab7f3a4e6c2438550e5808d",
-                "reference": "7d486347589dd1681ab7f3a4e6c2438550e5808d",
+                "url": "https://api.github.com/repos/phpolar/representations/zipball/37275c73bf8de408aa4b57aaf2c8e45970de6e92",
+                "reference": "37275c73bf8de408aa4b57aaf2c8e45970de6e92",
                 "shasum": ""
             },
             "require": {
@@ -1105,22 +1105,22 @@
             "description": "A set of HTTP representations",
             "support": {
                 "issues": "https://github.com/phpolar/representations/issues",
-                "source": "https://github.com/phpolar/representations/tree/1.0.5"
+                "source": "https://github.com/phpolar/representations/tree/1.0.6"
             },
-            "time": "2025-12-05T00:01:25+00:00"
+            "time": "2025-12-05T00:34:38+00:00"
         },
         {
             "name": "phpolar/serializers",
-            "version": "1.0.7",
+            "version": "1.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpolar/serializers.git",
-                "reference": "63687b2f5c02abe387dc02517791d6eb27435ccf"
+                "reference": "3f1987aa671cc710e0ac214c3776a3964ac89870"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpolar/serializers/zipball/63687b2f5c02abe387dc02517791d6eb27435ccf",
-                "reference": "63687b2f5c02abe387dc02517791d6eb27435ccf",
+                "url": "https://api.github.com/repos/phpolar/serializers/zipball/3f1987aa671cc710e0ac214c3776a3964ac89870",
+                "reference": "3f1987aa671cc710e0ac214c3776a3964ac89870",
                 "shasum": ""
             },
             "require": {
@@ -1151,9 +1151,9 @@
             "description": "A set of serializers",
             "support": {
                 "issues": "https://github.com/phpolar/serializers/issues",
-                "source": "https://github.com/phpolar/serializers/tree/1.0.7"
+                "source": "https://github.com/phpolar/serializers/tree/1.0.8"
             },
-            "time": "2025-12-05T00:01:56+00:00"
+            "time": "2025-12-05T00:35:21+00:00"
         },
         {
             "name": "phpolar/storage",
