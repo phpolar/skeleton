@@ -758,16 +758,16 @@
         },
         {
             "name": "phpolar/model",
-            "version": "2.1.1",
+            "version": "2.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpolar/model.git",
-                "reference": "5e5a3a81269045a00eb705c397611bc4298364f8"
+                "reference": "7d5f4406593b907cf67e907eb6fe0f3ba9c8ad30"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpolar/model/zipball/5e5a3a81269045a00eb705c397611bc4298364f8",
-                "reference": "5e5a3a81269045a00eb705c397611bc4298364f8",
+                "url": "https://api.github.com/repos/phpolar/model/zipball/7d5f4406593b907cf67e907eb6fe0f3ba9c8ad30",
+                "reference": "7d5f4406593b907cf67e907eb6fe0f3ba9c8ad30",
                 "shasum": ""
             },
             "require": {
@@ -802,9 +802,9 @@
             "description": "Provides support for configuring the properties of an object for validation, formatting, and storage.",
             "support": {
                 "issues": "https://github.com/phpolar/model/issues",
-                "source": "https://github.com/phpolar/model/tree/2.1.1"
+                "source": "https://github.com/phpolar/model/tree/2.1.2"
             },
-            "time": "2025-12-04T23:59:37+00:00"
+            "time": "2025-12-05T00:21:41+00:00"
         },
         {
             "name": "phpolar/model-resolver",
