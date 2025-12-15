@@ -676,16 +676,16 @@
         },
         {
             "name": "phpolar/csv-file-storage",
-            "version": "3.1.1",
+            "version": "3.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpolar/csv-file-storage.git",
-                "reference": "00825fcd7ebe84fff2c346082254bc9b251c09fb"
+                "reference": "993040ab4701ef75a7a9ddf869ea045376641af5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpolar/csv-file-storage/zipball/00825fcd7ebe84fff2c346082254bc9b251c09fb",
-                "reference": "00825fcd7ebe84fff2c346082254bc9b251c09fb",
+                "url": "https://api.github.com/repos/phpolar/csv-file-storage/zipball/993040ab4701ef75a7a9ddf869ea045376641af5",
+                "reference": "993040ab4701ef75a7a9ddf869ea045376641af5",
                 "shasum": ""
             },
             "require": {
@@ -715,9 +715,9 @@
             "description": "Adds support for storing data on disk in CSV format.",
             "support": {
                 "issues": "https://github.com/phpolar/csv-file-storage/issues",
-                "source": "https://github.com/phpolar/csv-file-storage/tree/3.1.1"
+                "source": "https://github.com/phpolar/csv-file-storage/tree/3.1.2"
             },
-            "time": "2025-12-04T23:58:26+00:00"
+            "time": "2025-12-12T02:06:54+00:00"
         },
         {
             "name": "phpolar/http-request-processor",
