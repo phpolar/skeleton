@@ -394,16 +394,16 @@
         },
         {
             "name": "php-contrib/http-representation",
-            "version": "1.0.3",
+            "version": "1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-contrib/http-representation.git",
-                "reference": "588fec0658bac7a829c9e69f04ed4ada6ddce51f"
+                "reference": "dee31e35cc00bd5eaea4c76d6007c8ee397f7867"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-contrib/http-representation/zipball/588fec0658bac7a829c9e69f04ed4ada6ddce51f",
-                "reference": "588fec0658bac7a829c9e69f04ed4ada6ddce51f",
+                "url": "https://api.github.com/repos/php-contrib/http-representation/zipball/dee31e35cc00bd5eaea4c76d6007c8ee397f7867",
+                "reference": "dee31e35cc00bd5eaea4c76d6007c8ee397f7867",
                 "shasum": ""
             },
             "require": {
@@ -425,9 +425,9 @@
             "description": "Supports HTTP resource representation interoperability",
             "support": {
                 "issues": "https://github.com/php-contrib/http-representation/issues",
-                "source": "https://github.com/php-contrib/http-representation/tree/1.0.3"
+                "source": "https://github.com/php-contrib/http-representation/tree/1.0.4"
             },
-            "time": "2025-06-30T01:38:48+00:00"
+            "time": "2025-12-05T00:07:44+00:00"
         },
         {
             "name": "php-contrib/response-filter",
@@ -848,16 +848,16 @@
         },
         {
             "name": "phpolar/phpolar",
-            "version": "8.3.1",
+            "version": "8.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpolar/phpolar.git",
-                "reference": "6f47de842797738215048a746e81f4db34128559"
+                "reference": "f59210f82822dc83066ee8b0a70411a07620f81d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpolar/phpolar/zipball/6f47de842797738215048a746e81f4db34128559",
-                "reference": "6f47de842797738215048a746e81f4db34128559",
+                "url": "https://api.github.com/repos/phpolar/phpolar/zipball/f59210f82822dc83066ee8b0a70411a07620f81d",
+                "reference": "f59210f82822dc83066ee8b0a70411a07620f81d",
                 "shasum": ""
             },
             "require": {
@@ -914,9 +914,9 @@
             "description": "A PHP framework for minimalists",
             "support": {
                 "issues": "https://github.com/phpolar/phpolar/issues",
-                "source": "https://github.com/phpolar/phpolar/tree/8.3.1"
+                "source": "https://github.com/phpolar/phpolar/tree/8.3.2"
             },
-            "time": "2025-12-22T01:16:38+00:00"
+            "time": "2026-01-12T01:11:48+00:00"
         },
         {
             "name": "phpolar/property-injector",
@@ -1064,16 +1064,16 @@
         },
         {
             "name": "phpolar/representations",
-            "version": "1.0.8",
+            "version": "1.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpolar/representations.git",
-                "reference": "8de49ebc82c8bc5879d76d3a4ab108086e7caa92"
+                "reference": "58a4bee35194c731d843652cf69418b6459e2a38"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpolar/representations/zipball/8de49ebc82c8bc5879d76d3a4ab108086e7caa92",
-                "reference": "8de49ebc82c8bc5879d76d3a4ab108086e7caa92",
+                "url": "https://api.github.com/repos/phpolar/representations/zipball/58a4bee35194c731d843652cf69418b6459e2a38",
+                "reference": "58a4bee35194c731d843652cf69418b6459e2a38",
                 "shasum": ""
             },
             "require": {
@@ -1105,9 +1105,9 @@
             "description": "A set of HTTP representations",
             "support": {
                 "issues": "https://github.com/phpolar/representations/issues",
-                "source": "https://github.com/phpolar/representations/tree/1.0.8"
+                "source": "https://github.com/phpolar/representations/tree/1.0.9"
             },
-            "time": "2025-12-18T20:17:27+00:00"
+            "time": "2026-01-05T01:17:51+00:00"
         },
         {
             "name": "phpolar/serializers",
