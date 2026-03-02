@@ -848,16 +848,16 @@
         },
         {
             "name": "phpolar/phpolar",
-            "version": "8.3.2",
+            "version": "8.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpolar/phpolar.git",
-                "reference": "f59210f82822dc83066ee8b0a70411a07620f81d"
+                "reference": "ac212e0144106b78ac74cbc64f26f724838be1fa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpolar/phpolar/zipball/f59210f82822dc83066ee8b0a70411a07620f81d",
-                "reference": "f59210f82822dc83066ee8b0a70411a07620f81d",
+                "url": "https://api.github.com/repos/phpolar/phpolar/zipball/ac212e0144106b78ac74cbc64f26f724838be1fa",
+                "reference": "ac212e0144106b78ac74cbc64f26f724838be1fa",
                 "shasum": ""
             },
             "require": {
@@ -883,7 +883,7 @@
             "require-dev": {
                 "ext-ast": "*",
                 "ext-openssl": "*",
-                "phan/phan": "^5.3",
+                "phan/phan": "^5.3 || ^6.0",
                 "php-coveralls/php-coveralls": "^2.5",
                 "phpmd/phpmd": "^2.13",
                 "phpolar/csrf-protection": "^3.2",
@@ -914,9 +914,9 @@
             "description": "A PHP framework for minimalists",
             "support": {
                 "issues": "https://github.com/phpolar/phpolar/issues",
-                "source": "https://github.com/phpolar/phpolar/tree/8.3.2"
+                "source": "https://github.com/phpolar/phpolar/tree/8.3.3"
             },
-            "time": "2026-01-12T01:11:48+00:00"
+            "time": "2026-02-20T00:53:30+00:00"
         },
         {
             "name": "phpolar/property-injector",
@@ -3368,5 +3368,5 @@
         "php": ">=8.4"
     },
     "platform-dev": {},
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.9.0"
 }
