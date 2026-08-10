@@ -848,16 +848,16 @@
         },
         {
             "name": "phpolar/phpolar",
-            "version": "8.3.4",
+            "version": "8.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpolar/phpolar.git",
-                "reference": "ae6222c1a0da6cd8fcb5565216dda30c4cbda675"
+                "reference": "a9a95e5ffc96cff663685ae500a5e85736a9eed9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpolar/phpolar/zipball/ae6222c1a0da6cd8fcb5565216dda30c4cbda675",
-                "reference": "ae6222c1a0da6cd8fcb5565216dda30c4cbda675",
+                "url": "https://api.github.com/repos/phpolar/phpolar/zipball/a9a95e5ffc96cff663685ae500a5e85736a9eed9",
+                "reference": "a9a95e5ffc96cff663685ae500a5e85736a9eed9",
                 "shasum": ""
             },
             "require": {
@@ -891,7 +891,7 @@
                 "phpolar/model": "^1.2.4 || ^2.0.0",
                 "phpolar/pure-php": "^2.0 || ^3.0",
                 "phpstan/phpstan": "^2.0.3",
-                "phpunit/phpunit": "^10 || ^11.4 || ^12",
+                "phpunit/phpunit": "^13.0.5",
                 "picocss/pico": "^v2.1.1",
                 "squizlabs/php_codesniffer": "^3.7 || ^4.0"
             },
@@ -914,9 +914,9 @@
             "description": "A PHP framework for minimalists",
             "support": {
                 "issues": "https://github.com/phpolar/phpolar/issues",
-                "source": "https://github.com/phpolar/phpolar/tree/8.3.4"
+                "source": "https://github.com/phpolar/phpolar/tree/8.3.5"
             },
-            "time": "2026-06-05T19:15:55+00:00"
+            "time": "2026-07-30T03:11:32+00:00"
         },
         {
             "name": "phpolar/property-injector",
